@@ -1,5 +1,6 @@
 class PhotosController < ApplicationController
-  before_action :set_photo, only: [:show, :update, :destroy]
+  before_action :set_photo, only: :show
+  before_action :authorize_request, only: [create, :update, :destroy]
 
   # GET /photos
   def index
@@ -16,7 +17,7 @@ class PhotosController < ApplicationController
   # POST /photos
   def create
     @photo = Photo.new(photo_params)
-
+    @photo.user = @current_user
     if @photo.save
       render json: @photo, status: :created, location: @photo
     else
@@ -26,6 +27,7 @@ class PhotosController < ApplicationController
 
   # PATCH/PUT /photos/1
   def update
+    @photo = @current_user.photos.find(params[:id])
     if @photo.update(photo_params)
       render json: @photo
     else
@@ -35,6 +37,7 @@ class PhotosController < ApplicationController
 
   # DELETE /photos/1
   def destroy
+    @photo = @current_user.photos.find(params[:id])
     @photo.destroy
   end
 
