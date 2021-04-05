@@ -1,8 +1,10 @@
-#Navbar {
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-  font
+.logo-size {
+  height: 14vh;
+  width: 5vw;
+  margin: 0;
+  top: 0;
+}
 
+#position{
+  
 }
