@@ -1,6 +1,13 @@
 import { React, Link } from "react-router-dom"
 import { Navbar, Nav, NavDropdown, } from 'react-bootstrap'
-import { getAllParks } from "../assets/Services/parks";
+import { getAllParks } from "../services/parks";
+import { getAllRides } from "../services/rides";
+import { getAllPhotos } from '../services/photos';
+import { getOnePark } from "../services/parks";
+import { getOneRide } from "../services/rides";
+import { postPhoto } from '../services/photos';
+import { putPhoto } from '../services/photos';
+import { destroyPhoto } from '../services/photos';
 import DisneyCarousel from "./DisneyCarousel"
 import DisneyCards from './DisneyCards'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
@@ -56,73 +63,93 @@ export default function DisneyNavbar() {
             <DisneyCards />
             Home
           </Route>
+          </Switch>
         </Nav.Link>
       <NavDropdown title="Parks" id="collasible-nav-dropdown">
           <NavDropdown.Item>
+          <Switch>
           <Route path="/park/:id">
           <ThemePark getOnePark={getOnePark}/>
               Magic Kingdom
             </Route>
+            </Switch>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>
+          <Switch>
           <Route path="/park/:id">
           <ThemePark getOnePark={getOnePark}/>
               Hollywood Studios
             </Route>
+            </Switch>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>
+          <Switch>
           <Route path="/park/:id">
           <ThemePark getOnePark={getOnePark}/>
               Animal Kingdom
             </Route>
+            </Switch>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>
+          <Switch>
           <Route path="/park/:id">
           <ThemePark getOnePark={getOnePark}/>
               Epcot
             </Route>
+            </Switch>
           </NavDropdown.Item>
        </NavDropdown>
         <NavDropdown title="Rides" id="collasible-nav-dropdown">
           <NavDropdown.Item>
+          <Switch>
           <Route path="/rides/:type">
           <ThemePark getOneRide={getAllRides}/>
               Fun for All
             </Route>
+            </Switch>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>
+          <Switch>
           <Route path="/rides/:type">
           <ThemePark getOneRide={getAllRides}/>
               Spinning Rides
             </Route>
+            </Switch>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>
+          <Switch>
           <Route path="/rides/:type">
           <ThemePark getOneRide={getAllRides}/>
               Thrill Rides
             </Route>
+            </Switch>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>
+          <Switch>
             <Route path="/rides">
           <ThemePark getOneRide={getAllRides}/>
               By Park
             </Route>
+            </Switch>
           </NavDropdown.Item>
         </NavDropdown>
         <Nav.Link>Add a Photo</Nav.Link>
       <Nav>
         <Nav.Link id="position">
+          <Switch>
           <Route>
             Sign Up
           </Route>
+          </Switch>
         </Nav.Link>
         <Nav.Link eventKey={2} id="position">
+          <Switch>
           <Route>
             Sign in
           </Route>
