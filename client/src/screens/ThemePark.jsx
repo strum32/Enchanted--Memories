@@ -1,8 +1,8 @@
 import React from 'react'
-import { useEffect, UseState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom"
 
-export default function ThemeParks() {
+export default function ThemePark(props) {
   const { getOnePark } = props
   const { id } = useParams()
   const [park, setPark] = useState({})
@@ -14,7 +14,7 @@ export default function ThemeParks() {
     }
     fetchPark()
   }, [])
-  
+
   return (
     <div>
       <p>{park.name}</p>

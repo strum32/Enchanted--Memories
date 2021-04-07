@@ -2,7 +2,10 @@ import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import './DisneyCarousel.css'
 
+
+
 export default function DisneyCarousel() {
+ 
   return (
     <Carousel>
      <Carousel.Item className="img-size">
