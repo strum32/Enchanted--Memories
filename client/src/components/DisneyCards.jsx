@@ -4,7 +4,7 @@ import { Card, Button, CardDeck } from 'react-bootstrap'
 export default function DisneyCards(props) {
 
   return (
-    <CardDeck>
+    <CardDeck className="cardMargin">
     <Card>
       <Card.Img variant="top" src="holder.js/100px160" />
       <Card.Body className="cardWidth">

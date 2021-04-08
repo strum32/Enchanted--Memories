@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function ThemeParkRides(props) {
+export default function AllRides(props) {
   const { rides } = props
 
   return (

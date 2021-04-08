@@ -1,84 +1,85 @@
 import { React, Link } from "react-router-dom"
-import { Navbar, Nav, NavDropdown, } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import './DisneyNavbar.css';
 
 export default function DisneyNavbar() {
 
   return (
-      <Navbar sticky='top' bg="light" variant="dark">
+      <Navbar sticky='top' bg="light" variant="dark">a
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
+        <LinkContainer to='/'>
         <Nav.Link>
-          <Link to='/'>
             Home
-          </Link>
         </Nav.Link>
+        </LinkContainer>
       <NavDropdown title="Parks" id="collasible-nav-dropdown">
+          <LinkContainer to='/park/MagicKingdom'> 
           <NavDropdown.Item>
-            <Link to="/park/:id">
-              Magic Kingdom
-            </Link>
+            Magic Kingdom
           </NavDropdown.Item>
+          </LinkContainer>
           <NavDropdown.Divider />
+          <LinkContainer to='/park/HollywoodStudios'>
           <NavDropdown.Item>
-            <Link to="/park/:id">
-              Hollywood Studios
-            </Link>
+            Hollywood Studios
           </NavDropdown.Item>
+          </LinkContainer>
           <NavDropdown.Divider />
+          <LinkContainer to='/park/AnimalKingdom'>
           <NavDropdown.Item>
-            <Link to="/park/:id">
-              Animal Kingdom
-            </Link>
+            Animal Kingdom
           </NavDropdown.Item>
+          </LinkContainer>
           <NavDropdown.Divider />
+          <LinkContainer to='/park/Epcot'>
           <NavDropdown.Item>
-            <Link to="/park/:id">
               Epcot
-            </Link>
           </NavDropdown.Item>
+          </LinkContainer>
        </NavDropdown>
         <NavDropdown title="Rides" id="collasible-nav-dropdown">
+         <LinkContainer to='/rides/AllRides'>
           <NavDropdown.Item>
-            <Link to="/rides">
-              All Rides
-            </Link>
+            All Rides
           </NavDropdown.Item>
+          </LinkContainer>
           <NavDropdown.Divider />
+          <LinkContainer to='/rides/FunForAll'>
           <NavDropdown.Item>
-            <Link to="/rides/:type">
-              Fun for All
-            </Link>
+            Fun for All
           </NavDropdown.Item>
+          </LinkContainer>
           <NavDropdown.Divider />
+          <LinkContainer to='/rides/ThrillRides'>
           <NavDropdown.Item>
-            <Link to="/rides/:type">
-              Thrill Rides
-            </Link>
+            Thrill Rides
           </NavDropdown.Item>
+          </LinkContainer>
           <NavDropdown.Divider />
+          <LinkContainer to='/rides/SpinningRides'>
           <NavDropdown.Item>
-            <Link to="/rides/:type">
-              Spinning Rides
-            </Link>
+            Spinning Rides
           </NavDropdown.Item>
+          </LinkContainer>
         </NavDropdown>
+        <LinkContainer to='/photos/new'>
         <Nav.Link>
-          <Link to="photo/new"> 
-            Add a Photo
-          </Link>   
+          Add a Photo
         </Nav.Link>
+        </LinkContainer>
       <Nav>
+        <LinkContainer to='/register'>
         <Nav.Link id="me-auto">
-          <Link to=''>
             Register
-          </Link>
         </Nav.Link>
+        </LinkContainer>
+        <LinkContainer to='/login'>
         <Nav.Link eventKey={2} id="me-auto">
-          <Link>
             Login
-          </Link>
         </Nav.Link>
+        </LinkContainer>
       </Nav>
       </Navbar.Collapse>
       </Navbar>
