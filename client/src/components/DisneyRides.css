@@ -1,0 +1,58 @@
+#RidesGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.RidesContainer {
+  row-gap: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.RidesGallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(13, 4.5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . . . . . . . . . . . ."
+  ". . . a a a a a a a a a a a a a a a . . ."
+  ". . . a a a a a a a a a a a a a a a . . ."
+  ". . . a a a a a a a a a a a a a a a . . ."
+  ". . . a a a a a a a a a a a a a a a . . ."
+  ". . . a a a a a a a a a a a a a a a . . ."
+  ". . . a a a a a a a a a a a a a a a . . ."
+  ". . . s s s s s q q q q q w w w w w . . ."
+  ". . . s s s s s q q q q q w w w w w . . ."
+  ". . . s s s s s q q q q q w w w w w . . ."
+  ". . . s s s s s q q q q q w w w w w . . ."
+  ". . . s s s s s q q q q q w w w w w . . ."
+  ". . . . . . . . . . . . . . . . . . . . ."
+}
+
+#RidesGallery-Item1 {
+  grid-area: w;
+  margin-top:0;
+}
+
+#RidesGallery-Item2 {
+  grid-area: s;
+  margin-top:0;
+} 
+
+#RidesGallery-Item3 {
+  grid-area: a;
+  margin-bottom: 0;
+} 
+
+#RidesGallery-Item4 {
+  grid-area: q;
+  margin-top:0;
+} 
+
+
+

@@ -6,25 +6,22 @@
 }
 
 .CreditContainer {
-  width: 60%;
-  margin: 2rem auto;
-  background: #F4F4F4
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #F4F4F4;
 }
 
 .CreditGallery {
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(6, 5vw);
+  grid-template-columns: repeat(19, 1fr);
+  grid-template-rows: repeat(3, 5vw);
   grid-template-areas: 
-  ". . . . . . . . . . . . . . . . . . . ."
-  ". . a a a a a a a a . s s s s s s s s s"
-  ". . a a a a a a a a . s s s s s s s s s"
-  ". . a a a a a a a a . s s s s s s s s s"
-  ". . . . . . . . . . . . . . . . . . . ."
-  ". . . . . . . . . . . . . . . . . . . ."
   
-  
+  ". . a a a a a a a a . s s s s s s . ."
+  ". . a a a a a a a a . s s s s s s . ."
+  ". . a a a a a a a a . . . . . . . . ."
 }
 
 #CreditGallery-Item1 {

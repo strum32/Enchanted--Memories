@@ -1,17 +1,30 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import img1 from '../assets/DisneyRide1.jpg'
+import img2 from '../assets/DisneyRide2.jpg'
+import img3 from '../assets/DisneyRide3.jpg'
+import img4 from '../assets/DisneyRide4.jpg'
+import './DisneyRides.css'
+
 
 export default function DisneyRides() {
   return (
-    <Container>
-  <Row>
-    <Col>1 of 1</Col>
-  </Row>
-  <Row>
-    <Col>1 of 3</Col>
-    <Col>2 of 3</Col>
-    <Col>3 of 3</Col>
-  </Row>
-</Container>
+    <div className="RidesContainter" id='background'>
+      <div className='RidesGallery'>
+        <figure id="RidesGallery-Item1">
+          <img id='height' id='RidesGallery-Img' src={img1} alt='Family members having a blast'/>
+        </figure>
+        <figure id="RidesGallery-Item2">
+          <img id='RidesGallery-Img' src={img2} alt='Dumbo Ride'/>
+        </figure>
+        <figure id="RidesGallery-Item3">
+          <img id='RidesGallery-Img' src={img3} alt='Three children having fun on a rollercoaster'/>
+        </figure>
+        <figure  id="RidesGallery-Item4">
+
+          <img id='RidesGallery-Img' src={img4} alt='Jessie from Toy Story'/>
+        </figure>
+      </div>
+    </div>
+  
   )
 }

@@ -10,9 +10,9 @@ export default function DisneyCreditCard() {
           <img id='CreditGallery-Img' src={img1} alt='Disney CreditCards' />
         </figure>
         <figure id="CreditGallery-Item2" className='height' >
-          <p className='font1'>New Disney Premier Visa Cardmembers can earn a</p>
+          <p className='font1'>New Enchanted Premier Visa Cardmembers can earn a</p>
           <h2 className='font2'>$300 STATEMENT CREDIT</h2>
-          <p className='font1'>plus 0% Promo APR on select Disney vacations</p>
+          <p className='font1'>plus 0% Promo APR on select Enchanted vacations</p>
           <h6 className='font3'>Restrictions apply</h6>
         </figure>
       </div>
