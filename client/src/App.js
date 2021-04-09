@@ -1,12 +1,9 @@
 // import { useState, useEffect } from 'react'
-import DisneyCarousel from './components/DisneyCarousel'
-import DisneyNavbar from './components/DisneyNavbar'
-import DisneyCards from './components/DisneyCards'
-// import Login from './screens/Login.jsx'
-// import Register from './screens/Register.jsx'
+import Login from './screens/Login.jsx'
+import Register from './screens/Register.jsx'
 import AllRides from './screens/AllRides'
 import AnimalKingdom from './screens/AnimalKingdom'
-// import DisneyCreditCard from './components/DisneyCreditCard'
+import Home from './screens/Home'
 import Epcot from './screens/Epcot'
 import FunForAllRides from './screens/FunForAllRides'
 import HollywoodStudios from './screens/HollywoodStudios'
@@ -99,21 +96,17 @@ function App(props){
   return (
 
     <div className="App">
-      <Router>
-        <DisneyNavbar />
-        <DisneyCarousel />
-        <DisneyCards />
-        
+      <Router>    
       {/* <Layout
         currentUser={currentUser}
           handleLogout={handleLogout} > */}
           <Switch>
-        <Route exact path='/' component={App}>
+        <Route exact path='/' component={Home}>
         </Route>
-        <Route path='/login'>
+        <Route path='/login' component={Login}>
             {/* <Login handleLogin={handleLogin}/> */}
         </Route>
-        <Route path='/register'>
+        <Route path='/register' component={Register}>
             {/* <Register handleRegister={handleRegister}/> */}
         </Route>
           <Route path='/park/MagicKingdom' component={MagicKingdom}>

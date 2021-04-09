@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import DisneyNavbar from '../components/DisneyNavbar'
 import App from '../App.js';
 
 export default function Login(props) {
@@ -22,7 +23,8 @@ export default function Login(props) {
     <form className="login" onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData);
-    }}>
+      }}>
+        <DisneyNavbar />
       <h3>Login</h3>
       <label htmlFor="login">
         Username:

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DisneyNavbar from '../components/DisneyNavbar'
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export default function Register(props) {
       e.preventDefault();
      handleRegister(formData);
     }}>
+      <DisneyNavbar />
       <h3>Register</h3>
       <label htmlFor="login">
         Username:
