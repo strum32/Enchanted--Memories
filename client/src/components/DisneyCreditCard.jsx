@@ -1,5 +1,6 @@
 import React from 'react'
-import img1 from '../assets/disney-cards.jpg'
+import { Image } from 'react-bootstrap'
+import img1 from '../assets/DisneyCreditCards.jpg'
 import './DisneyCreditCard.css'
 
 export default function DisneyCreditCard() {
@@ -7,7 +8,7 @@ export default function DisneyCreditCard() {
     <div className="CreditContainter" id='background'>
       <div className='CreditGallery'>
         < figure id="CreditGallery-Item1">
-          <img id='CreditGallery-Img' src={img1} alt='Disney CreditCards' />
+          <Image id='CreditGallery-Img' src={img1} alt='Disney Credit Cards' fluid/>
         </figure>
         <figure id="CreditGallery-Item2" className='height' >
           <p className='font1'>New Enchanted Premier Visa Cardmembers can earn a</p>

@@ -4,6 +4,7 @@ import DisneyNavbar from '../components/DisneyNavbar'
 import DisneyCards from '../components/DisneyCards'
 import DisneyCreditCards from '../components/DisneyCreditCard'
 import DisneyRides from '../components/DisneyRides'
+import DisneyPhotos from '../components/DisneyPhotos'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <DisneyCards />
       <DisneyRides />
       <DisneyCreditCards />
+      <DisneyPhotos />
     </div>
   )
 }
