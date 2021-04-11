@@ -16,16 +16,15 @@
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(10, 3.7vw);
+  grid-template-rows: repeat(9, 4vw);
   column-gap: 20px;
   row-gap: 20px;
   grid-template-areas: 
   ". . . . . . . . . . . . . . . ."
   ". . a a a a a a a a a a a a . ."
   ". . a a a a a a a a a a a a . ."
-  ". . a a a a a a a a a a a a . ."
-  ". . s s s s . . . . w w w w . ."
-  ". . s s s s . . . . w w w w . ."
+  ". . s s s s e e e e w w w w . ."
+  ". . s s s s e e e e w w w w . ."
   ". . s s s s q q q q w w w w . ."
   ". . s s s s q q q q w w w w . ."
   ". . d d d d d d d d d d d d . ."
@@ -35,28 +34,44 @@
 #PhotosGallery-Item1 {
   grid-area: w;
   margin-top:0;
-  transform: translate(0px, 16px)
+  margin-bottom:0;
 }
 
 #PhotosGallery-Item2 {
   grid-area: s;
   margin-top:0;
-  
+  margin-bottom:0;
 } 
 
 #PhotosGallery-Item3 {
   grid-area: a;
   margin-bottom: 0;
+  margin-top:0;
+  background: rgb(39,62,176);
+  background: radial-gradient(circle, rgba(39,62,176,1) 0%, rgba(8,9,33,1) 72%);
+  border: 1px solid black;
+  color: white;
 } 
 
 #PhotosGallery-Item4 {
   grid-area: q;
   margin-top:0;
+  margin-bottom:0;
 } 
 
 #PhotosGallery-Item5 {
   grid-area: d;
   margin-top:0;
-  border: 1px solid black;
-  background: lightgray
+  background: rgb(250,250,252);
+  background: radial-gradient(circle, rgba(250,250,252,1) 0%, rgba(231,229,229,0.5452556022408963) 27%);
+  
+}
+
+#PhotosGallery-Item6 {
+  grid-area: e;
+  text-align:center;
+  margin-top:0;
+  margin-bottom:0;
+  background: rgb(251,255,255);
+  background: linear-gradient(0deg, rgba(251,255,255,1) 9%, rgba(191,188,188,0.8981967787114846) 98%);
 }

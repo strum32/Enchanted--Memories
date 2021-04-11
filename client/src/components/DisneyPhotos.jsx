@@ -15,19 +15,21 @@ export default function DisneyPhotos() {
           <Image id='PhotosGallery-Img' src={img2} alt='' fluid/>
         </figure>
         <figure id="PhotosGallery-Item2">
-          <p></p>
           <Image id='PhotosGallery-Img' src={img4} alt='' fluid/>
         </figure>
         <figure id="PhotosGallery-Item3">
-          <p></p>
-          <Image id="height" id='PhotosGallery-Img' src={img1} alt='' fluid/>
+            <h1>Enchanted</h1>
+            <h1>Memories+</h1>
         </figure>
         <figure  id="PhotosGallery-Item4">
-          <p></p>
           <Image id='PhotosGallery-Img' src={img3} alt='' fluid/>
         </figure>
-        <figure  id="PhotosGallery-Item5">
-          <p></p>
+        <figure id="PhotosGallery-Item5">
+            <p>Take a look at the memories below and add your own here</p>
+        </figure>
+        <figure id="PhotosGallery-Item6">
+            <h3>Limited-Time Offer</h3>
+            <p>Get All your Enchanted Memories photos and videos captured through December 11, 2021 for one prie with Memory Maker!</p>
         </figure>
       </div>
     </div>
