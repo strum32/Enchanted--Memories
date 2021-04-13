@@ -1,7 +1,6 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
 import'./DisneyPhotos.css'
-import img1 from '../assets/DisneyPhoto1.jpg'
 import img2 from '../assets/DisneyPhoto2.jpg'
 import img3 from '../assets/DisneyPhoto3.jpg'
 import img4 from '../assets/DisneyPhoto4.jpg'

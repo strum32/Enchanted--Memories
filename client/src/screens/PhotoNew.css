@@ -1,0 +1,19 @@
+.BackgroundImg {
+background-image: url("https://i.etsystatic.com/13155421/r/il/19ae97/1648780687/il_794xN.1648780687_8bfc.jpg");
+background-repeat: no-repeat;
+background-position: right; 
+image-rendering: pixelated;
+image-rendering: auto;
+image-rendering: crisp-edges;
+background-size: 300px 300px;
+margin-right: 300px;
+height: 800px;
+}
+
+.margin {
+  margin-top: 3%
+}
+
+.margin-position {
+ margin-left: 10%;
+}

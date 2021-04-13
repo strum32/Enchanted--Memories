@@ -14,32 +14,32 @@ export default function DisneyNavbar() {
         </Nav.Link>
         </LinkContainer>
       <NavDropdown title="Parks" id="collasible-nav-dropdown">
-          <LinkContainer to='/park/MagicKingdom'> 
+          <LinkContainer to='/parks/1'> 
           <NavDropdown.Item id='fontsize'>
             Magic Kingdom
           </NavDropdown.Item>
           </LinkContainer>
           <NavDropdown.Divider />
-          <LinkContainer to='/park/HollywoodStudios'>
+          <LinkContainer to='/parks/2'>
           <NavDropdown.Item id='fontsize'>
             Hollywood Studios
           </NavDropdown.Item>
           </LinkContainer>
           <NavDropdown.Divider />
-          <LinkContainer to='/park/AnimalKingdom'>
+          <LinkContainer to='/parks/3'>
           <NavDropdown.Item id='fontsize'>
             Animal Kingdom
           </NavDropdown.Item>
           </LinkContainer>
           <NavDropdown.Divider />
-          <LinkContainer to='/park/Epcot'>
+          <LinkContainer to='/parks/4'>
           <NavDropdown.Item id='fontsize'>
               Epcot
           </NavDropdown.Item>
           </LinkContainer>
        </NavDropdown>
         <NavDropdown title="Rides" id="collasible-nav-dropdown">
-         <LinkContainer to='/rides/AllRides'>
+         <LinkContainer to='/rides'>
           <NavDropdown.Item id='fontsize'>
             All Rides
           </NavDropdown.Item>

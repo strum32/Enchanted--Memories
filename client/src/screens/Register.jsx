@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import DisneyNavbar from '../components/DisneyNavbar'
+import "./Register.css"
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -18,6 +19,7 @@ export default function Register(props) {
     }))
   }
   return (
+    <div className="Background">
     <form onSubmit={(e) => {
       e.preventDefault();
      handleRegister(formData);
@@ -59,5 +61,6 @@ export default function Register(props) {
       <br />
       <button>Submit</button>
     </form>
+    </div>
   )
 }

@@ -1,11 +1,10 @@
 import React from 'react'
 import DisneyNavbar from '../components/DisneyNavbar'
 
-export default function AnimalKingdom() {
+export default function Layout() {
   return (
     <div>
-      <DisneyNavbar />
-      <h1>This is Animal Kingdom</h1>
+      <DisneyNavbar/>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DisneyNavbar from '../components/DisneyNavbar'
-import App from '../App.js';
+import './Login.css'
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
