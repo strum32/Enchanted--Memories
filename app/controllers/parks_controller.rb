@@ -1,5 +1,5 @@
 class ParksController < ApplicationController
-  before_action :set_park, only: [:show, :update, :destroy]
+  before_action :set_park, only: [:show]
 
   # GET /parks
   def index

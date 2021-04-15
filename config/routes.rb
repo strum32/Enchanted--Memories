@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :rides
-  resources :parks
+  resources :rides, only: [:index, :show]
+  resources :parks, only: [:index, :show]
   resources :photos
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'

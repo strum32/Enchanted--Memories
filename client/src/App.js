@@ -5,9 +5,6 @@ import AllRides from './screens/AllRides'
 import RidesDetail from './screens/RidesDetail'
 import Home from './screens/Home'
 import ParkDetail from './screens/ParkDetail'
-import FunForAllRides from './screens/FunForAllRides'
-import SpinningRides from './screens/SpinningRides'
-import ThrillRides from './screens/ThrillRides'
 import PhotosNew from './screens/PhotoNew'
 import {BrowserRouter as Router, Switch, Route, useHistory} from 'react-router-dom'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth.js'
@@ -96,17 +93,7 @@ useEffect(() => {
         <Route path='/rides/:id'>
             <RidesDetail />
         </Route>
-        <Route path='/rides/SpinningRides' component={SpinningRides}>
-
-        </Route>
-        <Route path='/rides/ThrillRides' component={ThrillRides}>
-        
-        </Route>
-        <Route path='/rides/FunForAll' component={FunForAllRides}>
-
-        </Route>
         <Route path='/photos/new' component={PhotosNew}>
-
         </Route>
         <Route path="/photos/edit/:id">
             <PhotoDelete photos={photos} handleDelete={handleDelete}/>

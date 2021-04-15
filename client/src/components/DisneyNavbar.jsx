@@ -37,35 +37,15 @@ export default function DisneyNavbar() {
               Epcot
           </NavDropdown.Item>
           </LinkContainer>
-       </NavDropdown>
-        <NavDropdown title="Rides" id="collasible-nav-dropdown">
-         <LinkContainer to='/rides'>
-          <NavDropdown.Item id='fontsize'>
-            All Rides
-          </NavDropdown.Item>
-          </LinkContainer>
-          <NavDropdown.Divider />
-          <LinkContainer to='/rides/FunForAll'>
-          <NavDropdown.Item id='fontsize'>
-            Fun for All
-          </NavDropdown.Item>
-          </LinkContainer>
-          <NavDropdown.Divider />
-          <LinkContainer to='/rides/ThrillRides'>
-          <NavDropdown.Item id='fontsize'>
-            Thrill Rides
-          </NavDropdown.Item>
-          </LinkContainer>
-          <NavDropdown.Divider />
-          <LinkContainer to='/rides/SpinningRides'>
-          <NavDropdown.Item id='fontsize'>
-            Spinning Rides
-          </NavDropdown.Item>
-          </LinkContainer>
         </NavDropdown>
+        <LinkContainer to='/rides'>
+        <Nav.Link id='fontsize'>
+            Attractions
+        </Nav.Link>
+        </LinkContainer>
         <LinkContainer to='/photos/new'>
         <Nav.Link id='fontsize'>
-          Add a Photo
+            Add a Photo
         </Nav.Link>
         </LinkContainer>
       <Nav>

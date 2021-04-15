@@ -51,6 +51,50 @@
   font: Avenir, Helvetica, Arial, sans-serif;
 }
 
+@media screen and (max-width: 1853px) {
+  .font1{
+    font-size: 20px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font2{
+    font-size: 32px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1546px) {
+  .font1{
+    font-size: 18px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font2{
+    font-size: 30px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font3{
+    font-size: 16px;
+    font: Avenir, Helvetica, Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .font1{
+    font-size: 16px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font2{
+    font-size: 28px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font3{
+    font-size: 15px;
+    font: Avenir, Helvetica, Arial, sans-serif;
+  }
+}
+
+
+
+
 
 
 

@@ -1,28 +1,30 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import DisneyNavbar from '../components/DisneyNavbar';
+import DisneyNavbar from '../components/DisneyNavbar'
 import { getOnePark } from '../services/parks'
 
 export default function ParkDetail(props) {
-  const [park, setPark] = useState(null);
+  const [onePark, setOnePark] = useState(null);
   const { id } = useParams();
-
+  
   useEffect(() => {
-    const fetchPark = async () => {
+    const fetchOnePark = async () => {
       const parkData = await getOnePark(id);
-      setPark(parkData);
+      setOnePark(parkData);
     };
-    fetchPark();
+    fetchOnePark();
   }, [id]);
   
   return (
     <div>
-      <DisneyNavbar/>
-      <div >
-      {/* <h4>{park.name}</h4>
-      <img src={park.img_url} /> */}
-      </div>
+    {onePark.map((thePark) => (
+    <div key={thePark.id}>
+      {/* <h4>{thePark.name}</h4>
+      <img src={thePark.img_url} /> */}
     </div>
+      ))}  
+    </div>
+    
   )
 }

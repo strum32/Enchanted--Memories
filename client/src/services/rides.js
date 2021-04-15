@@ -9,3 +9,4 @@ export const getOneRide = async (id) => {
   const resp = await api.get(`/rides/${id}`);
   return resp.data;
 }
+
