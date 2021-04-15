@@ -7,7 +7,7 @@ import DisneyNavbar from '../components/DisneyNavbar';
 
 export default function AllRides() {
   const [rides, setRides] = useState([]);
- 
+
   useEffect(() => {
     const fetchRides = async () => {
       const rideList = await getAllRides();
@@ -15,6 +15,7 @@ export default function AllRides() {
     }
     fetchRides();
   }, [])
+
 
   return (
     <div>

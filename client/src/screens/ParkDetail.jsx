@@ -5,23 +5,23 @@ import DisneyNavbar from '../components/DisneyNavbar';
 import { getOnePark } from '../services/parks'
 
 export default function ParkDetail(props) {
-  const [parkItem, setParkItem] = useState(null);
+  const [park, setPark] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchParkItem = async () => {
+    const fetchPark = async () => {
       const parkData = await getOnePark(id);
-      setParkItem(parkData);
+      setPark(parkData);
     };
-    fetchParkItem();
+    fetchPark();
   }, [id]);
   
   return (
     <div>
       <DisneyNavbar/>
-      <div>
-      <h4>{parkItem.name}</h4>
-      <img src={parkItem.img_url} />
+      <div >
+      {/* <h4>{park.name}</h4>
+      <img src={park.img_url} /> */}
       </div>
     </div>
   )

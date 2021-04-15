@@ -10,12 +10,12 @@ export default function PhotoNew() {
     <div className="BackgroundImg">
       <Form className='margin'>
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label className="margin-position">Username</Form.Label>
-    <Form.Control className="margin-position" type="Username" placeholder="Enter Username Here" />
+    <Form.Label className="margin-position">Caption</Form.Label>
+    <Form.Control className="margin-position" type="Username" placeholder="Caption your Photo" />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlInput1">
     <Form.Label className="margin-position">Image URL</Form.Label>
-    <Form.Control className="margin-position" type="Username" placeholder="Enter Username Here" />
+    <Form.Control className="margin-position" type="Username" placeholder="Enter Image URL Here" />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Label className="margin-position">Pick a Park</Form.Label>

@@ -1,7 +1,20 @@
-.reshape{
+.display{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-#resize{
-  height:400px;
-  width:400px;
+.spacing{
+  align-items: center;
+  margin-top: 18%;
+  margin-bottom:0;
 }
+
+#size{
+  height:420px;
+  width:420px;
+}
+
+

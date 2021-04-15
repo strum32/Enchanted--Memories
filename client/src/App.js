@@ -12,6 +12,8 @@ import PhotosNew from './screens/PhotoNew'
 import {BrowserRouter as Router, Switch, Route, useHistory} from 'react-router-dom'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth.js'
 import { putPhoto, destroyPhoto, postPhoto, getAllPhotos } from './services/photos'
+import PhotoDelete from './components/PhotoDelete.jsx'
+import AllPhotos from './components/AllPhotos.jsx'
 
 
 
@@ -22,63 +24,63 @@ function App(props){
   const [photos, setPhotos] = useState([]);
   const history = useHistory();
 
-// useEffect(() => {
-//   const handleVerify = async () => {
-//     const currentUser = await verifyUser();
-//     setCurrentUser(currentUser)
-//   }
-//   handleVerify();
-// }, [])
+useEffect(() => {
+  const handleVerify = async () => {
+    const currentUser = await verifyUser();
+    setCurrentUser(currentUser)
+  }
+  handleVerify();
+}, [])
   
-//   const handleLogin = async (formData) => {
-//     const currentUser = await loginUser(formData);
-//     setCurrentUser(currentUser);
-//     history.push('/');
-//   }
-//   const handleRegister = async (formData) => {
-//     const currentUser = await registerUser(formData);
-//     setCurrentUser(currentUser);
-//     history.push('/');
-//   }
+  const handleLogin = async (formData) => {
+    const currentUser = await loginUser(formData);
+    setCurrentUser(currentUser);
+    history.push('/');
+  }
+  const handleRegister = async (formData) => {
+    const currentUser = await registerUser(formData);
+    setCurrentUser(currentUser);
+    history.push('/');
+  }
 
-//   const handleLogout = () => {
-//     setCurrentUser(null);
-//     localStorage.removeItem('authToken');
-//     removeToken();
-//   }
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('authToken');
+    removeToken();
+  }
   
-  // useEffect(() => {
-  //   const fetchPhotos = async () => {
-  //     const photoList = await getAllPhotos();
-  //     setPhotos(photoList);
-  //   }
-  //   fetchPhotos();
-  // }, [])
+  useEffect(() => {
+    const fetchPhotos = async () => {
+      const photoList = await getAllPhotos();
+      setPhotos(photoList);
+    }
+    fetchPhotos();
+  }, [])
 
-  // const handleCreate = async (formData) => {
-  //   const newPhoto = await postPhoto(formData);
-  //   setPhotos(prevState => [...prevState, newPhoto]);
-  //   history.push(`/parks`)
-  // }
+  const handleCreate = async (formData) => {
+    const newPhoto = await postPhoto(formData);
+    setPhotos(prevState => [...prevState, newPhoto]);
+    history.push(`/parks`)
+  }
 
-  // const handleUpdate = async (id, formData) => {
-  //   const updatedPhoto = await putPhoto(id, formData);
-  //   setPhotos((prevState) => prevState.map((photo) => photo.id === Number(id) ? updatedPhoto : photo))
-  // }
+  const handleUpdate = async (id, formData) => {
+    const updatedPhoto = await putPhoto(id, formData);
+    setPhotos((prevState) => prevState.map((photo) => photo.id === Number(id) ? updatedPhoto : photo))
+  }
 
-  // const handleDelete = async (id) => {
-  //   await destroyPhoto(id);
-  //   setPhotos(prevState => prevState.filter((photo) => photo.id !== id))
-  //   history.push(`/parks`)
-  // }
+  const handleDelete = async (id) => {
+    await destroyPhoto(id);
+    setPhotos(prevState => prevState.filter((photo) => photo.id !== id))
+    history.push(`/parks`)
+  }
 
   return (
 
     <div className="App">
       <Router>
           <Switch>
-        <Route exact path='/' component={Home}>
-        </Route>
+        <Route exact path='/' component={Home} />
+          
         <Route path='/login' component={Login}>
               
         </Route>
@@ -86,6 +88,7 @@ function App(props){
         </Route>
         <Route path='/parks/:id'>
             <ParkDetail />
+            <AllPhotos />
         </Route>
         <Route path='/rides'>
             <AllRides />
@@ -106,7 +109,7 @@ function App(props){
 
         </Route>
         <Route path="/photos/edit/:id">
-
+            <PhotoDelete photos={photos} handleDelete={handleDelete}/>
         </Route>
         </Switch>
     </Router> 

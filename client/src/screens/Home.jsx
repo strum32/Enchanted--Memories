@@ -1,4 +1,5 @@
 import React from 'react'
+import AllPhotos from '../components/AllPhotos'
 import DisneyCarousel from '../components/DisneyCarousel'
 import DisneyNavbar from '../components/DisneyNavbar'
 import DisneyCreditCards from '../components/DisneyCreditCard'
@@ -13,7 +14,8 @@ export default function Home() {
       <DisneyNavbar />
       <DisneyCarousel />
       <AllParks />
-      {/* <DisneyRides /> */}
+      <AllPhotos />
+      <DisneyRides />
       <DisneyCreditCards />
       <DisneyPhotos />
     </div>
