@@ -17,14 +17,13 @@ export default function DisneyPhotos() {
           <Image id='PhotosGallery-Img' src={img4} alt='' fluid/>
         </figure>
         <figure id="PhotosGallery-Item3">
-            <h1>Enchanted</h1>
-            <h1>Memories+</h1>
+            <h1>Enchanted Memories+</h1>
         </figure>
         <figure  id="PhotosGallery-Item4">
           <Image id='PhotosGallery-Img' src={img3} alt='' fluid/>
         </figure>
         <figure id="PhotosGallery-Item5">
-            <p>Take a look at the memories below and add your own here</p>
+            <p>Add your own Memory here</p>
         </figure>
         <figure id="PhotosGallery-Item6">
             <h3>Limited-Time Offer</h3>
