@@ -28,13 +28,13 @@ export default function DisneyNavbar() {
           <NavDropdown.Divider />
           <LinkContainer to='/parks/3'>
           <NavDropdown.Item id='fontsize'>
-            Animal Kingdom
+            Epcot
           </NavDropdown.Item>
           </LinkContainer>
           <NavDropdown.Divider />
           <LinkContainer to='/parks/4'>
           <NavDropdown.Item id='fontsize'>
-              Epcot
+            Animal Kingdom
           </NavDropdown.Item>
           </LinkContainer>
         </NavDropdown>

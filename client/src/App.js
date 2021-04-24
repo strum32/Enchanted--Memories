@@ -6,9 +6,17 @@ import RidesDetail from './screens/RidesDetail'
 import Home from './screens/Home'
 import ParkDetail from './screens/ParkDetail'
 import PhotosNew from './screens/PhotoNew'
+import AllParks from './screens/AllParks'
+import DisneyNavbar from './components/DisneyNavbar'
+import DisneyCarousel from './components/DisneyCarousel'
+import DisneyCreditCard from './components/DisneyCreditCard'
+import DisneyRides from './components/DisneyRides'
+import DisneyPhotos from './components/DisneyPhotos'
 import {BrowserRouter as Router, Switch, Route, useHistory} from 'react-router-dom'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth.js'
 import { putPhoto, destroyPhoto, postPhoto, getAllPhotos } from './services/photos'
+import { getAllParks, getOnePark } from './services/parks'
+import { getAllRides, getOneRide } from './services/rides'
 import PhotoDelete from './components/PhotoDelete.jsx'
 import AllPhotos from './components/AllPhotos.jsx'
 
@@ -16,11 +24,29 @@ import AllPhotos from './components/AllPhotos.jsx'
 
 
 
-function App(props){
+function App(){
   const [currentUser, setCurrentUser] = useState(null)
   const [photos, setPhotos] = useState([]);
+  const [rides, setRides] = useState([])
+  const [parks, setParks] = useState([]);
   const history = useHistory();
 
+  useEffect(() => {
+    const fetchParks = async () => {
+      const parkList = await getAllParks();
+      setParks(parkList);
+    }
+    fetchParks();
+  }, [])
+  
+  useEffect(() => {
+    const fetchRides = async () => {
+      const rideList = await getAllRides();
+      setRides(rideList);
+    }
+    fetchRides();
+  }, [])
+  
 useEffect(() => {
   const handleVerify = async () => {
     const currentUser = await verifyUser();
@@ -76,31 +102,42 @@ useEffect(() => {
     <div className="App">
       <Router>
           <Switch>
-        <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Home} >
+            <DisneyNavbar />
+            <DisneyCarousel />
+            <AllParks parks={parks} />
+            <DisneyRides />
+            <DisneyCreditCard />
+            <DisneyPhotos />
+          </Route>
+
+          <Route path='/login' component={Login} />
           
-        <Route path='/login' component={Login}>
-              
-        </Route>
-        <Route path='/register' component={Register}>
-        </Route>
-        <Route path='/parks/:id'>
-            <ParkDetail />
+          <Route path='/register' component={Register}>
+          </Route>
+
+          <Route path='/parks/:id'>
+            <ParkDetail getOnePark={getOnePark}/>
             <AllPhotos />
-        </Route>
-        <Route path='/rides'>
-            <AllRides />
-        </Route>
-        <Route path='/rides/:id'>
-            <RidesDetail />
-        </Route>
-        <Route path='/photos/new' component={PhotosNew}>
-        </Route>
-        <Route path="/photos/edit/:id">
+          </Route>
+
+          <Route path='/rides'>
+            <AllRides rides={rides}/>
+          </Route>
+
+          <Route path='/rides/:id'>
+            <RidesDetail getOneRide={getOneRide}/>
+          </Route>
+
+          <Route path='/photos/new' component={PhotosNew}>
+          </Route>
+          
+          <Route path="/photos/edit/:id">
             <PhotoDelete photos={photos} handleDelete={handleDelete}/>
-        </Route>
-        </Switch>
-    </Router> 
-   </div>
+          </Route>
+          </Switch>
+      </Router> 
+    </div>
   );
 }
 

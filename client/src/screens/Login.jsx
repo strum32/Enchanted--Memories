@@ -1,26 +1,49 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Form, Button } from 'react-bootstrap'
 import DisneyNavbar from '../components/DisneyNavbar'
 import './Login.css'
 
 export default function Login(props) {
-  const [formData, setFormData] = useState({
-    username: '',
-    password: ''
-  })
-  const { username, password } = formData;
-  const { handleLogin } = props;
+  // const [formData, setFormData] = useState({
+  //   username: '',
+  //   password: ''
+  // })
+  // const { username, password } = formData;
+  // const { handleLogin } = props;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }))
-  }
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData(prevState => ({
+  //     ...prevState,
+  //     [name]: value
+  //   }))
+  // }
   return (
     <div className='formContainer'>
-    <form className="login" onSubmit={(e) => {
+      <DisneyNavbar/>
+      <div>
+      <Form>
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
+        <Form.Group controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+      </Form>
+    {/* <form className="login" onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData);
       }}>
@@ -50,7 +73,8 @@ export default function Login(props) {
       <br />
       <Link to="/register">Register</Link>
       <button>Submit</button>
-      </form>
+      </form> */}
       </div>
+    </div>
   )
 }

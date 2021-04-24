@@ -1,28 +1,17 @@
 import React from 'react'
-import { getAllRides } from '../services/rides'
-import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 import './AllRides.css'
 import DisneyNavbar from '../components/DisneyNavbar';
 
-export default function AllRides() {
-  const [rides, setRides] = useState([]);
-
-  useEffect(() => {
-    const fetchRides = async () => {
-      const rideList = await getAllRides();
-      setRides(rideList);
-    }
-    fetchRides();
-  }, [])
-
+export default function AllRides(props) {
+  const { rides } = props
 
   return (
-    <div>
-      <DisneyNavbar/>
   <div>
+      <DisneyNavbar/>
+    <div>
       {rides.map((ride) => (
-      <Link to={`/rides/${ride.id}`}>
         <div class="card mb-3" id="width" >
           <div class="row g-0">
             <div class="col-md-4">
@@ -33,13 +22,15 @@ export default function AllRides() {
                 <h5 class="card-title">{ride.name}</h5>
                 <p class="card-text">{ride.height}</p>
                 <p class="card-text">{ride.category}</p>
+                <Link to={`/rides/${ride.id}`}>
+                  <Button variant="primary">Ride Information</Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </Link>
     ))}
-  </div>
+    </div>
   </div>
   )
 }

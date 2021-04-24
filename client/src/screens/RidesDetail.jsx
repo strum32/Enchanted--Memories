@@ -1,27 +1,27 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { getOneRide } from '../services/rides'
 
-export default function RidesDetail() {
-  const [rideItem, setRideItem] = useState(null);
+export default function RidesDetail(props) {
+  const [ride, setRide] = useState({});
+  const { getOneRide } = props
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchRideItem = async () => {
-      const rideData = await getOneRide(id);
-      setRideItem(rideData);
+    const fetchRide = async () => {
+      const singleRide = await getOneRide(id);
+      setRide(singleRide);
     };
-    fetchRideItem();
+    fetchRide();
   }, [id]);
   
   return (
     <div>
-      <h4>{rideItem.name}</h4>
-      <img src={rideItem.img_url} />
-      <p>{rideItem.height}</p>
-      <p>{rideItem.category}</p>
-      {/* <p>{rideItem.description}</p> */}
+      <img src={ride.img_url} alt=''/>
+      <h4>{ride.name}</h4>
+      <p>Height:{ride.height}</p>
+      <p>Category:{ride.category}</p>
+      {/* <p>{ride.description}</p> */}
     </div>
   )
 }
