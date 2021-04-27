@@ -1,0 +1,194 @@
+#EpcotGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.EpcotContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.EpcotGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(51, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". a a a a a . . . . . ."
+  ". a a a a a . b b b b ."
+  ". a a a a a . b b b b ."
+  ". a a a a a . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . c c c c c ."
+  ". d d d d . c c c c c ."
+  ". d d d d . c c c c c ."
+  ". . . . . . c c c c c ."
+  ". . . . . . . . . . . ."
+  ". e e e e e . . . . . ."
+  ". e e e e e . f f f f ."
+  ". e e e e e . f f f f ."
+  ". e e e e e . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . g g g g g ."
+  ". h h h h . g g g g g ."
+  ". h h h h . g g g g g ."
+  ". . . . . . g g g g g ."
+  ". . . . . . . . . . . ."
+  ". i i i i i . . . . . ."
+  ". i i i i i . j j j j ."
+  ". i i i i i . j j j j ."
+  ". i i i i i . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . k k k k k ."
+  ". l l l l . k k k k k ."
+  ". l l l l . k k k k k ."
+  ". . . . . . k k k k k ."
+  ". . . . . . . . . . . ."
+  ". m m m m m . . . . . ."
+  ". m m m m m . n n n n ."
+  ". m m m m m . n n n n ."
+  ". m m m m m . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . p p p p p ."
+  ". o o o o . p p p p p ."
+  ". o o o o . p p p p p ."
+  ". . . . . . p p p p p ."
+  ". . . . . . . . . . . ."
+  ". q q q q q . . . . . ."
+  ". q q q q q . r r r r ."
+  ". q q q q q . r r r r ."
+  ". q q q q q . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . t t t t t ."
+  ". s s s s . t t t t t ."
+  ". s s s s . t t t t t ."
+  ". . . . . . t t t t t ."
+  ". . . . . . . . . . . ."
+}
+
+#EpcotGallery-Item1 {
+  grid-area: a;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item2 {
+  grid-area: b;
+  border: 1px solid black;
+  color: black;
+  margin: 0;
+} 
+
+#EpcotGallery-Item3 {
+  grid-area: c;
+  border: 3px solid black;
+  margin: 0;
+} 
+
+#EpcotGallery-Item4 {
+  grid-area: d;
+  border: 1px solid black;
+  margin: 0;
+} 
+
+#EpcotGallery-Item5 {
+  grid-area: e;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item6 {
+  grid-area: f;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item7 {
+  grid-area: g;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item8 {
+  grid-area: h;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item9 {
+  grid-area: i;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item10 {
+  grid-area: j;
+  border: 1px solid black;
+  margin:0;
+}
+
+#EpcotGallery-Item11 {
+  grid-area: k;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item12 {
+  grid-area: l;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item13 {
+  grid-area: m;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item14 {
+  grid-area: n;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item15 {
+  grid-area: p;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item16 {
+  grid-area: o;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item17 {
+  grid-area: q;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item18 {
+  grid-area: r;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item19 {
+  grid-area: t;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item20 {
+  grid-area: s;
+  border: 1px solid black;
+  margin: 0;
+}

@@ -117,8 +117,8 @@ useEffect(() => {
           </Route>
 
           <Route path='/parks/:id'>
-            <ParkDetail getOnePark={getOnePark}/>
-            <AllPhotos />
+            <DisneyNavbar/>
+            <ParkDetail getOnePark={getOnePark} />
           </Route>
 
           <Route path='/rides'>

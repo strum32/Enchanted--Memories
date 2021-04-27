@@ -1,7 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Image } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-import DisneyNavbar from '../components/DisneyNavbar'
+import Switcher from '../components/Switcher'
+import "./ParkDetail.css"
+// import Epcot from './Epcot'
+// import AnimalKingdom from './AnimalKingdom'
 
 export default function ParkDetail(props) {
   const { getOnePark } = props
@@ -18,11 +23,10 @@ export default function ParkDetail(props) {
   
   return (
     <div>
-      <DisneyNavbar />
-      <div>
-        <h4>{park.name}</h4>
-        <img src={park.img_url} alt=''/>
+      <div className='display'>
+        <Image className='picture' src={park.img_url} alt=''/>
       </div>
+        <Switcher />
     </div>  
   )
 }

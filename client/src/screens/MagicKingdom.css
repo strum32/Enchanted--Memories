@@ -1,0 +1,126 @@
+#MagicGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.MagicContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MagicGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(31, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". a a a a a . . . . . ."
+  ". a a a a a . b b b b ."
+  ". a a a a a . b b b b ."
+  ". a a a a a . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . c c c c c ."
+  ". d d d d . c c c c c ."
+  ". d d d d . c c c c c ."
+  ". . . . . . c c c c c ."
+  ". . . . . . . . . . . ."
+  ". e e e e e . . . . . ."
+  ". e e e e e . f f f f ."
+  ". e e e e e . f f f f ."
+  ". e e e e e . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . g g g g g ."
+  ". h h h h . g g g g g ."
+  ". h h h h . g g g g g ."
+  ". . . . . . g g g g g ."
+  ". . . . . . . . . . . ."
+  ". i i i i i . . . . . ."
+  ". i i i i i . j j j j ."
+  ". i i i i i . j j j j ."
+  ". i i i i i . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . k k k k k ."
+  ". l l l l . k k k k k ."
+  ". l l l l . k k k k k ."
+  ". . . . . . k k k k k ."
+  ". . . . . . . . . . . ."
+}
+
+#MagicGallery-Item1 {
+  grid-area: a;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item2 {
+  grid-area: b;
+  border: 1px solid black;
+  color: black;
+  margin: 0;
+} 
+
+#MagicGallery-Item3 {
+  grid-area: c;
+  border: 4px solid black;
+  margin: 0;
+} 
+
+#MagicGallery-Item4 {
+  grid-area: d;
+  border: 1px solid black;
+  margin: 0;
+} 
+
+#MagicGallery-Item5 {
+  grid-area: e;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item6 {
+  grid-area: f;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item7 {
+  grid-area: g;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item8 {
+  grid-area: h;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item9 {
+  grid-area: i;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item10 {
+  grid-area: j;
+  border: 1px solid black;
+  margin:0;
+}
+
+#MagicGallery-Item11 {
+  grid-area: k;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item12 {
+  grid-area: l;
+  border: 1px solid black;
+  margin: 0;
+}

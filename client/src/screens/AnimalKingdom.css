@@ -1,0 +1,109 @@
+#AnimalGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.AnimalContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AnimalGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(26, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". a a a a a . . . . . ."
+  ". a a a a a . b b b b ."
+  ". a a a a a . b b b b ."
+  ". a a a a a . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . c c c c c ."
+  ". d d d d . c c c c c ."
+  ". d d d d . c c c c c ."
+  ". . . . . . c c c c c ."
+  ". . . . . . . . . . . ."
+  ". e e e e e . . . . . ."
+  ". e e e e e . f f f f ."
+  ". e e e e e . f f f f ."
+  ". e e e e e . . . . . ."
+  ". . . . . . . . . . . ."
+  ". . . . . . g g g g g ."
+  ". h h h h . g g g g g ."
+  ". h h h h . g g g g g ."
+  ". . . . . . g g g g g ."
+  ". . . . . . . . . . . ."
+  ". i i i i i . . . . . ."
+  ". i i i i i . j j j j ."
+  ". i i i i i . j j j j ."
+  ". i i i i i . . . . . ."
+  ". . . . . . . . . . . ."
+}
+
+#AnimalGallery-Item1 {
+  grid-area: a;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item2 {
+  grid-area: b;
+  border: 1px solid black;
+  color: black;
+  margin: 0;
+} 
+
+#AnimalGallery-Item3 {
+  grid-area: c;
+  border: 4px solid black;
+  margin: 0;
+} 
+
+#AnimalGallery-Item4 {
+  grid-area: d;
+  border: 1px solid black;
+  margin: 0;
+} 
+
+#AnimalGallery-Item5 {
+  grid-area: e;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item6 {
+  grid-area: f;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item7 {
+  grid-area: g;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item8 {
+  grid-area: h;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item9 {
+  grid-area: i;
+  border: 4px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item10 {
+  grid-area: j;
+  border: 1px solid black;
+  margin:0;
+}
