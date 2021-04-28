@@ -16,31 +16,31 @@ export default function AnimalKingdom() {
             <Image id='AnimalGallery-Img' src={img1} alt='' fluid />
       </figure>
       <figure id="AnimalGallery-Item2">
-        <p>Welcome to Tomorrowland an intergalactic city. Our futurisitic theme park will encompass every childs imagination of rockets, UFOs, and robots. Walt Disney said "Tomorrow can be a wonderful age. Our scientists today are opening the door of the Space Age to achievements that will benefit our children and generations to come". The Tomorrowland attractions have been designed to give you an opportunity to participate in adventures that are a living blueprint of our future. Classic attractions include Space Mountain, Walt Disney's Carousel of Progress, Astro Orbiter, Tomorrowland Transit Authority PeopleMover and the Tomorrowland Speedway</p>
+        <p>The Oasis is the park's logistic equivalent to Main Street U.S.A. and provides the transition from the park's entrance to the world of animals. The main paths feature animal exhibits and dense vegetation and trees lead deeper into the park and then onto Discovery Island. Between the parking lot and the Oasis sits a Rainforest Cafe, which can be entered from both inside and outside the ticketed area</p>
       </figure>
       <figure id="AnimalGallery-Item3">
         <Image id='AnimalGallery-Img' src={img2} alt='' fluid />
       </figure>
       <figure id="AnimalGallery-Item4">
-        <p>Welcome to Fantasyland a carnival based theme park. Step into your own fantasy, be who you want, and make your dreams a reality. In the words of Walt Disney: "Fantasyland is dedicated to the young at heart and to those who believe that when you wish upon a star, your dreams come true." Attractions include It's a Small World, Peter Pan's Flight, The Many Adventures of Winnie the Pooh, Mickey's PhilharMagic, Prince Charming Regal Carrousel, and Mad Tea Party. </p>
+        <p>Pandora – The World of Avatar is themed to the fictional alien exoplanetary moon, Pandora. The land's marquee attraction is Avatar Flight of Passage, a 3D flying simulator that allows guests to fly on a banshee across the Pandoran landscape.Another attraction, the Na'vi River Journey, places guests aboard a boat ride through Pandora's bioluminescent rainforests</p>
       </figure>
       <figure id="AnimalGallery-Item5">
         <Image id='AnimalGallery-Img' src={img3} alt='' fluid/>
       </figure>
       <figure id="AnimalGallery-Item6">
-        <p>Welcome to Adventureland this park represents the mystery of exploring foreign lands. It is themed to resemble the remote jungles in Africa, Asia, the Middle East, South America and the South Pacific, with an extension resembling a Caribbean town square. It contains classic attractions such as Pirates of the Caribbean, Jungle Cruise, Walt Disney's Enchanted Tiki Room, Swiss Family Treehouse, and The Magic Carpets of Aladdin.</p>
+        <p>Discovery Island is located at the center of the park, and is an island within the park's Discovery River waterway. It serves as the "central hub" connecting the other sections of the park by bridges, with the exception of Rafiki's Planet Watch. </p>
       </figure>
       <figure id="AnimalGallery-Item7">
         <Image id='AnimalGallery-Img' src={img4} alt='' fluid/>
       </figure>
       <figure id="AnimalGallery-Item8">
-      <p>In Frontierland guests can relive the American Old West, from the romanticized cowboys and Native Americans, to exploring the mysteries of the Rivers of America. It contains classic attractions such as Big Thunder Mountain Railroad, Splash Mountain, and the Country Bear Jamboree. The land also contains shops such as Big Al's, Frontier Trading Post, Prairie Outpost and Supply, Briar Patch, and Splashdown Photos. So put on your cowboy hat, shine your boots, and saddle up, because your are in Frontierland</p>
+      <p>Rafiki's Planet Watch is the only section of the park not connected to Discovery Island; it connects only to Africa. Guests board the 3 ft (914 mm) narrow gauge Wildlife Express Train for the short trip to and from the area, which consists of three sub-areas. Guests first encounter Habitat Habit!, where they can see cotton-top tamarins and learn about the efforts to protect these endangered primates in their natural homes. Along the way, guests can also learn how to provide animal habitats in and around their own homes.</p>
       </figure>
       <figure id="AnimalGallery-Item9">
         <Image id='AnimalGallery-Img' src={img5} alt='' fluid/>
       </figure>
       <figure id="AnimalGallery-Item10">
-        <p>Main Street is lined with shops selling merchandise and food. The decor is early-20th century small-town America, inspired by Walt Disney's childhood and the film Lady and the Tramp.</p>
+        <p>DinoLand U.S.A. is themed around dinosaurs and other extinct prehistoric life. The area is anchored by the Dino Institute, a fictitious palaeontological facility which is home to Dinosaur, a dark thrill ride. Just outside the institute is "Dino-Sue", a casting of a Tyrannosaurus rex fossil that is the most complete yet found. At the nearby Boneyard, there is a multi-leveled playground area with a Columbian mammoth fossil to be uncovered and a cast skeleton of a Brachiosaurus.</p>
       </figure>
     </div>
   </div>

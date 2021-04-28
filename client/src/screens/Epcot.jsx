@@ -22,61 +22,61 @@ export default function Epcot() {
         <Image  id='EpcotGallery-Img' src={img1} alt='Toy Story land' fluid /> 
       </figure>
       <figure id="EpcotGallery-Item2">
-        <p>Welcome to Tomorrowland an intergalactic city. Our futurisitic theme park will encompass every childs imagination of rockets, UFOs, and robots. Walt Disney said "Tomorrow can be a wonderful age. Our scientists today are opening the door of the Space Age to achievements that will benefit our children and generations to come". The Tomorrowland attractions have been designed to give you an opportunity to participate in adventures that are a living blueprint of our future. Classic attractions include Space Mountain, Walt Disney's Carousel of Progress, Astro Orbiter, Tomorrowland Transit Authority PeopleMover and the Tomorrowland Speedway</p>
+        <p>Enjoy a little slice of Canada ehh. The Canada Pavilion is designed to remind guests of Canada's outdoors. It includes a canyon, a waterfall, gardens, a pool with fountains, and totem poles. Further in to the pavilion, beyond the rustic log cabins, a small thoroughfare is designed to represent the British and French influences and heritage through its buildings; the Château Frontenac dominates the skyline to the right whilst English cottages adorn the left.</p>
       </figure>
       <figure id="EpcotGallery-Item3">
         <Image id='EpcotGallery-Img' src={img2} alt='Star Wars: Galaxys Edge' fluid />
       </figure>
       <figure id="EpcotGallery-Item4">
-        <p>Welcome to Fantasyland a carnival based theme park. Step into your own fantasy, be who you want, and make your dreams a reality. In the words of Walt Disney: "Fantasyland is dedicated to the young at heart and to those who believe that when you wish upon a star, your dreams come true." Attractions include It's a Small World, Peter Pan's Flight, The Many Adventures of Winnie the Pooh, Mickey's PhilharMagic, Prince Charming Regal Carrousel, and Mad Tea Party. </p>
+        <p>The Morocco Pavilion, designed to look like a Moroccan city with a realistic Minaret, features the only pavilion in which the country's government aided in the design. Guests to the pavilion gain insight on the lifestyle and culture of the Moroccan people through the Gallery of Arts and History. The Fes House shows guests the typical Moroccan house. Inside the pavilion, North African plants including citrus trees, date palms, and olive trees, and fountains can be seen. The courtyard plays hosts to entertainment, including a belly dancing show in the evening.</p>
       </figure>
       <figure id="EpcotGallery-Item5">
         <Image id='EpcotGallery-Img' src={img3} alt='Echo Lake' />
       </figure>
       <figure id="EpcotGallery-Item6">
-        <p>Welcome to Adventureland this park represents the mystery of exploring foreign lands. It is themed to resemble the remote jungles in Africa, Asia, the Middle East, South America and the South Pacific, with an extension resembling a Caribbean town square. It contains classic attractions such as Pirates of the Caribbean, Jungle Cruise, Walt Disney's Enchanted Tiki Room, Swiss Family Treehouse, and The Magic Carpets of Aladdin.</p>
+        <p>The Japan Pavilion is made up of buildings surrounding a courtyard. The entrance to the courtyard features a Japanese Pagoda. A torii gate decorates the water in front of the pavilion. The area is filled with Japanese pools and gardens. At the end of the courtyard is the gate to a Japanese castle, including a moat, which leads into a display of Japanese culture.</p>
       </figure>
       <figure id="EpcotGallery-Item7">
         <Image id='EpcotGallery-Img' src={img4} alt='Grand Avenue' fluid/>
       </figure>
       <figure id="EpcotGallery-Item8">
-      <p>In Frontierland guests can relive the American Old West, from the romanticized cowboys and Native Americans, to exploring the mysteries of the Rivers of America. It contains classic attractions such as Big Thunder Mountain Railroad, Splash Mountain, and the Country Bear Jamboree. The land also contains shops such as Big Al's, Frontier Trading Post, Prairie Outpost and Supply, Briar Patch, and Splashdown Photos. So put on your cowboy hat, shine your boots, and saddle up, because your are in Frontierland</p>
+      <p>You will be welcomed with the lively spirit of Mexico. The Mexico Pavilion resembles a Mesoamerican pyramid with steps leading to entrance doors. Visitors enter through a gallery display of Mexican artwork, the "Animales Fantásticos" art collection. The central indoor area of the pavilion is themed as an outdoor twilight-lit Mexican village and marketplace, Plaza de los Amigos. At the edge of the plaza, a restaurant, San Ángel Inn Restaurante, overlooks an indoor lagoon with a themed backdrop of another pyramid and a smoldering volcano in the distance with themed lighting and smoke effects.</p>
       </figure>
       <figure id="EpcotGallery-Item9">
         <Image id='EpcotGallery-Img' src={img5} alt='Animation Courtyard' fluid/>
       </figure>
       <figure id="EpcotGallery-Item10">
-        <p>Main Street is lined with shops selling merchandise and food. The decor is early-20th century small-town America, inspired by Walt Disney's childhood and the film Lady and the Tramp.</p>
+        <p>Oui Oui I would like some more wine. The France Pavilion is themed to look like a Parisienne neighborhood with a pool and fountains and with a view of the Eiffel Tower in the distance. Most of the shops on the streets are actual shops selling French goods such as Guerlain perfume. The attraction effects France's cities and historical structures</p>
       </figure>
       <figure id="EpcotGallery-Item11">
         <Image id='EpcotGallery-Img' src={img6} alt='Sunset Boulevard' fluid/>
       </figure>
       <figure id="EpcotGallery-Item12">
-        <p>Liberty Square is inspired by a colonial American town set during the American Revolutionary War. The Liberty Belle Riverboat travels down the park's Rivers of America. Liberty Square is home to such attractions as the Haunted Mansion and The Hall of Presidents.</p>
+        <p>The Germany Pavilion is designed to look like a German town, but with architecture from different eras and regions. The Platz (square) is decorated with a statue of St. George and the Dragon inspired by the statue in the medieval Bavarian town of Rothenburg ob der Tauber,[4] and a clock tower. The Biergarten, at the rear of the courtyard, sells traditional German food. The pavilion also has numerous small shops selling German goods. Now grab a lager and enjoy a giant pretzels.</p>
       </figure>
       <figure id="EpcotGallery-Item13">
         <Image id='EpcotGallery-Img' src={img7} alt='Sunset Boulevard' fluid/>
       </figure>
       <figure id="EpcotGallery-Item14">
-        <p>Liberty Square is inspired by a colonial American town set during the American Revolutionary War. The Liberty Belle Riverboat travels down the park's Rivers of America. Liberty Square is home to such attractions as the Haunted Mansion and The Hall of Presidents.</p>
+        <p>Norway Pavilion is designed to look like a Norwegian village.[1] The village includes a detailed reproduction Stave church, and the exterior of its main table-service restaurant, Restaurant Akershus, resembles its namesake in Oslo. The exhibit showcases 4 styles of Norwegian architecture: Setesdal-style, Bergen-style, Oslo-style and Ålesund-style.</p>
       </figure>
       <figure id="EpcotGallery-Item15">
         <Image id='EpcotGallery-Img' src={img8} alt='Sunset Boulevard' fluid/>
       </figure>
       <figure id="EpcotGallery-Item16">
-        <p>Liberty Square is inspired by a colonial American town set during the American Revolutionary War. The Liberty Belle Riverboat travels down the park's Rivers of America. Liberty Square is home to such attractions as the Haunted Mansion and The Hall of Presidents.</p>
+        <p>All hail the Queen. The United Kingdom Pavilion, designed to look like a stereotypical British village, has English gardens including a hedge maze and a band stand. The shops sell British items such as tea, biscuits toys, clothing, sports apparel and Beatles merchandise.</p>
       </figure>
       <figure id="EpcotGallery-Item17">
         <Image id='EpcotGallery-Img' src={img9} alt='Sunset Boulevard' fluid/>
       </figure>
       <figure id="EpcotGallery-Item18">
-        <p>Liberty Square is inspired by a colonial American town set during the American Revolutionary War. The Liberty Belle Riverboat travels down the park's Rivers of America. Liberty Square is home to such attractions as the Haunted Mansion and The Hall of Presidents.</p>
+        <p>Visitors enter the China Pavilion through a large Chinese gate. The courtyard is dominated by a replica of the Temple of Heaven, which contains the entrance to "Reflections of China", a Circle-Vision 360° movie exploring China's history and scenery, as well as a museum containing several ancient Chinese artifacts. The courtyard is bordered by shops selling Chinese merchandise, and two Chinese restaurants.</p>
       </figure>
       <figure id="EpcotGallery-Item19">
         <Image id='EpcotGallery-Img' src={img10} alt='Sunset Boulevard' fluid/>
       </figure>
       <figure id="EpcotGallery-Item20">
-        <p>Liberty Square is inspired by a colonial American town set during the American Revolutionary War. The Liberty Belle Riverboat travels down the park's Rivers of America. Liberty Square is home to such attractions as the Haunted Mansion and The Hall of Presidents.</p>
+        <p>Welcome to Italy. The Italy Pavilion features a plaza surrounded by a collection of buildings evocative of Venetian, Florentine, and Roman architecture. There are also small shops selling Italian goods, such as candy, household items, perfumes, and wine.</p>
       </figure>
       </div>
     </div>
