@@ -92,6 +92,20 @@
   }
 }
 
+@media screen and (max-width: 1330px) {
+
+  #CreditGallery-Item2{
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+
+  #CreditGallery-Item2{
+    margin-top: 1%;
+  }
+}
+
 
 
 

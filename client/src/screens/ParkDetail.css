@@ -1,24 +1,23 @@
 .display{
-  display: flex;
-  flex-direction: column;
+  display:flex;
   justify-content: center;
+  background: rgb(49,0,221);
+  background: linear-gradient(180deg, rgba(49,0,221,0.2458158263305322) 35%, rgba(241,245,246,1) 85%);
 }
 
-/* .parkName{
-  display: flex;
-  justify-content: center;
-  margin-top: 1%;
-  margin-bottom: 1.5%;
-  font-size: 50px;
-} */
+.background{
+  background: rgb(11,199,236);
+  background: linear-gradient(0deg, rgba(11,199,236,0.469625350140056) 35%, rgba(241,245,246,1) 75%);
+}
 
 .picture{
-  height: 93vh;
-  width: 55vw;
+  height: 90vh;
+  width: 45vw;
 }
 
 .inactiveLink{
   pointer-events: none;
   cursor: default;
 }
+
 

@@ -1,4 +1,4 @@
-.display{
+.looks{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,14 +7,60 @@
 }
 
 .spacing{
+  flex-grow: 1;
   align-items: center;
   margin-top: 4%;
+  margin-right: 1%;
+  margin-left: 1%;
   margin-bottom:0;
 }
 
-#size{
-  height:420px;
-  width:420px;
+.size{
+  height:260px;
+  width:262px;
 }
+
+
+@media screen and (min-width: 1400px) {
+  #height{
+   height: 500px;
+  }
+
+  #height2{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  #height{
+   height: 550px;
+  }
+  
+  #height2{
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1690px) {
+  #height{
+   height: 580px;
+  }
+  
+  #height2{
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1870px) {
+  #height{
+   height: 630px;
+  }
+  
+  #height2{
+    height: 430px;
+  }
+}
+
+
 
 

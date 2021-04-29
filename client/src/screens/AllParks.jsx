@@ -9,10 +9,10 @@ export default function AllParks(props) {
   const { parks } = props;
 
   return (
-    <div className="display">
+    <div className="looks">
       {parks.map((park) => (
-          <Card className="spacing" style={{ width: '26.6rem' }}>
-            <Card.Img variant="top" id="size" key={park.id} src={park.img_url} alt={park.name} />
+          <Card className="spacing" id='height' style={{ width: '16rem' }}>
+            <Card.Img variant="top" id="height2" className="size" key={park.id} src={park.img_url} alt={park.name} />
             <Card.Body>
               <Card.Title key={park.id}>{park.name}</Card.Title>
               <Card.Text>

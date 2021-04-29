@@ -16,60 +16,60 @@
   display: table;
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(51, 5vw);
   grid-template-areas: 
-  ". . . . . . . . . . . ."
-  ". a a a a a . . . . . ."
-  ". a a a a a . b b b b ."
-  ". a a a a a . b b b b ."
-  ". a a a a a . b b b b ."
-  ". . . . . . . . . . . ."
-  ". . . . . . c c c c c ."
-  ". d d d d . c c c c c ."
-  ". d d d d . c c c c c ."
-  ". d d d d . c c c c c ."
-  ". . . . . . . . . . . ."
-  ". e e e e e . . . . . ."
-  ". e e e e e . f f f f ."
-  ". e e e e e . f f f f ."
-  ". e e e e e . f f f f ."
-  ". . . . . . . . . . . ."
-  ". . . . . . g g g g g ."
-  ". h h h h . g g g g g ."
-  ". h h h h . g g g g g ."
-  ". h h h h . g g g g g ."
-  ". . . . . . . . . . . ."
-  ". i i i i i . . . . . ."
-  ". i i i i i . j j j j ."
-  ". i i i i i . j j j j ."
-  ". i i i i i . j j j j ."
-  ". . . . . . . . . . . ."
-  ". . . . . . k k k k k ."
-  ". l l l l . k k k k k ."
-  ". l l l l . k k k k k ."
-  ". l l l l . k k k k k ."
-  ". . . . . . . . . . . ."
-  ". m m m m m . . . . . ."
-  ". m m m m m . n n n n ."
-  ". m m m m m . n n n n ."
-  ". m m m m m . n n n n ."
-  ". . . . . . . . . . . ."
-  ". . . . . . p p p p p ."
-  ". o o o o . p p p p p ."
-  ". o o o o . p p p p p ."
-  ". o o o o . p p p p p ."
-  ". . . . . . . . . . . ."
-  ". q q q q q . . . . . ."
-  ". q q q q q . r r r r ."
-  ". q q q q q . r r r r ."
-  ". q q q q q . r r r r ."
-  ". . . . . . . . . . . ."
-  ". . . . . . t t t t t ."
-  ". s s s s . t t t t t ."
-  ". s s s s . t t t t t ."
-  ". s s s s . t t t t t ."
-  ". . . . . . . . . . . ."
+  ". . . . . . . . . . ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". . . . . . . . . . ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". . . . . . . . . . ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". . . . . . . . . . ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". . . . . . . . . . ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". . . . . . . . . . ."
+  ". l l l l k k k k k ."
+  ". l l l l k k k k k ."
+  ". l l l l k k k k k ."
+  ". l l l l k k k k k ."
+  ". . . . . . . . . . ."
+  ". m m m m m n n n n ."
+  ". m m m m m n n n n ."
+  ". m m m m m n n n n ."
+  ". m m m m m n n n n ."
+  ". . . . . . . . . . ."
+  ". o o o o p p p p p ."
+  ". o o o o p p p p p ."
+  ". o o o o p p p p p ."
+  ". o o o o p p p p p ."
+  ". . . . . . . . . . ."
+  ". q q q q q r r r r ."
+  ". q q q q q r r r r ."
+  ". q q q q q r r r r ."
+  ". q q q q q r r r r ."
+  ". . . . . . . . . . ."
+  ". s s s s t t t t t ."
+  ". s s s s t t t t t ."
+  ". s s s s t t t t t ."
+  ". s s s s t t t t t ."
+  ". . . . . . . . . . ."
 }
 
 #EpcotGallery-Item1 {
@@ -80,6 +80,7 @@
 
 #EpcotGallery-Item2 {
   grid-area: b;
+  background: #f1f1f1;
   color: black;
   margin: 0;
 } 
@@ -92,6 +93,7 @@
 
 #EpcotGallery-Item4 {
   grid-area: d;
+  background: #f1f1f1;
   margin: 0;
 } 
 
@@ -103,6 +105,7 @@
 
 #EpcotGallery-Item6 {
   grid-area: f;
+  background: #f1f1f1;
   margin: 0;
 }
 
@@ -114,6 +117,7 @@
 
 #EpcotGallery-Item8 {
   grid-area: h;
+  background: #f1f1f1;
   margin: 0;
 }
 
@@ -125,6 +129,7 @@
 
 #EpcotGallery-Item10 {
   grid-area: j;
+  background: #f1f1f1;
   margin:0;
 }
 
@@ -136,6 +141,7 @@
 
 #EpcotGallery-Item12 {
   grid-area: l;
+  background: #f1f1f1;
   margin: 0;
 }
 
@@ -147,6 +153,7 @@
 
 #EpcotGallery-Item14 {
   grid-area: n;
+  background: #f1f1f1;
   margin: 0;
 }
 
@@ -158,6 +165,7 @@
 
 #EpcotGallery-Item16 {
   grid-area: o;
+  background: #f1f1f1;
   margin: 0;
 }
 
@@ -169,6 +177,7 @@
 
 #EpcotGallery-Item18 {
   grid-area: r;
+  background: #f1f1f1;
   margin: 0;
 }
 
@@ -180,5 +189,17 @@
 
 #EpcotGallery-Item20 {
   grid-area: s;
+  background: #f1f1f1;
   margin: 0;
+}
+
+.center{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.text{
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right:6%;
 }

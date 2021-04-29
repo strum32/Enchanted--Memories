@@ -1,11 +1,21 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import './DisneyNavbar.css';
+import img1 from '../assets/logo.png'
 
 export default function DisneyNavbar() {
 
   return (
-      <Navbar sticky='top' bg="light" variant="dark">
+    <Navbar sticky='top' bg="light" variant="dark">
+      <Navbar.Brand>
+        <img
+          src={img1}
+          alt='logo'
+          width='200'
+          height='60'
+          className="d-inline-block align-top"
+        />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <LinkContainer to='/'>
