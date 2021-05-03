@@ -117,7 +117,8 @@ useEffect(() => {
           </Route>
 
           <Route path='/parks/:id'>
-            <DisneyNavbar/>
+            <DisneyNavbar />
+            <AllPhotos photos={photos}/>
             <ParkDetail getOnePark={getOnePark} />
           </Route>
 
@@ -127,6 +128,13 @@ useEffect(() => {
 
           <Route path='/rides/:id'>
             <RidesDetail getOneRide={getOneRide}/>
+          </Route>
+
+          <Route path='/photos'>
+
+          </Route>
+          <Route path='/photos/:id'>
+
           </Route>
 
           <Route path='/photos/new' component={PhotosNew}>

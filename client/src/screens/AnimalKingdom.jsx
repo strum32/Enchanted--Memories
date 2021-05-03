@@ -8,6 +8,7 @@ import img3 from '../assets/Animal3.jpg'
 import img4 from '../assets/Animal4.jpg'
 import img5 from '../assets/Animal5.webp'
 import './AnimalKingdom.css'
+import AllPhotos from '../components/AllPhotos'
 
 export default function AnimalKingdom() {
   useEffect(() => {
@@ -15,8 +16,10 @@ export default function AnimalKingdom() {
   }, []);
   
   return (
-    <div>
+<div>
   <div className="AnimalContainter" id='background' >
+      <hr className='line' />
+      <AllPhotos/>
     <div className='AnimalGallery'>
       <figure id="AnimalGallery-Item1" data-aos="fade-right">
             <Image id='AnimalGallery-Img' src={img1} alt='' fluid />

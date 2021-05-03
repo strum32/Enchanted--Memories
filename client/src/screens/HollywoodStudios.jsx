@@ -8,6 +8,7 @@ import img2 from '../assets/holly2.jpg'
 import img3 from '../assets/holly3.jpg'
 import img4 from '../assets/holly4.jpg'
 import img6 from '../assets/holly6.jpg'
+import AllPhotos from '../components/AllPhotos'
 
 export default function HollywoodStudios() {
   useEffect(() => {
@@ -17,6 +18,8 @@ export default function HollywoodStudios() {
   return (
 <div>
   <div className="HollyContainter" id='background'>
+      <hr className='line' />
+      <AllPhotos/>
     <div className='HollyGallery'>
       <figure id="HollyGallery-Item1" data-aos="fade-right">
         <Image  id='HollyGallery-Img' src={img1} alt='Toy Story land' fluid /> 

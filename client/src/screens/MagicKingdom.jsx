@@ -8,6 +8,7 @@ import img3 from '../assets/magic4.jpg'
 import img4 from '../assets/magic2.jpg'
 import img5 from '../assets/magic5.jpg'
 import './MagicKingdom.css'
+import AllPhotos from '../components/AllPhotos'
 
 export default function MagicKingdom() {
   useEffect(() => {
@@ -17,6 +18,8 @@ export default function MagicKingdom() {
   return (
 <div>
   <div className="MagicContainter" id='background'>
+      <hr className='line' />
+      <AllPhotos/>
     <div className='MagicGallery'>
       <figure id="MagicGallery-Item1" data-aos="fade-right">
         <Image  id='MagicGallery-Img' src={img1} alt='Tomorrow Land' fluid /> 

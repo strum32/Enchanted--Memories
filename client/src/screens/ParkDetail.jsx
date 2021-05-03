@@ -21,10 +21,10 @@ export default function ParkDetail(props) {
   return (
     <div className='background'>
       <div className='display'>
-          <Image className='picture' src={park.img_url} alt='' />
+        <Image className='picture' src={park.img_url} alt='' />
       </div>
         {/* <h1>Inside the Park</h1> */}
-      <Switcher />
-    </div>  
+        <Switcher />
+    </div>
   )
 }

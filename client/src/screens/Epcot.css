@@ -80,7 +80,7 @@
 
 #EpcotGallery-Item2 {
   grid-area: b;
-  background: #f1f1f1;
+  background:rgba(241,245,246,1);
   color: black;
   margin: 0;
 } 
@@ -93,7 +93,7 @@
 
 #EpcotGallery-Item4 {
   grid-area: d;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 } 
 
@@ -105,7 +105,7 @@
 
 #EpcotGallery-Item6 {
   grid-area: f;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -117,7 +117,7 @@
 
 #EpcotGallery-Item8 {
   grid-area: h;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -129,7 +129,7 @@
 
 #EpcotGallery-Item10 {
   grid-area: j;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin:0;
 }
 
@@ -141,7 +141,7 @@
 
 #EpcotGallery-Item12 {
   grid-area: l;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -153,7 +153,7 @@
 
 #EpcotGallery-Item14 {
   grid-area: n;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -165,7 +165,7 @@
 
 #EpcotGallery-Item16 {
   grid-area: o;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -177,7 +177,7 @@
 
 #EpcotGallery-Item18 {
   grid-area: r;
-  background: #f1f1f1;
+  background:rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -189,7 +189,7 @@
 
 #EpcotGallery-Item20 {
   grid-area: s;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -202,4 +202,8 @@
   margin-top: 4%;
   margin-left: 6%;
   margin-right:6%;
+}
+
+.line {
+  margin:0;
 }

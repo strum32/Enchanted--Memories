@@ -55,7 +55,7 @@
 
 #MagicGallery-Item2 {
   grid-area: b;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   color: black;
   margin: 0;
 } 
@@ -68,7 +68,7 @@
 
 #MagicGallery-Item4 {
   grid-area: d;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 } 
 
@@ -80,7 +80,7 @@
 
 #MagicGallery-Item6 {
   grid-area: f;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -92,7 +92,7 @@
 
 #MagicGallery-Item8 {
   grid-area: h;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin: 0;
 }
 
@@ -104,7 +104,7 @@
 
 #MagicGallery-Item10 {
   grid-area: j;
-  background: #f1f1f1;
+  background: rgba(241,245,246,1);
   margin:0;
 }
 
@@ -117,4 +117,8 @@
   margin-top: 4%;
   margin-left: 6%;
   margin-right:6%;
+}
+
+.line {
+  margin:0;
 }

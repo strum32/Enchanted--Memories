@@ -12,6 +12,7 @@ import img7 from '../assets/Epcot7.jpg'
 import img8 from '../assets/Epcot8.jpg'
 import img9 from '../assets/Epcot9.jpg'
 import img10 from '../assets/Epcot10.jpg'
+import AllPhotos from '../components/AllPhotos';
 import './Epcot.css'
 
 export default function Epcot() {
@@ -23,6 +24,8 @@ export default function Epcot() {
 <div>
   <div>
     <div className="EpcotContainter" id='background'>
+        <hr className='line' />
+        <AllPhotos />
       <div className='EpcotGallery'>
       <figure id="EpcotGallery-Item1" data-aos="fade-right">
         <Image  id='EpcotGallery-Img' src={img1} alt='Toy Story land' fluid /> 
