@@ -27,7 +27,7 @@ export default function DisneyPhotos() {
         </figure>
         <figure id="PhotosGallery-Item6">
             <h3>Limited-Time Offer</h3>
-            <p>Get All your Enchanted Memories photos and videos captured through December 11, 2021 for one prie with Memory Maker!</p>
+            <p>Get All your Enchanted Memories photos and videos captured through December 11, 2021 for one price with Memory Maker!</p>
         </figure>
       </div>
     </div>

@@ -5,7 +5,7 @@ import AllRides from './screens/AllRides'
 import RidesDetail from './screens/RidesDetail'
 import Home from './screens/Home'
 import ParkDetail from './screens/ParkDetail'
-import PhotosNew from './screens/PhotoNew'
+import PhotoNew from './screens/PhotoNew'
 import AllParks from './screens/AllParks'
 import DisneyNavbar from './components/DisneyNavbar'
 import DisneyCarousel from './components/DisneyCarousel'
@@ -17,7 +17,7 @@ import { loginUser, registerUser, removeToken, verifyUser } from './services/aut
 import { putPhoto, destroyPhoto, postPhoto, getAllPhotos } from './services/photos'
 import { getAllParks, getOnePark } from './services/parks'
 import { getAllRides, getOneRide } from './services/rides'
-import PhotoDelete from './components/PhotoDelete.jsx'
+import PhotoEdit from './components/PhotoEdit.jsx'
 import AllPhotos from './components/AllPhotos.jsx'
 
 
@@ -79,11 +79,10 @@ useEffect(() => {
     }
     fetchPhotos();
   }, [])
-
   const handleCreate = async (formData) => {
     const newPhoto = await postPhoto(formData);
     setPhotos(prevState => [...prevState, newPhoto]);
-    history.push(`/parks`)
+    history.push(`/parks/:id`)
   }
 
   const handleUpdate = async (id, formData) => {
@@ -94,7 +93,7 @@ useEffect(() => {
   const handleDelete = async (id) => {
     await destroyPhoto(id);
     setPhotos(prevState => prevState.filter((photo) => photo.id !== id))
-    history.push(`/parks`)
+    history.push(`/parks/:id`)
   }
 
   return (
@@ -130,18 +129,19 @@ useEffect(() => {
             <RidesDetail getOneRide={getOneRide}/>
           </Route>
 
-          <Route path='/photos'>
-
-          </Route>
-          <Route path='/photos/:id'>
-
-          </Route>
-
-          <Route path='/photos/new' component={PhotosNew}>
+          <Route path='/photos/new'
+          >
+            <PhotoNew
+              handleCreate={handleCreate}
+            />
           </Route>
           
           <Route path="/photos/edit/:id">
-            <PhotoDelete photos={photos} handleDelete={handleDelete}/>
+            <PhotoEdit
+              photos={photos}
+              handleDelete={handleDelete}
+              handleUpdate={handleUpdate}
+            />
           </Route>
           </Switch>
       </Router> 

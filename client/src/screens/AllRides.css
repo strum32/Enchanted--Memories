@@ -1,13 +1,19 @@
 .rides{
- height: 200px;
+ height: 198px;
  width: 300px;
- margin-top: 20px;
- margin-left: 60px;
+ margin-left: 0.4%;
  image-rendering: pixelated;
  image-rendering: auto;
  image-rendering: crisp-edges;
 }
 
-#CardBody{
-
+#margin{
+margin-top: 2%;
+margin-left:18%;
+margin-right:18%;
 }
+
+#padding{
+  margin-left: 30%
+}
+

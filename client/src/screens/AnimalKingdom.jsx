@@ -39,7 +39,7 @@ export default function AnimalKingdom() {
         <Image id='AnimalGallery-Img' src={img3} alt='' fluid/>
       </figure>
       <figure id="AnimalGallery-Item6" data-aos="fade-left">
-        <h1 className='center'>Discovery Land</h1> 
+        <h1 className='center'>Discovery Island</h1> 
         <p className='text'>Discovery Island is located at the center of the park, and is an island within the park's Discovery River waterway. It serves as the "central hub" connecting the other sections of the park by bridges, with the exception of Rafiki's Planet Watch. </p>
       </figure>
       <figure id="AnimalGallery-Item7" data-aos="fade-left">
@@ -53,8 +53,8 @@ export default function AnimalKingdom() {
         <Image id='AnimalGallery-Img' src={img5} alt='' fluid/>
       </figure>
       <figure id="AnimalGallery-Item10" data-aos="fade-left">
-        <h1 className='center'>Dino Lnad U.S.A</h1> 
-        <p className='text'>DinoLand U.S.A. is themed around dinosaurs and other extinct prehistoric life. The area is anchored by the Dino Institute, a fictitious palaeontological facility which is home to Dinosaur, a dark thrill ride. Just outside the institute is "Dino-Sue", a casting of a Tyrannosaurus rex fossil that is the most complete yet found. At the nearby Boneyard, there is a multi-leveled playground area with a Columbian mammoth fossil to be uncovered and a cast skeleton of a Brachiosaurus.</p>
+        <h1 className='center'>Dino Land U.S.A</h1> 
+        <p className='text'>Dino Land U.S.A. is themed around dinosaurs and other extinct prehistoric life. The area is anchored by the Dino Institute, a fictitious palaeontological facility which is home to Dinosaur, a dark thrill ride. Just outside the institute is "Dino-Sue", a casting of a Tyrannosaurus rex fossil that is the most complete yet found. At the nearby Boneyard, there is a multi-leveled playground area with a Columbian mammoth fossil to be uncovered and a cast skeleton of a Brachiosaurus.</p>
       </figure>
     </div>
   </div>
