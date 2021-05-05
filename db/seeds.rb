@@ -5,10 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Park.destroy_all
+Photo.destroy_all
+User.destroy_all
 
 # User Section
-@SteveStrum =User.create!(username: "SteveStrum", email: 'stevenstrum@email.com', password: "SteveStrum")
-@FrankStrum =User.create!(username: "FrankStrum", email: 'frankstrum@email.com', password: "FrankStrum")
+@SteveStrum = User.create!(username: "SteveStrum", email: 'stevenstrum@email.com', password: "SteveStrum")
+@FrankStrum = User.create!(username: "FrankStrum", email: 'frankstrum@email.com', password: "FrankStrum")
 @KikiOrtiz = User.create!(username: "KikiOrtiz", email: 'kikiortiz@email.com', password: "KikiOrtiz")
 @DonnaStrum = User.create!(username: "DonnaStrum", email: 'donnastrum@email.com', password: "DonnaStrum")
 @RalphStrum = User.create!(username: "RalphStrum", email: 'ralphstrum@email.com', password: "RalphStrum")
@@ -53,7 +56,7 @@ puts "#{Photo.count} photos created"
 # Park Section
 
 @MagicKingdom = Park.create!(name: 'Magic Kingdom', img_url: 'https://images.unsplash.com/photo-1556950961-8c092986258e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80')
-@HollywoodStudios = Park.create!(name: 'Hollywood Studios', img_url: 'https://images.unsplash.com/photo-1590604493788-b8192a3bd4d6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80')
+@HollywoodStudios = Park.create!(name: 'Hollywood Studios', img_url: 'https://pbs.twimg.com/media/D1ytbQwX4AE2Lxt.jpg')
 @Epcot = Park.create!(name: 'Epcot', img_url: 'https://images.unsplash.com/photo-1553526630-81e8f0d6ffde?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80')
 @AnimalKingdom = Park.create!(name: 'Animal Kingdom', img_url: 'https://images.unsplash.com/photo-1522008629172-0c17aa47d1ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
 
@@ -175,10 +178,10 @@ Ride.create!(name: 'ImageWorks - The "What If" Labs', park: @Epcot, img_url: 'ht
 Ride.create!(name: 'Leave A Legacy', park: @Epcot, img_url: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/disney-world/attractions/epcot/leave-a-legacy/lal-lrg-16x9.jpg?1612879865771', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'Manatees - Disney Animals', park: @Epcot, img_url: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1920/1080/75/dam/disney-world/attractions/epcot/disney-animals-manatees/west-indian-manatee-littlejoe-1-16x9.jpg?1575485855086', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'Mexico Folk Art Gallery', park: @Epcot, img_url: 'https://cache.undercovertourist.com/media_file/mexico-folk-art-gallery-934464-16dd5fbb317.jpg', category: 'Fun for All', height: 'Any Height')
-Ride.create!(name: 'Palais du Cinema', park: @Epcot, img_url: '', category: 'Fun for All', height: 'Any Height')
+Ride.create!(name: 'Palais du Cinema', park: @Epcot, img_url: 'https://sir.wdwnt.com/wdwnt.com/2020/01/87D9F886-76A3-4D3F-982C-4A0DAEB30CCE.jpeg', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'Reef Fish - Disney Animals', park: @Epcot, img_url: 'http://www.floribobs.com/images/reef-fish-tang-blue-acanthurus-16x9.jpg', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'SeaBase', park: @Epcot, img_url: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/19/6c/82/05/seabase-bruce-s-sub-house.jpg', category: 'Fun for All', height: 'Any Height')
-Ride.create!(name: 'Sea Turtles - Disney Animals', park: @Epcot, img_url: 'https://wallpaperaccess.com/full/1622452.jpg', category: 'Fun for All', height: 'Any Height')
+Ride.create!(name: 'Sea Turtles - Disney Animals', park: @Epcot, img_url: 'https://www.theregreview.org/wp-content/uploads/2017/04/sea-turtle.jpg', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'Sharks and Rays - Disney Animals', park: @Epcot, img_url: 'http://www.floribobs.com/images/disney-animals-sharks-00.jpg', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'Stave Church Gallery', park: @Epcot, img_url: 'https://attractionsmagazine.com/wp-content/uploads/2018/03/stave-church-2.jpeg', category: 'Fun for All', height: 'Any Height')
 Ride.create!(name: 'Advanced Training Lab', park: @Epcot, img_url: 'https://803277.smushcdn.com/1580116/wp-content/uploads/2019/04/A-746.jpg?lossy=0&strip=0&webp=1', category: 'Fun for All', height: 'Any Height')

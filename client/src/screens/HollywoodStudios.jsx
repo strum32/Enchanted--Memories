@@ -18,8 +18,9 @@ export default function HollywoodStudios() {
   return (
 <div>
   <div className="HollyContainter" id='background'>
-      <hr className='line' />
-      <AllPhotos/>
+    <hr className='line' />
+    <div>
+      <AllPhotos />    
     <div className='HollyGallery'>
       <figure id="HollyGallery-Item1" data-aos="fade-right">
         <Image  id='HollyGallery-Img' src={img1} alt='Toy Story land' fluid /> 
@@ -56,6 +57,7 @@ export default function HollywoodStudios() {
         <h1 className='center'>Sunset Boulevard</h1> 
         <p className='text'>Sunset Boulevard was the first expansion of the park, opening in July 1994. The focal point of Sunset Boulevard is The Twilight Zone Tower of Terror. Located nearby is Rock 'n' Roller Coaster Starring Aerosmith, themed to the music of Aerosmith, with three inversions and a high-speed launch. Along this strio you will be able to find food and shops.</p>
       </figure>
+      </div>
     </div>
   </div>
 </div>

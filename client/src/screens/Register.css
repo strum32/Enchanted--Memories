@@ -1,11 +1,17 @@
-.Background {
-background-image: url("https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0008/8036/brand.gif?itok=Enb-5Dqw");
-background-repeat: no-repeat;
-background-position: right; 
-image-rendering: pixelated;
-image-rendering: auto;
-image-rendering: crisp-edges;
-background-size: 200px 200px;
-margin-right: 300px;
-height: 800px;
-}
+  .form-group{
+    width: 1300px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .margin-position{
+    margin-left: 10%;
+  }
+
+  .height1{
+    margin-left: 1%;
+  }
+
+  .margin-top{
+    margin-top: 3%;
+  }

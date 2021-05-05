@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect, useState } from "react"
+import { getAllPhotos } from "../services/photos"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
@@ -10,13 +12,26 @@ import SwiperCore, {
 
 SwiperCore.use([Pagination,Navigation]);
 
-export default function AllPhotos(props) {
-  const { photos } = props
+export default function AllPhotos() {
+  const [photos, setPhotos] = useState([]);
+
+  useEffect(() => {
+    const fetchPhotos = async () => {
+      const photoList = await getAllPhotos();
+      setPhotos(photoList);
+    }
+    fetchPhotos();
+  }, [])
 
   return (
     <div>
-      {/* {photos.map((photo) => (
-        <Swiper
+      {photos.map((photo) => (
+        <div>
+          <Link to={`/photos/edit/${photo.id}`}>
+            <img src={photo.img_url} />
+          </Link>
+          <p>{photo.title}</p>
+        {/* <Swiper
           slidesPerView={5}
           spaceBetween={30}
           slidesPerGroup={5}
@@ -30,8 +45,9 @@ export default function AllPhotos(props) {
             <Link to={`/photos/${photo.id}`}>
               <img src={photo.image_url} />
             </Link>
-        </Swiper>
-      ))} */}
+        </Swiper> */}
+        </div>
+      ))}
     </div>
   )
 }

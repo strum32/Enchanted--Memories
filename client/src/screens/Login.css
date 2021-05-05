@@ -1,12 +1,18 @@
-.formContainer{
-background-image: url("https://webcomicms.net/sites/default/files/clipart/159954/mouse-outline-cliparts-159954-6699672.jpg");
-background-repeat: no-repeat;
-background-position: right; 
-image-rendering: pixelated;
-image-rendering: auto;
-image-rendering: crisp-edges;
-background-size: 250px 250px;
-margin-right: 150px;
-height: 800px;
-}
+  .form-group{
+    width: 1300px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .margin-position{
+    margin-left: 10%;
+  }
+
+  .height1{
+    margin-left: 1%;
+  }
+
+  .margin-top{
+    margin-top: 3%;
+  }
 

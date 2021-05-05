@@ -19,7 +19,6 @@ export default function AnimalKingdom() {
 <div>
   <div className="AnimalContainter" id='background' >
       <hr className='line' />
-      <AllPhotos/>
     <div className='AnimalGallery'>
       <figure id="AnimalGallery-Item1" data-aos="fade-right">
             <Image id='AnimalGallery-Img' src={img1} alt='' fluid />

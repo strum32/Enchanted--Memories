@@ -24,15 +24,14 @@ export default function PhotoNew(props) {
   return (
     <div>
       <DisneyNavbar />
-    <div className="BackgroundImg" >
+      <div className="BackgroundImg" >
       <Form className='margin'onSubmit={(e) => {
       e.preventDefault();
       handleCreate(formData);
-    }}>
+      }}>
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label className="margin-position">Caption</Form.Label>
+    <Form.Label className="margin-top">Caption</Form.Label>
     <Form.Control
-      className="margin-position"
       type="text"
       value={caption}
       onChange={handleChange}
@@ -40,18 +39,16 @@ export default function PhotoNew(props) {
     />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label className="margin-position">Image URL</Form.Label>
+    <Form.Label>Image URL</Form.Label>
     <Form.Control
-      className="margin-position"
       type="text"
       value={img_url}
       onChange={handleChange}
       placeholder="Enter Image URL Here" />
   </Form.Group>
   <Form.Group controlId="exampleForm.ControlSelect1">
-    <Form.Label className="margin-position">Pick a Park</Form.Label>
+    <Form.Label>Pick a Park</Form.Label>
     <Form.Control
-      className="margin-position"
       as="select"
       value={park}
       onChange={handleChange}
