@@ -18,8 +18,6 @@ export default function HollywoodStudios() {
   return (
 <div>
   <div className="HollyContainter" id='background'>
-    <hr className='line' />
-    <div>
       <AllPhotos />    
     <div className='HollyGallery'>
       <figure id="HollyGallery-Item1" data-aos="fade-right">
@@ -60,6 +58,5 @@ export default function HollywoodStudios() {
       </div>
     </div>
   </div>
-</div>
   )
 }

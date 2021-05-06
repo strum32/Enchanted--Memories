@@ -15,7 +15,7 @@ export default function AllRides(props) {
         <div class="card mb-3" id="margin">
           <div class="row g-0">
             <div class="col-md-4">
-              <img className="rides" src={ride.img_url} alt={ride.name} />
+              <img className="rides" key={ride.id} src={ride.img_url} alt={ride.name} />
             </div>
             <div class="col-md-8">
               <div class="card-body" id="padding">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-bootstrap"
 import { useEffect, useState } from "react"
 import { getAllPhotos } from "../services/photos"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,6 +7,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
 import { Link } from 'react-router-dom'
+import "./AllPhotos.css"
 import SwiperCore, {
   Pagination,Navigation
 } from 'swiper/core';
@@ -23,31 +25,24 @@ export default function AllPhotos() {
     fetchPhotos();
   }, [])
 
+
   return (
-    <div>
-      {photos.map((photo) => (
-        <div>
-          <Link to={`/photos/edit/${photo.id}`}>
-            <img src={photo.img_url} />
-          </Link>
-          <p>{photo.title}</p>
-        {/* <Swiper
+    <Swiper
           slidesPerView={5}
-          spaceBetween={30}
+          spaceBetween={10}
           slidesPerGroup={5}
           loop={true}
           loopFillGroupWithBlank={true}
           pagination={{"clickable": true}}
-          navigation={true}
-          className="mySwiper"
-        >
-          <SwiperSlide key={photo.id}>{photo.img_url}</SwiperSlide>
-            <Link to={`/photos/${photo.id}`}>
-              <img src={photo.image_url} />
-            </Link>
-        </Swiper> */}
-        </div>
+          navigation={true} 
+    >
+      {photos.map((photo) => (
+        <SwiperSlide key={photo.id}>
+              <Link to="/photos/:id">
+                <Image src={photo.img_url} fluid/>
+              </Link>
+          </SwiperSlide>
       ))}
-    </div>
+    </Swiper>
   )
 }

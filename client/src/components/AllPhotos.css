@@ -1,0 +1,23 @@
+.swiper-container{
+  width:90%;
+  border: 2px solid black;
+  margin-top: 3%;
+}
+
+.swiper-wrapper{
+  height:250px;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 90%;
+  margin-top: 4.5%;
+  image-rendering: pixelated;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -webkit-filter: brightness(120%); 
+}
+
+
+
+

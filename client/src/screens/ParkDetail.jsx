@@ -23,7 +23,7 @@ export default function ParkDetail(props) {
       <div className='display'>
         <Image className='picture' src={park.img_url} alt='' />
       </div>
-        {/* <h1>Inside the Park</h1> */}
+        <h1 className="center4">Inside the Park</h1>
         <Switcher />
     </div>
   )

@@ -18,7 +18,7 @@ export default function MagicKingdom() {
   return (
 <div>
   <div className="MagicContainter" id='background'>
-      <hr className='line' />
+      <AllPhotos/>  
     <div className='MagicGallery'>
       <figure id="MagicGallery-Item1" data-aos="fade-right">
         <Image  id='MagicGallery-Img' src={img1} alt='Tomorrow Land' fluid /> 

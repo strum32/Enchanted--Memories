@@ -22,6 +22,7 @@ export default function RidesDetail(props) {
       <p>Height:{ride.height}</p>
       <p>Category:{ride.category}</p>
       {/* <p>{ride.description}</p> */}
+      {/* <p>{ride.open}</p> */}
     </div>
   )
 }

@@ -59,7 +59,7 @@ export default function PhotoNew(props) {
       <option>Animal Kingdom</option>
     </Form.Control>
         </Form.Group>
-    <Button className="margin-position" variant="primary" type="submit">
+    <Button id="margin1" variant="primary" type="submit">
       Submit
     </Button>
       </Form>

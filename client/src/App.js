@@ -19,6 +19,7 @@ import { getAllParks, getOnePark } from './services/parks'
 import { getAllRides, getOneRide } from './services/rides'
 import PhotoEdit from './components/PhotoEdit.jsx'
 import AllPhotos from './components/AllPhotos.jsx'
+import Layout from './Layout/Layout.jsx'
 
 
 
@@ -26,7 +27,7 @@ import AllPhotos from './components/AllPhotos.jsx'
 
 function App(){
   const [currentUser, setCurrentUser] = useState(null)
-  // const [photos, setPhotos] = useState([]);
+  const [photos, setPhotos] = useState([]);
   const [rides, setRides] = useState([]);
   const [parks, setParks] = useState([]);
   const history = useHistory();
@@ -80,22 +81,22 @@ useEffect(() => {
   //   fetchPhotos();
   // }, [])
 
-  // const handleCreate = async (formData) => {
-  //   const newPhoto = await postPhoto(formData);
-  //   setPhotos(prevState => [...prevState, newPhoto]);
-  //   history.push(`/parks/:id`)
-  // }
+  const handleCreate = async (formData) => {
+    const newPhoto = await postPhoto(formData);
+    setPhotos(prevState => [...prevState, newPhoto]);
+    history.push(`/parks/:id`)
+  }
 
-  // const handleUpdate = async (id, formData) => {
-  //   const updatedPhoto = await putPhoto(id, formData);
-  //   setPhotos((prevState) => prevState.map((photo) => photo.id === Number(id) ? updatedPhoto : photo))
-  // }
+  const handleUpdate = async (id, formData) => {
+    const updatedPhoto = await putPhoto(id, formData);
+    setPhotos((prevState) => prevState.map((photo) => photo.id === Number(id) ? updatedPhoto : photo))
+  }
 
-  // const handleDelete = async (id) => {
-  //   await destroyPhoto(id);
-  //   setPhotos(prevState => prevState.filter((photo) => photo.id !== id))
-  //   history.push(`/parks/:id`)
-  // }
+  const handleDelete = async (id) => {
+    await destroyPhoto(id);
+    setPhotos(prevState => prevState.filter((photo) => photo.id !== id))
+    history.push(`/parks/:id`)
+  }
 
   return (
 
@@ -136,14 +137,14 @@ useEffect(() => {
           </Route>
 
           <Route path='/photos/new'>
-            {/* <PhotoNew handleCreate={handleCreate} /> */}
+            <PhotoNew handleCreate={handleCreate} />
           </Route>
           
           <Route path="/photos/edit/:id">
             <PhotoEdit
-              // photos={photos}
-              // handleDelete={handleDelete}
-              // handleUpdate={handleUpdate}
+              photos={photos}
+              handleDelete={handleDelete}
+              handleUpdate={handleUpdate}
             />
           </Route>
           </Switch>

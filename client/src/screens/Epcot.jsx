@@ -21,10 +21,9 @@ export default function Epcot() {
   }, []);
 
   return (
-<div>
   <div>
     <div className="EpcotContainter" id='background'>
-        <hr className='line' />
+        <AllPhotos/>
       <div className='EpcotGallery'>
       <figure id="EpcotGallery-Item1" data-aos="fade-right">
         <Image  id='EpcotGallery-Img' src={img1} alt='Toy Story land' fluid /> 
@@ -99,6 +98,5 @@ export default function Epcot() {
       </div>
     </div>
   </div>
-</div>
   )
 }

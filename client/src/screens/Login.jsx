@@ -52,7 +52,7 @@ export default function Login(props) {
               onChange={handleChange}
             />
           </Form.Group>
-          <Button className="margin-position" id="margin1" variant="primary" type="submit">
+          <Button id="margin1" variant="primary" type="submit">
             Submit
           </Button>
           <Link to="/register" className="height1">or Register</Link>
