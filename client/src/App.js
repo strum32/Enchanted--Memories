@@ -14,12 +14,13 @@ import DisneyRides from './components/DisneyRides'
 import DisneyPhotos from './components/DisneyPhotos'
 import {BrowserRouter as Router, Switch, Route, useHistory} from 'react-router-dom'
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth.js'
-import { putPhoto, destroyPhoto, postPhoto } from './services/photos'
+import { putPhoto, destroyPhoto, postPhoto, getOnePhoto } from './services/photos'
 import { getAllParks, getOnePark } from './services/parks'
 import { getAllRides, getOneRide } from './services/rides'
 import PhotoEdit from './components/PhotoEdit.jsx'
 import AllPhotos from './components/AllPhotos.jsx'
 import Layout from './Layout/Layout.jsx'
+import PhotoDetail from './components/PhotoDetail.jsx'
 
 
 
@@ -72,19 +73,11 @@ useEffect(() => {
     localStorage.removeItem('authToken');
     removeToken();
   }
-  
-  // useEffect(() => {
-  //   const fetchPhotos = async () => {
-  //     const photoList = await getAllPhotos();
-  //     setPhotos(photoList);
-  //   }
-  //   fetchPhotos();
-  // }, [])
 
   const handleCreate = async (formData) => {
     const newPhoto = await postPhoto(formData);
     setPhotos(prevState => [...prevState, newPhoto]);
-    history.push(`/parks/:id`)
+    history.push(`/photos`)
   }
 
   const handleUpdate = async (id, formData) => {
@@ -122,7 +115,6 @@ useEffect(() => {
 
           <Route path='/parks/:id'>
             <DisneyNavbar />
-            {/* <AllPhotos photos={photos}/> */}
             <ParkDetail getOnePark={getOnePark} />
           </Route>
 
@@ -140,6 +132,10 @@ useEffect(() => {
             <PhotoNew handleCreate={handleCreate} />
           </Route>
           
+          <Route path="/photos/:id">
+            <PhotoDetail getOnePhoto={getOnePhoto}/>
+          </Route>
+
           <Route path="/photos/edit/:id">
             <PhotoEdit
               photos={photos}

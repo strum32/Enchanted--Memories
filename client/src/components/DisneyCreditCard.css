@@ -15,13 +15,16 @@
 .CreditGallery {
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(19, 1fr);
-  grid-template-rows: repeat(3, 5vw);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(6, 3vw);
   grid-template-areas: 
   
-  ". . a a a a a a a a . s s s s s s . ."
-  ". . a a a a a a a a . s s s s s s . ."
-  ". . a a a a a a a a . . . . . . . . ."
+  ". . . . . . . . . . . . . . . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . . . . . . . . . . . . . . ."
 }
 
 #CreditGallery-Item1 {

@@ -1,0 +1,42 @@
+
+.PhotoDetailGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.PhotoDetailContainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PhotoDetailGallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-template-areas: 
+ 
+  "a a a a a a a a s s s s s s"
+  "a a a a a a a a s s s s s s"
+  "a a a a a a a a s s s s s s"
+  "a a a a a a a a s s s s s s"
+  "a a a a a a a a s s s s s s"
+  "a a a a a a a a s s s s s s"
+  "a a a a a a a a s s s s s s"
+}
+
+.PhotoDetailGallery-Item1 {
+  grid-area: a;
+  height: 100%;
+  margin:0;
+}
+
+.PhotoDetailGallery-Item2 {
+  grid-area: s;
+} 
+
+
+
