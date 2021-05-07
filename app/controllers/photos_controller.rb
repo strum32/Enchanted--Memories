@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
-  before_action :set_photo, only: :show
-  before_action :authorize_request, only: [create, :update, :destroy]
+  before_action :set_photo, only: [:show, :update]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /photos
   def index
@@ -11,6 +11,7 @@ class PhotosController < ApplicationController
 
   # GET /photos/1
   def show
+    @photo = Photo.find(params[:id])
     render json: @photo
   end
 
@@ -18,6 +19,7 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     @photo.user = @current_user
+
     if @photo.save
       render json: @photo, status: :created, location: @photo
     else
