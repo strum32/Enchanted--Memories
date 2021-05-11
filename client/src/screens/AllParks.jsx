@@ -16,8 +16,7 @@ export default function AllParks(props) {
             <Card.Body>
               <Card.Title key={park.id}>{park.name}</Card.Title>
               <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
+                {park.description}
               </Card.Text>
               <Link to={`/parks/${park.id}`}>
                 <Button variant="primary">Go To This Park</Button>

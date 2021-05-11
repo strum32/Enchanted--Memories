@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Image } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import './PhotoDetail.css'
@@ -18,17 +19,14 @@ export default function PhotoDetail(props) {
   }, [id]);
 
   return (
-    <div className="PhotoDetailContainter">
-      <div className='PhotoDetailGallery'>
-        < figure className="PhotoDetailGallery-Item1">
-          <Image className='PhotoDetailGallery-Img' src={photo.img_url} alt='Disney Credit Cards' fluid/>
-        </figure>
-        < figure className="PhotoDetailGallery-Item2">
-          <p className='PhotoDetailGallery-Img'>Title:{photo.title}</p>
-          {/* <p>{photo.date}</p> */}
-          {/* <p>{photo.park}</p> */}
-          <p>{photo.user}</p>
-        </figure>
+    <div className="Display">
+      <Image className='PhotoDetailGallery-Img' src={photo.img_url} alt='' />
+      <div className="bigger">
+        <h1 className="titleC">Enchanted Memory Photos</h1>
+        <p className="fontsize5">Title:</p>
+        <p className="placement">{photo.title}</p>
+        {/* <p>filler bullshit</p> */}
+        <p className="lastline">Enjoy our guests Enchanted photos. Please share your memories that are special to you. Click <Link to="/photos/new">here</Link> to post your Enchanted Photo and make your memory come to life</p>
       </div>
     </div>
   )

@@ -1,11 +1,14 @@
 import React from 'react'
+import { Image } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import DisneyNavbar from '../components/DisneyNavbar'
 
 export default function RidesDetail(props) {
   const [ride, setRide] = useState({});
   const { getOneRide } = props
   const { id } = useParams();
+
 
   useEffect(() => {
     const fetchRide = async () => {
@@ -17,12 +20,15 @@ export default function RidesDetail(props) {
   
   return (
     <div>
-      <img src={ride.img_url} alt=''/>
-      <h4>{ride.name}</h4>
-      <p>Height:{ride.height}</p>
-      <p>Category:{ride.category}</p>
-      {/* <p>{ride.description}</p> */}
-      {/* <p>{ride.open}</p> */}
+      <DisneyNavbar/>
+      <div>
+        <h1>{ride.name}</h1>
+        <Image src={ride.img_url} alt='' />
+        <p>{ride.description}</p>
+        <p>Height:{ride.height}</p>
+        <p>Category:{ride.category}</p>
+        <p>{ride.open}</p>
+      </div>
     </div>
   )
 }

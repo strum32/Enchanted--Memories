@@ -1,42 +1,48 @@
+.Display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding:0;
+  background: #F2F2F2;
+}
 
 .PhotoDetailGallery-Img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; 
+  height: 100vh;
+  width: 60vw;
+  margin: 0;
+  padding: 0;
 }
 
-.PhotoDetailContainer {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.titleC{
+  text-align: center;
+  margin-top: 8%;
 }
 
-.PhotoDetailGallery {
-  display: grid;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(7, 5vw);
-  grid-template-areas: 
- 
-  "a a a a a a a a s s s s s s"
-  "a a a a a a a a s s s s s s"
-  "a a a a a a a a s s s s s s"
-  "a a a a a a a a s s s s s s"
-  "a a a a a a a a s s s s s s"
-  "a a a a a a a a s s s s s s"
-  "a a a a a a a a s s s s s s"
+.bigger{
+  width: 40%;
 }
 
-.PhotoDetailGallery-Item1 {
-  grid-area: a;
-  height: 100%;
-  margin:0;
+.fontsize5{
+  font-size: 35px;
+  margin-left: 8%;
+  margin-top: 8%;
+  margin-bottom: 2%;
 }
 
-.PhotoDetailGallery-Item2 {
-  grid-area: s;
-} 
+.placement{
+  margin-left: 8%;
+  font-size: 25px;
+}
 
+.lastline{
+  margin-left: 8%;
+  font-size: 18px;
+}
 
-
+.fontsize4{
+  font-size: 35px;
+  margin-left: 8%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}

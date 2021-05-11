@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_07_234826) do
+ActiveRecord::Schema.define(version: 2021_05_10_182503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_04_07_234826) do
     t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "description"
   end
 
   create_table "photos", force: :cascade do |t|
@@ -39,6 +40,9 @@ ActiveRecord::Schema.define(version: 2021_04_07_234826) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "category"
     t.string "height"
+    t.string "description"
+    t.string "open"
+    t.string "subpark"
     t.index ["park_id"], name: "index_rides_on_park_id"
   end
 

@@ -13,16 +13,16 @@ export default function DisneyRides() {
     <div className="RidesContainter" id='background'>
       <div className='RidesGallery'>
         <figure className="geeks" id="RidesGallery-Item1">
-          <Image  id='RidesGallery-Img' src={img1} alt='Family members having a blast'/>
+          <Link to='/rides/36'><Image  id='RidesGallery-Img' src={img1} alt='Family members having a blast'/></Link>
         </figure>
         <figure className="geeks"  id="RidesGallery-Item2">
-          <Image id='RidesGallery-Img' src={img2} alt='Dumbo Ride'/>
+          <Link to='rides/6'><Image id='RidesGallery-Img' src={img2} alt='Dumbo Ride'/></Link>
         </figure>
         <figure className="geeks"  id="RidesGallery-Item3">
-          <Image id='RidesGallery-Img' src={img3} alt='Three children having fun on a rollercoaster' />
+          <Link to='/rides'><Image id='RidesGallery-Img' src={img3} alt='Three children having fun on a rollercoaster' /></Link>
         </figure>
         <figure  className="geeks"  id="RidesGallery-Item4">
-          <Image id='RidesGallery-Img' src={img4} alt='Siblings riding there favorite Buzz light year ride.'/>
+          <Link to='rides/39'><Image id='RidesGallery-Img' src={img4} alt='Siblings riding there favorite Buzz light year ride.'/></Link>
         </figure>
       </div>
     </div>

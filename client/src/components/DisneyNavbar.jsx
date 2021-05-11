@@ -3,9 +3,14 @@ import { LinkContainer } from 'react-router-bootstrap'
 import './DisneyNavbar.css';
 import img1 from '../assets/logo.png'
 
-export default function DisneyNavbar() {
+export default function DisneyNavbar(props) {
 
   return (
+    // <div>
+    //   <p>{currentUser.username}</p>
+    //   <button onClick={handleLogout}>Logout</button>
+    //   <div>
+    //     <LinkContainer to='/login'>Logout<LinkContainer
     <Navbar sticky='top' bg="light" variant="dark">
       <Navbar.Brand>
         <img
@@ -71,6 +76,8 @@ export default function DisneyNavbar() {
         </LinkContainer>
       </Nav>
       </Navbar.Collapse>
-      </Navbar>
+    </Navbar>
+//   </div>
+// </div>
   )
 }

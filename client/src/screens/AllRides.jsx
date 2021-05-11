@@ -12,6 +12,7 @@ export default function AllRides(props) {
       <DisneyNavbar/>
     <div>
       {rides.map((ride) => (
+      
         <div class="card mb-3" id="margin">
           <div class="row g-0">
             <div class="col-md-4">
@@ -22,9 +23,7 @@ export default function AllRides(props) {
                 <h5 class="card-title">{ride.name}</h5>
                 <p class="card-text">{ride.height}</p>
                 <p class="card-text">{ride.category}</p>
-                <Link to={`/rides/${ride.id}`}>
-                  <Button variant="primary">Ride Information</Button>
-                </Link>
+                <Link to={`/rides/${ride.id}`} className="btn btn-primary">Ride information</Link>
               </div>
             </div>
           </div>

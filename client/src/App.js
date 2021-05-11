@@ -18,7 +18,6 @@ import { putPhoto, destroyPhoto, postPhoto, getOnePhoto } from './services/photo
 import { getAllParks, getOnePark } from './services/parks'
 import { getAllRides, getOneRide } from './services/rides'
 import PhotoEdit from './components/PhotoEdit.jsx'
-import AllPhotos from './components/AllPhotos.jsx'
 import Layout from './Layout/Layout.jsx'
 import PhotoDetail from './components/PhotoDetail.jsx'
 
@@ -97,7 +96,10 @@ useEffect(() => {
       <Router>
           <Switch>
           <Route exact path='/' component={Home} >
-            <DisneyNavbar />
+            <DisneyNavbar
+              currentUser={currentUser}
+              handleLogout={handleLogout}
+            />
             <DisneyCarousel />
             <AllParks parks={parks} />
             <DisneyRides />

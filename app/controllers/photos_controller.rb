@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :update]
-  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize_request, only: [ :create, :update, :destroy]
 
   # GET /photos
   def index
