@@ -122,3 +122,22 @@
 .line {
   margin:0;
 }
+
+@media only screen and (max-width: 1450px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .text {
+    font-size: 12px;
+  }
+}
+

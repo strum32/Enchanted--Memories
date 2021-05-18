@@ -10,14 +10,15 @@ export default function PhotoNew(props) {
     img_url: '',
     park: ''
   });
+
   const { caption, img_url, park } = formData;
-  const { handleCreate } = props
+  const { handleCreate } = props;
 
   const handleChange = (e) => {
-    const { caption, value } = e.target;
+    const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [caption]: value
+      [name]: value
     }))
   }
 
@@ -25,33 +26,37 @@ export default function PhotoNew(props) {
     <div>
       <DisneyNavbar />
       <div className="BackgroundImg" >
-      <Form className='margin'onSubmit={(e) => {
+      <Form className='margin' onSubmit={(e) => {
       e.preventDefault();
       handleCreate(formData);
       }}>
-  <Form.Group controlId="exampleForm.ControlInput1">
+  <Form.Group controlId="CaptionPicture">
     <Form.Label className="margin-top">Caption</Form.Label>
     <Form.Control
+      placeholder="Caption your Photo"
       type="text"
+      name="caption"
       value={caption}
       onChange={handleChange}
-      placeholder="Caption your Photo"
     />
   </Form.Group>
-  <Form.Group controlId="exampleForm.ControlInput1">
+  <Form.Group controlId="PostImg_Url">
     <Form.Label>Image URL</Form.Label>
     <Form.Control
-      type="text"
+      type="text"      
+      name="img_url"
       value={img_url}
       onChange={handleChange}
       placeholder="Enter Image URL Here" />
   </Form.Group>
-  <Form.Group controlId="exampleForm.ControlSelect1">
+  <Form.Group controlId="PickAPark">
     <Form.Label>Pick a Park</Form.Label>
     <Form.Control
       as="select"
+      name="park"
       value={park}
       onChange={handleChange}
+      placeholder="Pick a Park" 
     >
       <option>Magic Kingdom</option>
       <option>Hollywood Studios</option>

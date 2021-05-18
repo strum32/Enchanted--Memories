@@ -24,15 +24,15 @@ export default function Login(props) {
     <div className='formContainer'>
       <DisneyNavbar/>
       <div className="Background">
-      <Form className='margin'onSubmit={(e) => {
+      <Form className='margin' onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData);
       }}>
         <Form.Group controlId="formBasicEmail">
-          <Form.Label className="margin-top">Email address</Form.Label>
+          <Form.Label className="margin-top">Username</Form.Label>
             <Form.Control
-              type="email"
-              placeholder="Enter email"
+              type="text"
+              placeholder="Enter Username"
               name='username'
               value={username}
               onChange={handleChange}

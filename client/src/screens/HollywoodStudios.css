@@ -109,12 +109,12 @@
   margin: 0;
 }
 
-.center{
+.center1{
   text-align: center;
   margin-top: 4%;
 }
 
-.text{
+.text1{
   margin-top: 4%;
   margin-left: 6%;
   margin-right:6%;
@@ -123,3 +123,31 @@
 .line {
   margin:0;
 }
+
+@media only screen and (max-width: 1550px) {
+  .text1 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1385px) {
+  .text1 {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .text1 {
+    font-size: 12px;
+  }
+  .center1 {
+    font-size: 31px;
+  }
+}
+
+@media only screen and (max-width: 1211px) {
+  .text1 {
+    font-size: 11px;
+  }
+}
+

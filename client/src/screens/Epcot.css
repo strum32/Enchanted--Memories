@@ -207,3 +207,36 @@
 .line {
   margin:0;
 }
+
+@media only screen and (max-width: 1550px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .center {
+    font-size: 31px;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .text {
+    font-size: 11px;
+  }
+  .center{
+    font-size: 30px;
+  }
+}

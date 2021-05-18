@@ -56,11 +56,14 @@ useEffect(() => {
   handleVerify();
 }, [])
   
+  
   const handleLogin = async (formData) => {
     const currentUser = await loginUser(formData);
+    console.log(currentUser)
     setCurrentUser(currentUser);
     history.push('/');
   }
+
   const handleRegister = async (formData) => {
     const currentUser = await registerUser(formData);
     setCurrentUser(currentUser);
@@ -120,15 +123,16 @@ useEffect(() => {
             <ParkDetail getOnePark={getOnePark} />
           </Route>
 
-          <Route path='/rides'>
-            <AllRides rides={rides}/>
-          </Route>
-
           <Route path='/rides/:id'>
             <RidesDetail
               getOneRide={getOneRide}
             />
           </Route>
+
+          <Route path='/rides'>
+            <AllRides rides={rides}/>
+          </Route>
+
 
           <Route path='/photos/new'>
             <PhotoNew handleCreate={handleCreate} />

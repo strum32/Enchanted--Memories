@@ -37,7 +37,7 @@ export default function Epcot() {
       </figure>
       <figure id="EpcotGallery-Item4" data-aos="fade-right">
         <h1 className='center'>Morocco</h1> 
-        <p className='text'>The Morocco Pavilion, designed to look like a Moroccan city with a realistic Minaret, features the only pavilion in which the country's government aided in the design. Guests to the pavilion gain insight on the lifestyle and culture of the Moroccan people through the Gallery of Arts and History. The Fes House shows guests the typical Moroccan house. Inside the pavilion, North African plants including citrus trees, date palms, and olive trees, and fountains can be seen. The courtyard plays hosts to entertainment, including a belly dancing show in the evening.</p>
+        <p className='text'>The Morocco Pavilion, designed to look like a Moroccan city with a realistic Minaret. Guests to the pavilion gain insight on the lifestyle and culture of the Moroccan people through the Gallery of Arts and History. The Fes House shows guests the typical Moroccan house. Inside the pavilion, North African plants including citrus trees, date palms, and olive trees, and fountains can be seen. The courtyard plays hosts to entertainment, including a belly dancing show in the evening.</p>
       </figure>
       <figure id="EpcotGallery-Item5" data-aos="fade-right">
         <Image id='EpcotGallery-Img' src={img3} alt='Echo Lake' />
@@ -51,7 +51,7 @@ export default function Epcot() {
       </figure>
       <figure id="EpcotGallery-Item8" data-aos="fade-right">
         <h1 className='center'>Mexico</h1> 
-        <p className='text'>You will be welcomed with the lively spirit of Mexico. The Mexico Pavilion resembles a Mesoamerican pyramid with steps leading to entrance doors. Visitors enter through a gallery display of Mexican artwork, the "Animales Fantásticos" art collection. The central indoor area of the pavilion is themed as an outdoor twilight-lit Mexican village and marketplace, Plaza de los Amigos. At the edge of the plaza, a restaurant, San Ángel Inn Restaurante, overlooks an indoor lagoon with a themed backdrop of another pyramid and a smoldering volcano in the distance with themed lighting and smoke effects.</p>
+        <p className='text'>The Mexico Pavilion resembles a Mesoamerican pyramid with steps leading to entrance doors. Visitors enter through a gallery display of Mexican artwork. The central indoor area of the pavilion is themed as an outdoor twilight-lit Mexican village and marketplace. At the edge of the plaza, a restaurant, San Ángel Inn Restaurante, overlooks an indoor lagoon with a themed backdrop of another pyramid and a smoldering volcano.</p>
       </figure>
       <figure id="EpcotGallery-Item9" data-aos="fade-right">
         <Image id='EpcotGallery-Img' src={img5} alt='Animation Courtyard' fluid/>
@@ -65,7 +65,7 @@ export default function Epcot() {
       </figure>
       <figure id="EpcotGallery-Item12" data-aos="fade-right">
         <h1 className='center'>Germany</h1> 
-        <p className='text'>The Germany Pavilion is designed to look like a German town, but with architecture from different eras and regions. The Platz (square) is decorated with a statue of St. George and the Dragon inspired by the statue in the medieval Bavarian town of Rothenburg ob der Tauber,[4] and a clock tower. The Biergarten, at the rear of the courtyard, sells traditional German food. The pavilion also has numerous small shops selling German goods. Now grab a lager and enjoy a giant pretzels.</p>
+        <p className='text'>The Germany Pavilion is designed to look like a German town, but with architecture from different eras and regions. The Platz (square) is decorated with a statue of St. George and a clock tower. The Biergarten, at the rear of the courtyard, sells traditional German food. The pavilion also has numerous small shops selling German goods. Now grab a lager and enjoy a giant pretzels.</p>
       </figure>
       <figure id="EpcotGallery-Item13" data-aos="fade-right">
         <Image id='EpcotGallery-Img' src={img7} alt='Sunset Boulevard' fluid/>

@@ -28,19 +28,19 @@ export default function AllPhotos() {
 
   return (
     <Swiper
-          slidesPerView={6}
-          spaceBetween={25}
-          slidesPerGroup={6}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          pagination={{"clickable": true}}
-          navigation={true} 
+      slidesPerView={6}
+      spaceBetween={25}
+      slidesPerGroup={6}
+      loop={true}
+      loopFillGroupWithBlank={true}
+      pagination={{ "clickable": true }}
+      navigation={true}
     >
       {photos.map((photo) => (
         <div className="swiper-button-next" className="swiper-button-prev">
           <SwiperSlide key={photo.id}>
               <Link to={`/photos/${photo.id}`}>
-                <Image className="zoom" src={photo.img_url} fluid/>
+                <Image className="zoom" src={photo.img_url} />
               </Link>
           </SwiperSlide>
         </div>
