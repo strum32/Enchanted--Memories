@@ -33,6 +33,7 @@
 
 .swiper-button-next, .swiper-button-prev{
   background: #F2F2F2;
+  display: none;
 }
 
 @media screen and (max-width: 1700px) {
@@ -46,7 +47,7 @@
 
     .swiper-container{
       width: 80%;
-   }
+  }
 }
 
 @media screen and (min-width: 1701px) {

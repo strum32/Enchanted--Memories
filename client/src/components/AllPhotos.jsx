@@ -12,7 +12,7 @@ import SwiperCore, {
   Pagination,Navigation
 } from 'swiper/core';
 
-SwiperCore.use([Pagination,Navigation]);
+SwiperCore.use([Pagination, Navigation]);
 
 export default function AllPhotos() {
   const [photos, setPhotos] = useState([]);
@@ -35,6 +35,7 @@ export default function AllPhotos() {
       loopFillGroupWithBlank={true}
       pagination={{ "clickable": true }}
       navigation={true}
+      
       breakpoints={{
         1650: {
           slidesPerView: 6,
