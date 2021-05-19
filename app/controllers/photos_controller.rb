@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :update]
-  before_action :authorize_request, only: [ :create, :update, :destroy]
+  before_action :authorize_request, only: [ :create, :update, :destroy, :edit]
 
   # GET /photos
   def index
@@ -13,6 +13,10 @@ class PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     render json: @photo
+  end
+
+  def edit
+    @photo= Photo.find(params[:id])
   end
 
   # POST /photos
@@ -36,6 +40,8 @@ class PhotosController < ApplicationController
       render json: @photo.errors, status: :unprocessable_entity
     end
   end
+
+
 
   # DELETE /photos/1
   def destroy
