@@ -9,7 +9,7 @@ import img4 from '../assets/DisneyPhoto4.jpg'
 export default function DisneyPhotos() {
   return (
     <div>
-      <div className="PhotosContainter" id='background'>
+      <div className="PhotosContainter">
       <div className='PhotosGallery'>
         <figure id="PhotosGallery-Item1">
           <Link to="/photos/new"><Image className="hover item-fade" id='PhotosGallery-Img' src={img2} alt='' fluid/></Link>

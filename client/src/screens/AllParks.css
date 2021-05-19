@@ -20,6 +20,18 @@
   width:262px;
 }
 
+.hover:hover {
+  opacity: 0.2;
+}
+
+.item-fade {
+  background: black;
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
 @media screen and (min-width: 1400px) {
   #height{
     height: 500px;
