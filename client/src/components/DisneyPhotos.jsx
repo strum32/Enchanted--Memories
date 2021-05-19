@@ -24,11 +24,11 @@ export default function DisneyPhotos() {
           <Link to="/photos/new"><Image className="hover item-fade" id='PhotosGallery-Img' src={img3} alt='' fluid/></Link>
         </figure>
         <figure id="PhotosGallery-Item5">
-        <p className="down3">Click on any of the Enchanted Memory photos to see more or add your own Memory here <Link to="/photos/new"><Button id="up">Add a Memory</Button></Link></p>
+        <p className="down3">Click on any of the Enchanted photos to view them in more detail or add your own Enchanted Memory <Link to="/photos/new">here</Link></p>
         </figure>
         <figure id="PhotosGallery-Item6">
             <h3 className="down2">Limited-Time Offer</h3>
-            <p>Get All your Enchanted Memories photos and videos captured through December 11, 2021 for one price with Memory Maker!</p>
+            <p className='outline'>Get All your Enchanted Memories photos and videos captured through December 11, 2021 for one price with Memory Maker!</p>
         </figure>
       </div>
     </div>

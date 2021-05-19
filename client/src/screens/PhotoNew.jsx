@@ -6,12 +6,12 @@ import './PhotoNew.css'
 
 export default function PhotoNew(props) {
   const [formData, setFormData] = useState({
-    caption: '',
+    title: '',
     img_url: '',
     park: ''
   });
 
-  const { caption, img_url, park } = formData;
+  const { title, img_url, park } = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
@@ -35,8 +35,8 @@ export default function PhotoNew(props) {
     <Form.Control
       placeholder="Caption your Photo"
       type="text"
-      name="caption"
-      value={caption}
+      name="title"
+      value={title}
       onChange={handleChange}
     />
   </Form.Group>

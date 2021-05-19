@@ -1,48 +1,42 @@
 .Display{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin: 0;
   padding:0;
   background: #F2F2F2;
 }
 
 .PhotoDetailGallery-Img {
-  height: 100vh;
+  height: 90vh;
   width: 60vw;
   margin: 0;
   padding: 0;
 }
 
-.titleC{
+.headline{
   text-align: center;
-  margin-top: 8%;
+  margin-top: 10vh;
+  font-size: 40px;
 }
 
-.bigger{
-  width: 40%;
-}
-
-.fontsize5{
-  font-size: 35px;
-  margin-left: 8%;
-  margin-top: 8%;
-  margin-bottom: 2%;
-}
-
-.placement{
-  margin-left: 8%;
+.title1{
+  margin-left: 4vw;
+  margin-top: 7vh;
+  margin-right: 4vw;
   font-size: 25px;
 }
 
-.lastline{
-  margin-left: 8%;
+.Button2{
+  margin-left: 4vw;
+  margin-top: 7vh;
+}
+
+.firstline{
+  margin-top: 11vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
   font-size: 18px;
 }
 
-.fontsize4{
-  font-size: 35px;
-  margin-left: 8%;
-  margin-top: 3%;
-  margin-bottom: 2%;
-}
+
+

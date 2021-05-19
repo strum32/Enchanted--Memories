@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Image } from 'react-bootstrap'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import DisneyNavbar from '../components/DisneyNavbar'
+import './RidesDetail.css'
 
 export default function RidesDetail(props) {
   const [ride, setRide] = useState({});
@@ -21,13 +23,17 @@ export default function RidesDetail(props) {
   return (
     <div>
       <DisneyNavbar/>
-      <div>
-        <h1>{ride.name}</h1>
-        <Image src={ride.img_url} alt='' />
-        <p>{ride.description}</p>
-        <p>Height:{ride.height}</p>
-        <p>Category:{ride.category}</p>
-        <p>{ride.open}</p>
+      <div className="Display1">
+        <Image className='RidesDetailGallery-Img' src={ride.img_url} alt=''/>
+        <div>
+          <h1 className="titleCenter">{ride.name}</h1>
+          <p className='subpark'> This attraction is located in {ride.subpark}</p>
+          <p className="description">{ride.description}</p>
+          <p className="sameP">Height: {ride.height}</p>
+          <p className="sameP">Category: {ride.category}</p>
+          <p className="sameP">Open: {ride.open}</p>
+          <p className="DiffP">Thank you for getting familiar with our rides and attractions. Please feel free to go back to our attractions page by clicking <Link to="/rides">here</Link>. Enjoy your Enchanted day!</p>
+        </div>
       </div>
     </div>
   )

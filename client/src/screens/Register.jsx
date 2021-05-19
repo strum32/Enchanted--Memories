@@ -28,7 +28,7 @@ export default function Register(props) {
           handleRegister(formData);
         }}>
         <Form.Group controlId="exampleForm.ControlInput1">
-          <Form.Label className="margin-top">Username</Form.Label>
+          <Form.Label className="margin-top1">Username</Form.Label>
             <Form.Control
               type="Username"
               placeholder="Create a Username"

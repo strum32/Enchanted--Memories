@@ -6,15 +6,16 @@ import DisneyNavbar from './DisneyNavbar';
 
 export default function PhotoEdit(props) {
   const { formData, setFormData } = useState({
-    caption: '',
+    title: '',
     img_url: '',
     park: ''
   })
 
   const history = useHistory()
-  const { caption, img_url, park } = formData;
-  const { photos, handleUpdate, handleDelete } = props
+  const { title, img_url, park } = formData;
+  const { photos, handleUpdate } = props
   const { id } = useParams();
+  
   const PhotoItem = photos.find((photo) => photo.id === Number(id));
   console.log(PhotoItem)
 
@@ -31,11 +32,11 @@ export default function PhotoEdit(props) {
   }, [photos])
 
   const handleChange = (e) => {
-    const { caption, value } = e.target;
+    const { name, value } = e.target;
     setFormData((formData) => {
       return {
         ...formData,
-        [caption]: value
+        [name]: value
       }})
   }
 
@@ -53,8 +54,8 @@ export default function PhotoEdit(props) {
       <Form.Control
         className="margin-position"
         type="text"
-        name='caption'
-        value={caption}
+        name='title'
+        value={title}
         onChange={handleChange}
         placeholder="Caption your Photo"
       />
@@ -86,9 +87,6 @@ export default function PhotoEdit(props) {
       </Form.Group>
         <Button className="margin-position" variant="primary" type="submit">
           Submit
-        </Button>
-        <Button className="margin-position" variant="danger" type="delete">
-          Delete
         </Button>
       </Form>
     </div>

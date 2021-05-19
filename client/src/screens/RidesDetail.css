@@ -1,0 +1,101 @@
+.Display1{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding:0;
+  background: #F2F2F2;
+}
+
+.RidesDetailGallery-Img {
+  height: 90vh;
+  width: 60vw;
+  margin: 0;
+  padding: 0;
+}
+
+.titleCenter{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10vh;
+}
+
+.sameP {
+  margin-left: 4vw;
+  font-size: 22px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  color: #0099cc;
+}
+
+.description{
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  font-size: 20px;
+}
+
+.DiffP{
+  margin-top: 5vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.subpark{
+  margin-top: 7vh;
+  margin-left: 4vw;
+}
+
+ @media screen and (max-width: 1276px){
+  .titleCenter{
+      font-size: 38px;
+  }
+
+  .subpark{
+    margin-left: 2vw;
+  }
+  
+  .description{
+    font-size: 18px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .DiffP{
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .sameP{
+    font-size: 20px;
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 1133px){
+  .titleCenter{
+    font-size: 36px;
+}
+
+.subpark{
+  margin-left: 1.5vw;
+  font-size: 14px;
+}
+
+.description{
+  font-size: 16px;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+}
+
+.DiffP{
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  font-size: 14px;
+}
+
+.sameP{
+  font-size: 18px;
+  margin-left: 1.5vw;
+}
+}

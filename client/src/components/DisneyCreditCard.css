@@ -33,6 +33,8 @@
 
 #CreditGallery-Item2 {
   grid-area: s;
+  position: relative;
+  top: -5%;
 } 
 
 .height{
@@ -54,7 +56,7 @@
   font: Avenir, Helvetica, Arial, sans-serif;
 }
 
-@media screen and (max-width: 1853px) {
+@media screen and (max-width: 1873px) {
   .font1{
     font-size: 20px;
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -65,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 1546px) {
+@media screen and (max-width: 1561px) {
   .font1{
     font-size: 18px;
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -78,9 +80,15 @@
     font-size: 16px;
     font: Avenir, Helvetica, Arial, sans-serif;
   }
+
+  #CreditGallery-Item2 {
+    grid-area: s;
+    position: relative;
+    top: -7%;
+  } 
 }
 
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1405px) {
   .font1{
     font-size: 16px;
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -95,21 +103,42 @@
   }
 }
 
-@media screen and (max-width: 1330px) {
-
-  #CreditGallery-Item2{
-    margin-top: 2%;
-  }
+@media screen and (max-width: 1350px) {
+  
+  #CreditGallery-Item2 {
+    grid-area: s;
+    position: relative;
+    top: -9%;
+  } 
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1250px) {
+  
+  #CreditGallery-Item2 {
+    display: none;
+  } 
 
-  #CreditGallery-Item2{
-    margin-top: 1%;
+  .CreditGallery {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 4.5vw);
+    grid-template-areas: 
+    
+    ". . . . . . . . . . . . . . . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . . . . . . . . . . . . . . ."
+  }
+
+  #CreditGallery-Item1 {
+    grid-area: a;
+    position: relative;
+    top: 9%;
   }
 }
-
-
 
 
 

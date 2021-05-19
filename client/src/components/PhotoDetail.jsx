@@ -2,7 +2,9 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Image } from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
+import { useParams, useHistory } from 'react-router-dom'
+import DisneyNavbar from '../components/DisneyNavbar'
 import './PhotoDetail.css'
 
 export default function PhotoDetail(props) {
@@ -18,15 +20,21 @@ export default function PhotoDetail(props) {
     fetchPark();
   }, [id]);
 
+  const history = useHistory()
+  const { handleDelete } = props
+
+
   return (
-    <div className="Display">
-      <Image className='PhotoDetailGallery-Img' src={photo.img_url} alt='' />
-      <div className="bigger">
-        <h1 className="titleC">Enchanted Memory Photos</h1>
-        <p className="fontsize5">Title:</p>
-        <p className="placement">{photo.title}</p>
-        {/* <p>filler bullshit</p> */}
-        <p className="lastline">Enjoy our guests Enchanted photos. Please share your memories that are special to you. Click <Link to="/photos/new">here</Link> to post your Enchanted Photo and make your memory come to life</p>
+    <div>
+      <DisneyNavbar/>
+      <div className="Display">
+        <Image className='PhotoDetailGallery-Img' src={photo.img_url} alt='' />
+        <div>
+          <h1 className="headline">Enchanted Photos</h1>
+          <p className="firstline">Enjoy our guests Enchanted photos. Please share your memories that are special to you. Click <Link to="/photos/new">here</Link> to post your Enchanted Photo and make your memory come to life</p>
+          <p className="title1">Title: {photo.title}</p>
+          <Button className="Button2" onClick={() => handleDelete(id)}>Delete Photo</Button>
+        </div>
       </div>
     </div>
   )

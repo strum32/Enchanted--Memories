@@ -11,16 +11,17 @@ export default function AllParks(props) {
   return (
     <div className="looks">
       {parks.map((park) => (
-          <Card className="spacing" id='height' style={{ width: '16rem' }}>
-            <Card.Img variant="top" id="height2" className="size" key={park.id} src={park.img_url} alt={park.name} />
+        <Card className="spacing" id='height' style={{ width: '16rem' }}>
+          <div>
+            <Link to={`/parks/${park.id}`}>
+              <Card.Img variant="top" id="height2" className="size" key={park.id} src={park.img_url} alt={park.name} />
+            </Link>
+          </div>
             <Card.Body>
-              <Card.Title key={park.id}>{park.name}</Card.Title>
-              <Card.Text>
+              <Card.Title >{park.name}</Card.Title>
+              <Card.Text >
                 {park.description}
               </Card.Text>
-              <Link to={`/parks/${park.id}`}>
-                <Button variant="primary">Go To This Park</Button>
-              </Link>
             </Card.Body>
           </Card>
     ))}
