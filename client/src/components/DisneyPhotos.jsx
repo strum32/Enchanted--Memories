@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Image } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 import'./DisneyPhotos.css'
 import img2 from '../assets/DisneyPhoto2.jpg'

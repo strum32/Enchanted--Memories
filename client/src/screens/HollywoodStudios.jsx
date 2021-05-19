@@ -46,7 +46,7 @@ export default function HollywoodStudios() {
       </figure>
       <figure id="HollyGallery-Item8" data-aos="fade-right">
         <h1 className='center1'>Grand Avenue</h1> 
-        <p className='text1'>Grand Avenue is themed as a gentrified historic district inspired by the real location of the same name in downtown Los Angeles. The area is anchored by Muppet Vision 3D, a 4D film attraction starring the Muppets from Jim Henson's The Muppet Show, that is presented at the Grand Arts Theatre within the avenue's Grand Park. Grand Avenue is also home to PizzeRizzo a Brooklyn-style pizza restaurant owned by Rizzo the Rat—Mama Melrose's Ristorante Italiano, and BaseLine Tap House, a modern California-styled pub.</p>
+        <p className='text1'>Grand Avenue is themed as a gentrified historic district inspired by the real location of the same name in downtown Los Angeles. The area is anchored by Muppet Vision 3D, a 4D film attraction starring the Muppets fromThe Muppet Show. Grand Avenue is also home to PizzeRizzo a Brooklyn-style pizza restaurant, and BaseLine Tap House.</p>
       </figure>
       <figure id="HollyGallery-Item11" data-aos="fade-right">
         <Image id='HollyGallery-Img' src={img6} alt='Sunset Boulevard' fluid/>

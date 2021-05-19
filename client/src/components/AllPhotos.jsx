@@ -28,13 +28,25 @@ export default function AllPhotos() {
 
   return (
     <Swiper
-      slidesPerView={6}
+      slidesPerView={3}
       spaceBetween={25}
-      slidesPerGroup={6}
+      slidesPerGroup={3}
       loop={true}
       loopFillGroupWithBlank={true}
       pagination={{ "clickable": true }}
       navigation={true}
+      breakpoints={{
+        1650: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          navigation: true,
+          observer: true, 
+          observeParents: true,
+        }
+      }}
+    
     >
       {photos.map((photo) => (
         <div className="swiper-button-next" className="swiper-button-prev">
