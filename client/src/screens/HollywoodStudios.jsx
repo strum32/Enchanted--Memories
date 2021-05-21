@@ -39,7 +39,7 @@ export default function HollywoodStudios() {
       </figure>
       <figure id="HollyGallery-Item6" data-aos="fade-left">
         <h1 className='center1'>Echo Lake</h1> 
-        <p className='text1'>Echo Lake includes three major attractions based on characters and films created by George Lucas. Star Tours – The Adventures Continue, The Jedi Training: Trials of the Temple, The live-action Indiana Jones Epic Stunt Spectacular! re-enacts various scenes from Steven Spielberg's Raiders of the Lost Ark</p>
+        <p className='text1'>Echo Lake includes three major attractions based on characters and films created by George Lucas. Star Tours – The Adventures Continue, The Jedi Training: Trials of the Temple, The live-action Indiana Jones Epic Stunt Spectacular! Which re-enacts various scenes from Steven Spielberg's Raiders of the Lost Ark</p>
       </figure>
       <figure id="HollyGallery-Item7" data-aos="fade-left">
         <Image id='HollyGallery-Img' src={img4} alt='Grand Avenue' fluid/>

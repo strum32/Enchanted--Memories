@@ -24,7 +24,7 @@ export default function DisneyPhotos() {
           <Link to="/photos/new"><Image className="hover item-fade" id='PhotosGallery-Img' src={img3} alt='' fluid/></Link>
         </figure>
         <figure id="PhotosGallery-Item5">
-        <p className="down3">Click on any of the Enchanted photos to view them in more detail or add your own Enchanted Memory <Link to="/photos/new">here</Link></p>
+        <p className="down3">Click on any of the Enchanted photos to add your own Enchanted Memory or you can click <Link to="/photos/new">here</Link></p>
         </figure>
         <figure id="PhotosGallery-Item6">
             <h3 className="down2">Limited-Time Offer</h3>

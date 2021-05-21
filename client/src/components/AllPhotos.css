@@ -33,7 +33,6 @@
 
 .swiper-button-next, .swiper-button-prev{
   background: #F2F2F2;
-  display: none;
 }
 
 @media screen and (max-width: 1700px) {
@@ -54,4 +53,17 @@
 .swiper-pagination {
   bottom: -4px;
   }
+}
+
+@media screen and (max-width: 880px){
+  .swiper-slide img{
+    height: 200px;
+    width: 450px;
+    margin-left: 14vw;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
 }

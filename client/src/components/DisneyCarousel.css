@@ -6,3 +6,9 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1113px) {
+ .carousel{
+    margin-bottom: 5vh;
+ } 
+}
+

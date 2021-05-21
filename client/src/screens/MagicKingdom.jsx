@@ -25,7 +25,7 @@ export default function MagicKingdom() {
       </figure>
       <figure id="MagicGallery-Item2" data-aos='fade-left'>
         <h1 className='center'>Tomorrow Land</h1> 
-        <p className="text2">Welcome to Tomorrowland an intergalactic city. Our futurisitic theme park will encompass every childs imagination of rockets, UFOs, and robots. The Tomorrowland attractions have been designed to give you an opportunity to participate in adventures that are a living blueprint of our future. Classic attractions include Space Mountain, Walt Disney's Carousel of Progress, Astro Orbiter, Tomorrowland Transit Authority, PeopleMover, and Tomorrowland Speedway</p>
+        <p className="text2">Welcome to Tomorrowland an intergalactic city. Our futurisitic theme park will encompass every childs imagination of rockets, UFOs, and robots. The Tomorrowland attractions have been designed to give you an opportunity to participate in adventures that are a living blueprint of our future. Classic attractions include Space Mountain, Astro Orbiter, and Tomorrowland Speedway</p>
       </figure>
       <figure id="MagicGallery-Item3" data-aos="fade-left">
         <Image id='MagicGallery-Img' src={img2} alt='Fantasy Land' fluid />
@@ -39,14 +39,14 @@ export default function MagicKingdom() {
       </figure>
       <figure id="MagicGallery-Item6" data-aos='fade-left'>
         <h1 className='center'>Adeventure Land</h1> 
-        <p className="text2">Welcome to Adventureland this park represents the mystery of exploring foreign lands. It is themed to resemble the remote jungles in Africa, resembling a Caribbean town square. It contains classic attractions such as Pirates of the Caribbean, Jungle Cruise, Walt Disney's Enchanted Tiki Room, Swiss Family Treehouse, and The Magic Carpets of Aladdin.</p>
+        <p className="text2">Welcome to Adventureland this park represents the mystery of exploring foreign lands. It is themed to resemble the remote jungles in Africa, and resembling a Caribbean town square. It contains classic attractions such as Pirates of the Caribbean, Jungle Cruise, Walt Disney's Enchanted Tiki Room, Swiss Family Treehouse, and The Magic Carpets of Aladdin.</p>
       </figure>
       <figure id="MagicGallery-Item7" data-aos="fade-left">
         <Image id='MagicGallery-Img' src={img4} alt='Frontier Land' fluid/>
       </figure>
       <figure id="MagicGallery-Item8" data-aos='fade-right'>
         <h1 className='center'>Frontier Land</h1> 
-        <p className="text2">In Frontierland guests can relive the American Old West. It contains classic attractions such as Big Thunder Mountain Railroad, Splash Mountain, and the Country Bear Jamboree. So put on your cowboy hat, shine your boots, and saddle up, because you are in Frontierland</p>
+        <p className="text2">In Frontierland guests can relive the American Old West. It contains classic attractions such as Big Thunder Mountain Railroad, Splash Mountain, and the Country Bear Jamboree. So put on your cowboy hat, shine your boots, and saddle up, because you are in Frontier Land</p>
       </figure>
       <figure id="MagicGallery-Item9" data-aos="fade-right">
         <Image id='MagicGallery-Img' src={img5} alt='Main Street U.S.A' fluid/>

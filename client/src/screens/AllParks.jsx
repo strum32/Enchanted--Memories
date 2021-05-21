@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './AllParks.css'
 
@@ -9,16 +9,16 @@ export default function AllParks(props) {
   const { parks } = props;
 
   return (
-    <div className="looks">
+    <div className="DivParks">
       {parks.map((park) => (
-          <Card className="spacing" id='height' style={{ width: '16rem' }}>
+        <Card>
           <Link to={`/parks/${park.id}`}>
-            <Card.Img variant="top" id="height2" className="hover item-fade" className="size" key={park.id} src={park.img_url} alt={park.name} />
+            <Card.Img variant="top" className="imageTop" key={park.id} src={park.img_url} alt={park.name} />
           </Link>
-            <Card.Body>
-              <Card.Title >{park.name}</Card.Title>
-              <Card.Text>{park.description}</Card.Text>
-            </Card.Body>
+          <Card.Body>
+            <Card.Title className='title'>{park.name}</Card.Title>
+            <Card.Text>{park.description}</Card.Text>
+          </Card.Body>
         </Card>
     ))}
     </div>
