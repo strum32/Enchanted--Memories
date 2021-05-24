@@ -1,15 +1,7 @@
-/* #color {
-  color: #007BFF;
-  font-size: 16px;
-}
 
-.difColor{
-  background: f8f9fa;
+.navbar{
+  width: 100%
 }
-
-#fontsize{
-  font-size: 16px;
-} */
 
 .navbar-brand{
   width: 200px;
@@ -42,8 +34,6 @@ a {
 
 @media screen and (max-width: 991px){
   .navbar-brand{
-    position: absolute;
-    left: 35vw;
     width:240px;
   }
 }
