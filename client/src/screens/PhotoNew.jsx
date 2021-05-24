@@ -64,7 +64,7 @@ export default function PhotoNew(props) {
       <option>Animal Kingdom</option>
     </Form.Control>
         </Form.Group>
-    <Button id="margin1" variant="primary" type="submit">
+    <Button className='photoButton' variant="primary" type="submit">
       Submit
     </Button>
       </Form>

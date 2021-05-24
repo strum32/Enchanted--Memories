@@ -23,7 +23,9 @@ export default function AllRides(props) {
                   <h4 class="card-title" key={ride.id}>{ride.name}</h4>
                   <p class="card-text">{ride.height}</p>
                   <p class="card-text">{ride.category}</p>
-                  <Link to={`/rides/${ride.id}`}><Button className='card-button'>Ride Information</Button></Link>
+                <div className='text-center'>
+                    <Link to={`/rides/${ride.id}`}><Button className='card-button'>Ride Information</Button></Link>
+                </div>
                 </div>
                 </div>
               </div>

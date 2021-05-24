@@ -1,5 +1,5 @@
 .swiper-container{
-  width:90%;
+  width:90% !important;
   margin-top: 3%;
 }
 
@@ -45,7 +45,13 @@
     }
 
     .swiper-container{
-      width: 80%;
+      width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 1090px){
+  .swiper-pagination{
+    display: none;
   }
 }
 
@@ -56,14 +62,15 @@
 }
 
 @media screen and (max-width: 880px){
-  .swiper-slide img{
-    height: 200px;
-    width: 450px;
-    margin-left: 14vw;
-  }
+  
 
   .swiper-pagination {
-    display: none;
+    display: none !important;
+  }
+
+  .swiper-container{
+    width: 60% !important;
+    margin-bottom: 0 !important;
   }
 
 }

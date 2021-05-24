@@ -6,7 +6,7 @@ import MagicKingdom from '../screens/MagicKingdom'
 import AnimalKingdom from '../screens/AnimalKingdom'
 import Epcot from '../screens/Epcot'
 
-import MobileMagicKingdom from '../screens/MobileMagicKingdom'
+import MobileMagicKingdom from '../screens/Mobile/MobileMagicKingdom'
 
 export default function Switcher() {
   return (

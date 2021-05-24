@@ -17,10 +17,16 @@
   width: 70%;
 }
 
-.card-body{
-  margin: 0 auto;
-  display: inline-block;
-  overflow: hidden;
+.card-title{
+  text-align: center;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.text-center{
+  align-items: center;
 }
 
 

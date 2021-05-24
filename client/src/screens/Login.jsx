@@ -38,7 +38,7 @@ export default function Login(props) {
               onChange={handleChange}
             />
           <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
+            We'll never share your information with anyone else.
           </Form.Text>
         </Form.Group>
 
@@ -52,8 +52,10 @@ export default function Login(props) {
               onChange={handleChange}
             />
         </Form.Group>
-          <Button id="button1" variant="primary" type="submit">Submit</Button>
-          <p><Link to="/register" className="orRegister">or Register</Link></p>
+        <div>
+          <Button className='loginButton' variant="primary" type="submit">Submit</Button>
+          <p className="inlineTogether"><Link to="/register" className="orRegister">or Register</Link></p>
+        </div>
       </Form>
       </div>
     </div>

@@ -6,7 +6,7 @@
   border-bottom: 5px solid;
 }
 
-.background{
+.background, html{
   background: rgb(11,199,236);
   background: linear-gradient(0deg, rgba(11,199,236,0.469625350140056) 35%, rgba(241,245,246,1) 75%);
 }

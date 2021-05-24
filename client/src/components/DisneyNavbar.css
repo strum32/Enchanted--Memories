@@ -29,7 +29,8 @@ a {
 }
 
 .dropdown-menu.show{
-  margin-left: 15vw;
+  position: relative;
+  left: 15vw;
 }
 
 @media screen and (max-width: 991px){

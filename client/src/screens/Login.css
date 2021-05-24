@@ -8,3 +8,13 @@
     margin-top: 3%;
   }
 
+  .inlineTogether{
+    display: inline-block;
+    padding: 9px;
+    margin-bottom: 0;
+  }
+
+  .loginButton{
+    margin-left: 10vw;
+  }
+

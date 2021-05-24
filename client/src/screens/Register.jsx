@@ -57,7 +57,7 @@ export default function Register(props) {
               onChange={handleChange}
             />
         </Form.Group>
-          <Button id="margin1" variant="primary" type="submit">
+          <Button className='registerButton' variant="primary" type="submit">
             Submit
           </Button>
         </Form>
