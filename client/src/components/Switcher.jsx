@@ -6,12 +6,15 @@ import MagicKingdom from '../screens/MagicKingdom'
 import AnimalKingdom from '../screens/AnimalKingdom'
 import Epcot from '../screens/Epcot'
 
+import MobileMagicKingdom from '../screens/MobileMagicKingdom'
+
 export default function Switcher() {
   return (
     <div>
       <Switch>
         <Route path='/parks/1'>
           <MagicKingdom />
+          <MobileMagicKingdom />
         </Route>
         <Route path='/parks/2'>
           <HollywoodStudios />

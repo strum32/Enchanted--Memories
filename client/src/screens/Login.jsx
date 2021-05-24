@@ -29,7 +29,7 @@ export default function Login(props) {
       handleLogin(formData);
       }}>
         <Form.Group controlId="formBasicEmail">
-          <Form.Label className="margin-top">Username</Form.Label>
+          <Form.Label className="form-top">Username</Form.Label>
             <Form.Control
               type="text"
               placeholder="Enter Username"
@@ -51,11 +51,9 @@ export default function Login(props) {
               value={password}
               onChange={handleChange}
             />
-          </Form.Group>
-          <Button id="margin1" variant="primary" type="submit">
-            Submit
-          </Button>
-          <Link to="/register" className="height1">or Register</Link>
+        </Form.Group>
+          <Button id="button1" variant="primary" type="submit">Submit</Button>
+          <p><Link to="/register" className="orRegister">or Register</Link></p>
       </Form>
       </div>
     </div>

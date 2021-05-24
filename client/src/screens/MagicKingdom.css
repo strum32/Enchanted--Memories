@@ -135,3 +135,48 @@
   }
 }
 
+@media only screen and (max-width: 1090px) {
+  
+  .MagicGallery{
+    display: none;
+  }
+  
+  #MagicGallery-Item1{
+    display: none;
+  }
+  
+  #MagicGallery-Item2{
+    display: none;
+  }
+  
+  #MagicGallery-Item3{
+    display: none;
+  }
+  
+  #MagicGallery-Item4{
+    display: none;
+  }
+  
+  #MagicGallery-Item5{
+    display: none;
+  }
+  
+  #MagicGallery-Item6{
+    display: none;
+  }
+  #MagicGallery-Item7{
+    display: none;
+  }
+  #MagicGallery-Item8{
+    display: none;
+  }
+  
+  #MagicGallery-Item9{
+    display: none;
+  }
+
+  #MagicGallery-Item10{
+    display: none;
+  }
+}
+

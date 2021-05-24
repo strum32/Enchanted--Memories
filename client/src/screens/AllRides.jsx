@@ -8,28 +8,28 @@ import DisneyNavbar from '../components/DisneyNavbar';
 export default function AllRides(props) {
   const { rides } = props
 
-  return (
-  <div>
-      <DisneyNavbar/>
-    <div>
-      {rides.map((ride) => (
-        <div class="card mb-3" id="margin">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <Image className="rides" src={ride.img_url} alt={ride.name} />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body" id="padding">
-                <h5 class="card-title" key={ride.id}>{ride.name}</h5>
-                <p class="card-text">{ride.height}</p>
-                <p class="card-text">{ride.category}</p>
-                <Link to={`/rides/${ride.id}`}><Button>Ride Information</Button></Link>
+    return (
+      <div>
+        <DisneyNavbar />
+        <div>
+          {rides.map((ride) => (
+            <div class="row g-0">
+              <div class='row no-gutters'>
+                <div class="col-md-4">
+                  <Image className="rides" src={ride.img_url} alt={ride.name} />
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title" key={ride.id}>{ride.name}</h4>
+                  <p class="card-text">{ride.height}</p>
+                  <p class="card-text">{ride.category}</p>
+                  <Link to={`/rides/${ride.id}`}><Button className='card-button'>Ride Information</Button></Link>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-  )
-}
+      </div>
+    )
+  }

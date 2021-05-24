@@ -122,3 +122,48 @@
 .line {
   margin:0;
 }
+
+@media only screen and (max-width: 1090px) {
+  
+  .AnimalGallery{
+    display: none;
+  }
+  
+  #AnimalGallery-Item1{
+    display: none;
+  }
+  
+  #AnimalGallery-Item2{
+    display: none;
+  }
+  
+  #AnimalGallery-Item3{
+    display: none;
+  }
+  
+  #AnimalGallery-Item4{
+    display: none;
+  }
+  
+  #AnimalGallery-Item5{
+    display: none;
+  }
+  
+  #AnimalGallery-Item6{
+    display: none;
+  }
+  #AnimalGallery-Item7{
+    display: none;
+  }
+  #AnimalGallery-Item8{
+    display: none;
+  }
+  
+  #AnimalGallery-Item9{
+    display: none;
+  }
+
+  #AnimalGallery-Item10{
+    display: none;
+  }
+}

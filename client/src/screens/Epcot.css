@@ -226,3 +226,88 @@
   }
 }
 
+@media only screen and (max-width: 1090px) {
+  
+  .EpcotGallery{
+    display: none;
+  }
+  
+  #EpcotGallery-Item1{
+    display: none;
+  }
+  
+  #EpcotGallery-Item2{
+    display: none;
+  }
+  
+  #EpcotGallery-Item3{
+    display: none;
+  }
+  
+  #EpcotGallery-Item4{
+    display: none;
+  }
+  
+  #EpcotGallery-Item5{
+    display: none;
+  }
+  
+  #EpcotGallery-Item6{
+    display: none;
+  }
+  #EpcotGallery-Item7{
+    display: none;
+  }
+  #EpcotGallery-Item8{
+    display: none;
+  }
+  
+  #EpcotGallery-Item9{
+    display: none;
+  }
+
+  #EpcotGallery-Item10{
+    display: none;
+  }
+
+  #EpcotGallery-Item11{
+    display: none;
+  }
+
+  #EpcotGallery-Item12{
+    display: none;
+  }
+
+  #EpcotGallery-Item13{
+    display: none;
+  }
+
+  #EpcotGallery-Item14{
+    display: none;
+  }
+
+  #EpcotGallery-Item15{
+    display: none;
+  }
+
+  #EpcotGallery-Item16{
+    display: none;
+  }
+
+  #EpcotGallery-Item17{
+    display: none;
+  }
+
+  #EpcotGallery-Item18{
+    display: none;
+  }
+
+  #EpcotGallery-Item19{
+    display: none;
+  }
+
+  #EpcotGallery-Item20{
+    display: none;
+  }
+}
+
