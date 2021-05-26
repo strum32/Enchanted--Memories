@@ -25,10 +25,10 @@ export default function MobileRides() {
         spaceBetween={30}
         freeMode={true}
         pagination={{ "clickable": true }}
-        className="mySwiper"
+        className="mySwiper2"
       >
         <SwiperSlide>
-          <img style={{ height: 350, width: 350 }} src={img1} />
+          <img style={{ height: 250, width: 250 }} src={img1} />
         </SwiperSlide>
         <SwiperSlide>
           <img style={{ height: 350, width: 350 }}  src={img2} />

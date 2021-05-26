@@ -1,5 +1,5 @@
 .swiper-container{
-  width:90% !important;
+  width: 90%; 
   margin-top: 3%;
 }
 
@@ -45,7 +45,7 @@
     }
 
     .swiper-container{
-      width: 80% !important;
+      width: 80%;
   }
 }
 
@@ -62,15 +62,20 @@
 }
 
 @media screen and (max-width: 880px){
-  
 
   .swiper-pagination {
-    display: none !important;
+    display: none;
   }
 
   .swiper-container{
-    width: 60% !important;
-    margin-bottom: 0 !important;
+    width: 60%;
+    margin-bottom: 0;
   }
+}
 
+@media screen and (max-width: 550px){
+  .swiper-container{
+    width: 70%;
+    margin-top: 3vh;
+  }
 }

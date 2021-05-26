@@ -53,7 +53,7 @@ export default function HollywoodStudios() {
       </figure>
       <figure id="HollyGallery-Item12" data-aos="fade-left">
         <h1 className='center1'>Sunset Boulevard</h1> 
-        <p className='text1'>Sunset Boulevard was the first expansion of the park, opening in July 1994. The focal point of Sunset Boulevard is The Twilight Zone Tower of Terror. Located nearby is Rock 'n' Roller Coaster Starring Aerosmith, themed to the music of Aerosmith, with three inversions and a high-speed launch. Along this strio you will be able to find food and shops.</p>
+        <p className='text1'>Sunset Boulevard was the first expansion of the park, opening in July 1994. The focal point of Sunset Boulevard is The Twilight Zone Tower of Terror. Located nearby is Rock 'n' Roller Coaster Starring Aerosmith, themed to the music of Aerosmith, with three inversions and a high-speed launch. Along this street you will be able to find food and shops.</p>
       </figure>
       </div>
     </div>

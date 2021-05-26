@@ -1,13 +1,96 @@
 @media screen and (min-width: 1091px){
-  .mySwiper{
+  .mySwiper3{
     display: none;
   }
+
 } 
+
+.mySwiper3{
+  margin-bottom: 5vh;
+  height: 60vh;
+  width: 95vw;
+}
+
+#MobileImage{
+  height: 45vh;
+}
 
 .MobileText{
   background:rgba(241,245,246,1);
+  height: 10vh;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
+@media screen and (max-width: 1000px){
+
+  #MobileImage{
+    height: 43vh;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  #MobileImage{
+    height: 41vh;
+  }
+}
+
+@media screen and (max-width: 815px){
+
+
+  #MobileImage{
+    height: 38vh;
+  }
+}
+@media screen and (max-width: 750px){
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 725px){
+
+  #MobileImage{
+    height: 36vh;
+  }
+}
+
+@media screen and (max-width: 650px){
+
+  #MobileImage{
+    height: 34vh;
+  }
+}
+
+@media screen and (max-width: 531px){
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 14vh;
+  }
+}
+
+@media screen and (max-width: 490px){
+
+  #MobileImage{
+    height: 31vh;
+  }
+}
+
+@media screen and (max-width: 420px){
+
+  #MobileImage{
+    height: 29vh;
+  }
+
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 16.5vh;
+  }
+}
 
 
 

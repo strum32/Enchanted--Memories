@@ -20,3 +20,13 @@
  } 
 }
 
+@media screen and (max-width: 414px) {
+  .carousel{
+    height: 60vh;
+  } 
+
+  .img-size{
+    height: 60vh;
+  }
+ }
+

@@ -78,4 +78,67 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .card{
+    width: 60vw;
+    height: 75vh;
+  }
 
+  .imageTop{
+    height: 52vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    width: 70vw;
+    height: 75vh;
+  }
+
+  .imageTop{
+    height: 52vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    width: 75vw;
+    height: 80vh;
+  }
+
+  .imageTop{
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card{
+    width: 80vw;
+    height: 75vh;
+  }
+
+  .imageTop{
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .imageTop{
+    height: 50vh;
+  }
+
+  .card{
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .imageTop{
+    height: 45vh;
+  }
+
+  .card{
+    width: 90vw;
+    height: 73vh;
+  }
+}

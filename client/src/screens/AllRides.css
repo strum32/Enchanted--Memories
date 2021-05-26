@@ -31,5 +31,129 @@
 
 
 
+@media screen and (max-width: 1500px) {
+  .row.no-gutters{ 
+    width: 80%;
+  }
 
+  .card-title{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+
+  .card-title{
+    margin-left: 11vw;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .card-text{
+    margin-left: 11vw;
+  }
+
+  .card-button{
+    margin-left: 11vw;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .card-title{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 991px){
+  .alternateTitle{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .alternateTitle{
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  .card-text{
+    margin-left: 10vw;
+  }
+
+  .card-button{
+    margin-left: 10vw;
+  }
+
+  .rides{
+    height: 250px;
+    width: 350px;
+    margin-left: -1.2vw;
+  } 
+}
+
+@media screen and (max-width: 900px){
+  .alternateTitle{
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  .card-text{
+    margin-left: 20vw;
+  }
+
+  .card-button{
+    margin-left: 20vw;
+  }
+
+  .rides{
+    height: 250px;
+    width: 350px;
+    margin-left: -1.4vw;
+  } 
+}
+
+@media screen and (max-width: 767px){
+  
+  .no-gutters {
+    display: none;
+  }
+  
+  .g-0{
+    display: none;
+  }
+
+  .rides{
+    height: 35vh;
+    width: 82.6vw;
+    margin-left: -1.4vw;
+  } 
+
+  .card-text{
+    margin-left: 0;
+  }
+
+  #card-text2{
+    margin-top: 0;
+  }
+
+  .card-button{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 580px){
+
+  .rides{
+    margin-left: -1.9vw;
+    width: 83.35vw;
+  }
+}
+
+@media screen and (max-width: 460px){
+  .rides{
+    margin-left: -2.5vw;
+    width: 84.5vw;
+    height:30vh;
+  }
+}
 
