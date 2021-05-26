@@ -69,5 +69,10 @@
   transform: scale(1.5);
 }
 
+@media screen and (max-width: 950px){
+  .RidesGallery{
+    display: none;
+  }
+} 
 
 

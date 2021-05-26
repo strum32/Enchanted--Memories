@@ -67,7 +67,7 @@ export default function AllPhotos() {
     >
       {photos.map((photo) => (
         <div className="swiper-button-next" className="swiper-button-prev">
-          <SwiperSlide className='photoSwiper' key={photo.id}>
+          <SwiperSlide  key={photo.id}>
               <Link to={`/photos/${photo.id}`}>
                 <Image className="zoom" src={photo.img_url} />
               </Link>
