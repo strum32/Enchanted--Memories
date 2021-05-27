@@ -42,7 +42,10 @@
 }
 
 @media screen and (max-width: 1290px) {
-
+  .rides{
+    margin-left: -1vw;
+  }
+    
   .ride-title{
     margin-left: 11vw;
     font-size: 18px;

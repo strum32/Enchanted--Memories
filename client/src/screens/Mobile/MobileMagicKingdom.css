@@ -2,11 +2,14 @@
   .mySwiper3{
     display: none;
   }
-
 } 
 
+html{
+  background: linear-gradient(0deg, rgba(11,199,236,0.469625350140056) 35%, rgba(241,245,246,1) 75%);
+}
+
 .mySwiper3{
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
   height: 56vh;
   width: 95vw;
 }
@@ -103,7 +106,13 @@
 }
 
 @media screen and (max-width: 490px){
- 
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 17vh;
+    font-size: 13px;
+    font-weight: 500px;
+  }
+
   .mySwiper3{
     height: 46.4vh;
   }
@@ -114,9 +123,6 @@
 }
 
 @media screen and (max-width: 420px){
-  /* .mySwiper3{
-    height: 46.4vh;
-  } */
 
   #MobileImage{
     height: 29vh;
@@ -124,7 +130,7 @@
 
   .MobileText{
     background:rgba(241,245,246,1);
-    height: 16.5vh;
+    height: 17vh;
   }
 }
 

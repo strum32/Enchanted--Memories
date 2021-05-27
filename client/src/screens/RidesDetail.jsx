@@ -29,9 +29,9 @@ export default function RidesDetail(props) {
           <h1 className="titleCenter">{ride.name}</h1>
           <p className='subpark'> This attraction is located in {ride.subpark}</p>
           <p className="description">{ride.description}</p>
-          <p className="sameP">Height: {ride.height}</p>
-          <p className="sameP">Category: {ride.category}</p>
-          <p className="sameP">Open: {ride.open}</p>
+          <p className="sameP" id='height'>Height: {ride.height}</p>
+          <p className="sameP" id='category'>Category: {ride.category}</p>
+          <p className="sameP" id='open'>Open: {ride.open}</p>
           <p className="DiffP">Thank you for getting familiar with our rides and attractions. Please feel free to go back to our attractions page by clicking <Link to="/rides">here</Link>. Enjoy your Enchanted day!</p>
         </div>
       </div>

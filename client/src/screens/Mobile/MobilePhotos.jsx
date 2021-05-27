@@ -10,7 +10,7 @@ export default function MobilePhoto() {
   return (
     <div>
         <h4 class="ride-mobile-title">Enchanted Photos</h4>
-        <Link to='/photos'>
+        <Link to='/photos/new'>
           <Image className="rides-mobile-image" src={img1} />
         </Link>
         </div>

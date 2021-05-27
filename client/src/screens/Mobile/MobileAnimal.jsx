@@ -33,23 +33,23 @@ export default function MobileAnimal() {
         >
         <SwiperSlide >
           <Image id='MobileImage' src={img1} />
-          <p className="MobileText">Welcome to Tomorrowland an intergalactic city. Encompass every childs imagination of rockets, UFOs, and robots.</p>
+          <p className="MobileText">The Oasis is the park's logistic equivalent to Main Street U.S.A. and provides the transition from the park's entrance to the world of animals.</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img2} />
-          <p className="MobileText">Welcome to Fantasyland a carnival based theme park. Fantasyland is dedicated to the young at heart and to those who believe that when you wish upon a star, your dreams come true.</p>
+          <p className="MobileText">Discovery Island is located at the center of the park, and is an island within the park's Discovery River waterway. It serves as the "central hub" connecting the other sections of the park by bridges.</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img3} />
-          <p className="MobileText">Welcome to Adventureland this park represents the mystery of exploring foreign lands.It is themed to resemble the remote jungles in Africa, and resembling a Caribbean town square.</p>
+          <p className="MobileText">Guests board the 3 ft narrow gauge Wildlife Express Train for the short trip to and from the area, which consists of three sub-areas.</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img4} />
-          <p className="MobileText">In Frontierland guests can relive the American Old West. So put on your cowboy hat, shine your boots, and saddle up, because you are in Frontier Land</p>
+          <p className="MobileText">Pandora – The World of Avatar is themed to the fictional alien exoplanetary moon, Pandora.</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img5} />
-          <p className="MobileText">Main Street is lined with shops selling merchandise and food. The decor is early-20th century small-town America, inspired by Walt Disney's childhood and the film Lady and the Tramp.</p>
+          <p className="MobileText">Dino Land U.S.A. is themed around dinosaurs and other extinct prehistoric life. The area is anchored by the Dino Institute.</p>
         </SwiperSlide>
         </Swiper>
       </>

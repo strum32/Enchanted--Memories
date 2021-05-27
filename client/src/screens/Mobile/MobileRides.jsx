@@ -12,7 +12,7 @@ export default function MobileRides() {
     <div>
         <h4 class="ride-mobile-title">Enchanted Attractions</h4>
         <Link to='/rides'>
-          <Image className="rides-mobile-image" src={img1} />
+          <Image className="rides-mobile-image" id="hover item-fade" src={img1} />
         </Link>
         </div>
     )

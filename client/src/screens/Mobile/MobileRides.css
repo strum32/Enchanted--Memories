@@ -12,12 +12,23 @@
   width: 100vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
-  align-content: center;
 }
 
 .ride-mobile-title{
   margin-top: 4vh;
   text-align: center;
+}
+
+#hover:hover {
+  opacity: 0.2;
+}
+
+#item-fade {
+  background: black;
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 @media screen and (max-width: 600px){

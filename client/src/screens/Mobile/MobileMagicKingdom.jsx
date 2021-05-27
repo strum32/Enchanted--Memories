@@ -20,7 +20,7 @@ SwiperCore.use([Mousewheel,Pagination]);
 export default function MobileMagicKingdom() {
   
   return (
-      <>
+      <div id='MobileBackground'>
         <Swiper
           direction={'vertical'}
           slidesPerView={1}
@@ -50,7 +50,7 @@ export default function MobileMagicKingdom() {
           <p className="MobileText">Main Street is lined with shops selling merchandise and food. The decor is early-20th century small-town America, inspired by Walt Disney's childhood and the film Lady and the Tramp.</p>
         </SwiperSlide>
         </Swiper>
-      </>
+      </div>
     )
   }
   

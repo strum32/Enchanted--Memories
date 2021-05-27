@@ -7,7 +7,8 @@ import img1 from '../assets/logo.png'
 export default function DisneyNavbar(props) {
 
   return (
-
+<header>
+  <p className='fontColorHeader'>This project is not affiliated or associated with the Walt Disney Company. This projects only purpose is to showcase my skills and I will not be recieving any compensation now or in the future for this website.</p>  
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div className='NavBar1' class="container-fluid">
     <img class="navbar-brand" src={img1} />
@@ -59,5 +60,6 @@ export default function DisneyNavbar(props) {
     </div>
   </div>
 </nav>
+</header>
   )
 }

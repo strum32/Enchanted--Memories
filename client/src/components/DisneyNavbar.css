@@ -3,6 +3,11 @@
   width: 100%
 }
 
+.fontColorHeader{
+  color: red;
+  text-align: center;
+}
+
 .navbar-brand{
   width: 200px;
   height: 60px;

@@ -39,19 +39,12 @@
 }
 
 @media screen and (max-width: 1550px) {
-  .card{
-    height: 65vh;
-  }
-
   .imageTop{
     height: 38vh;
   }
 }
 
 @media screen and (max-width: 1260px) {
-  .card{
-    height: 61vh;
-  }
 
   .imageTop{
     height: 35vh;
@@ -66,7 +59,7 @@
   }
 
   .card{
-    height: 70vh;
+    height: 72vh;
     width: 50vw;
     margin-top: 5vh;
     margin-right: 2vw;
@@ -79,10 +72,15 @@
   }
 }
 
+@media screen and (max-width: 870px) {
+  .card{
+    height: 76vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .card{
     width: 60vw;
-    height: 75vh;
   }
 
   .imageTop{
@@ -101,10 +99,10 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 619px) {
   .card{
     width: 75vw;
-    height: 72vh;
+
   }
 
   .imageTop{
@@ -112,10 +110,10 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 578px) {
   .card{
     width: 80vw;
-    height: 68vh;
+    height: 72vh;
   }
 
   .imageTop{
@@ -123,14 +121,14 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   .imageTop{
     height: 41vh;
   }
 
   .card{
     width: 90vw;
-    height: 65vh;
+    height: 70vh;
   }
 }
 
@@ -140,7 +138,7 @@
   }
 
   .card{
-    width: 90vw;
-    height: 66vh;
+    width: 95vw;
+    height: 72vh;
   }
 }
