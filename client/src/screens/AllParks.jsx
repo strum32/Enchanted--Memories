@@ -17,7 +17,7 @@ export default function AllParks(props) {
           </Link>
           <Card.Body>
             <Card.Title className='title'>{park.name}</Card.Title>
-            <Card.Text>{park.description}</Card.Text>
+            <Card.Text id="defualtSettings">{park.description}</Card.Text>
           </Card.Body>
         </Card>
     ))}

@@ -98,7 +98,41 @@
   }
 }
 
+@media screen and (max-width: 650px){
+  .picture{
+    height: 80vh;
+  }
+}
 
+@media screen and (max-width: 600px){
+  .picture{
+    height: 78vh;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .picture{
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .picture{
+    height: 66vh;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .picture{
+    height: 63vh;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .picture{
+    height: 60vh;
+  }
+}
 
 
 

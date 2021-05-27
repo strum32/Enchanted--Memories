@@ -16,6 +16,7 @@
 
 .card-title{
   margin-top: 1vh;
+  text-align: center;
 }
 .card-text{
   margin-top: 3vh;
@@ -103,7 +104,7 @@
 @media screen and (max-width: 600px) {
   .card{
     width: 75vw;
-    height: 80vh;
+    height: 72vh;
   }
 
   .imageTop{
@@ -114,31 +115,32 @@
 @media screen and (max-width: 500px) {
   .card{
     width: 80vw;
-    height: 75vh;
+    height: 68vh;
   }
 
   .imageTop{
-    height: 50vh;
+    height: 45vh;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 420px) {
   .imageTop{
-    height: 50vh;
+    height: 41vh;
   }
 
   .card{
     width: 90vw;
+    height: 65vh;
   }
 }
 
 @media screen and (max-width: 360px) {
   .imageTop{
-    height: 45vh;
+    height: 42vh;
   }
 
   .card{
     width: 90vw;
-    height: 73vh;
+    height: 66vh;
   }
 }

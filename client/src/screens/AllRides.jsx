@@ -22,9 +22,9 @@ export default function AllRides(props) {
                 </div>
                 <div class="col-md-8">
                 <div class="card-body">
-                  <h4 class="card-title" key={ride.id}>{ride.name}</h4>
-                  <p class="card-text" id="card-text2">{ride.height}</p>
-                  <p class="card-text" id="card-text2">{ride.category}</p>
+                  <h4 class="ride-title" key={ride.id}>{ride.name}</h4>
+                  <p class="ride-text" id="card-text2">{ride.height}</p>
+                  <p class="ride-text" id="card-text2">{ride.category}</p>
                 <div className='text-center'>
                     <Link to={`/rides/${ride.id}`}><Button className='card-button'>Ride Information</Button></Link>
                 </div>

@@ -17,11 +17,11 @@
   width: 70%;
 }
 
-.card-title{
+.ride-title{
   text-align: center;
 }
 
-.card-text{
+.ride-text{
   text-align: center;
 }
 
@@ -36,20 +36,20 @@
     width: 80%;
   }
 
-  .card-title{
+  .ride-title{
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1290px) {
 
-  .card-title{
+  .ride-title{
     margin-left: 11vw;
     font-size: 18px;
     font-weight: 600;
   }
 
-  .card-text{
+  .ride-text{
     margin-left: 11vw;
   }
 
@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 990px){
-  .card-title{
+  .ride-title{
     display: none;
   }
 }
@@ -76,7 +76,7 @@
     margin-top: 5vh;
   }
 
-  .card-text{
+  .ride-text{
     margin-left: 10vw;
   }
 
@@ -97,7 +97,7 @@
     margin-top: 5vh;
   }
 
-  .card-text{
+  .ride-text{
     margin-left: 20vw;
   }
 
@@ -128,7 +128,7 @@
     margin-left: -1.4vw;
   } 
 
-  .card-text{
+  .ride-text{
     margin-left: 0;
   }
 
