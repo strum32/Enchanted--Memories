@@ -20,6 +20,7 @@ import { getAllRides, getOneRide } from './services/rides'
 import PhotoEdit from './components/PhotoEdit.jsx'
 import PhotoDetail from './components/PhotoDetail.jsx'
 import MobileRides from './screens/Mobile/MobileRides.jsx'
+import MobilePhoto from './screens/Mobile/MobilePhotos.jsx'
 
 
 
@@ -109,6 +110,7 @@ useEffect(() => {
             <DisneyCreditCard />
             <DisneyPhotos />
             <MobileRides />
+            <MobilePhoto />
           </Route>
 
           <Route path='/login' component={Login}>

@@ -1,5 +1,45 @@
-@media screen and (min-width: 950px){
-  .mySwiper2{
+@media screen and (min-width: 951px){
+  .rides-mobile-image {
+    display: none;
+  }
+  .ride-mobile-title {
     display: none;
   }
 } 
+
+.rides-mobile-image{
+  height: 40vh;
+  width: 100vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  align-content: center;
+}
+
+.ride-mobile-title{
+  margin-top: 4vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .rides-mobile-image{
+    height: 36vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .rides-mobile-image{
+    height: 33vh;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .rides-mobile-image{
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 370px){
+  .rides-mobile-image{
+    height: 28vh;
+  }
+}

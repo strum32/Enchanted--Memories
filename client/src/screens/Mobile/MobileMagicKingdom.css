@@ -15,6 +15,10 @@
   height: 45vh;
 }
 
+.swiper-pagination{
+  visibility: visible;
+}
+
 .MobileText{
   background:rgba(241,245,246,1);
   height: 10vh;
@@ -48,7 +52,7 @@
 @media screen and (max-width: 815px){
 
   .mySwiper3{
-    height: 49.5vh;
+    height: 49vh;
   }
 
   #MobileImage{

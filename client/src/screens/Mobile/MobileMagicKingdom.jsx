@@ -26,12 +26,10 @@ export default function MobileMagicKingdom() {
           slidesPerView={1}
           spaceBetween={100}
           mousewheel={true}
-          pagination={{
-            "clickable": true
-          }}
+          pagination={{"clickable": true}}
           className="mySwiper3"
         >
-        <SwiperSlide >
+        <SwiperSlide id='pagination'>
           <Image id='MobileImage' src={img1} />
           <p className="MobileText">Welcome to Tomorrowland an intergalactic city. Encompass every childs imagination of rockets, UFOs, and robots.</p>
         </SwiperSlide>
