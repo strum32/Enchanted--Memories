@@ -77,4 +77,9 @@ a {
   .navbar-brand{
     width:240px;
   }
+
+  .dropdown-menu.show{
+    position: relative;
+    left: 0;
+  }
 }
