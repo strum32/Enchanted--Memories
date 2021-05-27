@@ -9,7 +9,7 @@ export default function MobilePhoto() {
 
   return (
     <div>
-        <h4 class="ride-mobile-title">Enchanted Photos</h4>
+        <h4 className="ride-mobile-title">Enchanted Photos</h4>
         <Link to='/photos/new'>
           <Image className="rides-mobile-image" src={img1} />
         </Link>

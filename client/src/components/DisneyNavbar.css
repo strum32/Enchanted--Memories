@@ -38,6 +38,41 @@ a {
   left: 15vw;
 }
 
+@media screen and (max-width: 1788px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 17.5vw;
+  }
+}
+
+@media screen and (max-width: 1544px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 20.5vw;
+  }
+}
+
+@media screen and (max-width: 1310px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 24.3vw;
+  }
+}
+
+@media screen and (max-width: 1310px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 24.3vw;
+  }
+}
+
+@media screen and (max-width: 1110px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 28.5vw;
+  }
+}
+
 @media screen and (max-width: 991px){
   .navbar-brand{
     width:240px;
