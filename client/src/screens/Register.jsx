@@ -56,6 +56,9 @@ export default function Register(props) {
               value={password}
               onChange={handleChange}
             />
+          <Form.Text className="text-muted">
+            Password must be at least 6 characters long
+          </Form.Text>
         </Form.Group>
           <Button className='registerButton' variant="primary" type="submit">
             Submit

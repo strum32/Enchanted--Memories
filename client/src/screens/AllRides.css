@@ -7,6 +7,10 @@
  image-rendering: crisp-edges;
 }
 
+.row .g-0{
+  margin-right:10vw;
+}
+
 
 .row.no-gutters{
   border: 1px solid lightgray;
@@ -27,6 +31,10 @@
 
 .text-center{
   align-items: center;
+}
+
+.card-body{
+  margin-top: 2vh;
 }
 
 
@@ -115,48 +123,153 @@
   } 
 }
 
-@media screen and (max-width: 767px){
-  
-  .no-gutters {
-    display: none;
+@media screen and (max-width: 768px){
+  .row .no-gutters{
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: nowrap;
   }
-  
-  .g-0{
-    display: none;
-  }
-
-  .rides{
-    height: 35vh;
-    width: 82.6vw;
-    margin-left: -1.4vw;
-  } 
 
   .ride-text{
     margin-left: 0;
   }
 
-  #card-text2{
-    margin-top: 0;
+  .card-button{
+    margin-left: 0;
+  }
+
+  .card-body{
+    margin-top: 1vh;
+  }
+
+  .rides{
+    margin-left: -2.7vw;
+    height: 25vh;
+    width: 35vw;
+  }
+
+  .col-md-8{
+    position: absolute;
+    width: 25%;
+    margin-right:auto;
+    margin-left:auto;
   }
 
   .card-button{
-    margin: 0;
+    height:5vh;
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .col-md-8{
+    position: relative;
+    right:680px;
+    width: 25%;
+    padding:0;
+  }
+
+  .card-button{
+    position: relative;
+    right: 0;
+  }
+
+  .rides{
+    width: 34vw;
+  }
+
+  .card-body{
+    width: 40vw;
+    position: relative;
+    left: 350px;
+  }
+
+  .row .g-0{
+    /* margin-right: 4vw; */
+  }
+}
+
+@media screen and (max-width: 725px){
+  .card-button{
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .card-body{
+    width: 40vw;
+    position: relative;
+    left: 400px;
   }
 }
 
 @media screen and (max-width: 580px){
+  .card-button{
+    width: 30vw;
+  }
 
   .rides{
-    margin-left: -1.9vw;
-    width: 83.35vw;
+    height: 22vh;
+    width: 32vw;
   }
 }
 
-@media screen and (max-width: 460px){
-  .rides{
-    margin-left: -2.5vw;
-    width: 84.5vw;
-    height:30vh;
+@media screen and (max-width: 550px){
+  .card-body{
+    position: relative;
+    left: 450px;
   }
 }
 
+@media screen and (max-width: 490px){
+  .card-button{
+    width: 35vw;
+  }
+
+  .card-body{
+    width: 50vw;
+  }
+
+  .rides{
+    height: 21vh;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .col-md-8{
+    position: relative;
+    right:360px;
+    width: 25%;
+    padding:0;
+  }
+
+  .card-body{
+    position: relative;
+    left: 130px;
+  }
+}
+
+@media screen and (max-width: 415px){
+  
+  .card-button{
+    width: 40vw;
+  }
+
+  .rides{
+    height: 20.4vh;
+    width: 35vw;
+  }
+
+  .card-body{
+    position: relative;
+    left: 170px;
+  }
+}
+
+@media screen and (max-width: 367px){
+  .card-button{
+    width: 43vw;
+  }
+}
