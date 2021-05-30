@@ -56,6 +56,13 @@
   }
 }
 
+@media screen and (min-width: 1090px) {
+  .swiper-container {
+    margin-top: 10vh;
+  }
+}
+
+
 @media screen and (max-width: 880px){
   .swiper-pagination {
     display: none;

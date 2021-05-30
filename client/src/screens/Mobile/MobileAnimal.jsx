@@ -5,7 +5,6 @@ import img2 from '../../assets/Animal3.jpg'
 import img3 from '../../assets/Animal4.jpg'
 import img4 from '../../assets/Animal2.jpg'
 import img5 from '../../assets/Animal5.webp'
-// import './MobileMagicKingdom.css'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
@@ -34,15 +33,15 @@ export default function MobileAnimal() {
         >
         <SwiperSlide >
           <Image id='MobileImage' src={img1} />
-          <p className="MobileText">The Oasis is the park's logistic equivalent to Main Street U.S.A. and provides the transition from the park's entrance to the world of animals.</p>
+          <p className="MobileText">The Oasis provides the transition from the entrance to the park.</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img2} />
-          <p className="MobileText">Discovery Island is located at the center of the park, and is an island within the park's Discovery River waterway. It serves as the "central hub" connecting the other sections of the park by bridges.</p>
+          <p className="MobileText">Discovery Island is located at the center of the park, and it serves as the "central hub".</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img3} />
-          <p className="MobileText">Guests board the 3 ft narrow gauge Wildlife Express Train for the short trip to and from the area, which consists of three sub-areas.</p>
+          <p className="MobileText">Rafiki's Planet Watch is the research and education center.</p>
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img4} />
@@ -50,7 +49,7 @@ export default function MobileAnimal() {
         </SwiperSlide>
         <SwiperSlide id="MobileSwiper">
           <Image id='MobileImage' src={img5} />
-          <p className="MobileText">Dino Land U.S.A. is themed around dinosaurs and other extinct prehistoric life. The area is anchored by the Dino Institute.</p>
+          <p className="MobileText">Dino Land U.S.A. is themed around dinosaurs and other extinct prehistoric life.</p>
         </SwiperSlide>
         </Swiper>
       </>
