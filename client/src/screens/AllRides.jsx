@@ -21,7 +21,7 @@ export default function AllRides(props) {
                   <Image className="rides" class="card-img-top" alt src={ride.img_url} alt={ride.name} />
                 </div>
                 <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body2">
                   <h4 class="ride-title" key={ride.id}>{ride.name}</h4>
                   <p class="ride-text" id="card-text2">{ride.height}</p>
                   <p class="ride-text" id="card-text2">{ride.category}</p>

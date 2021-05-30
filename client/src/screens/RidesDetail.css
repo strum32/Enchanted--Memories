@@ -107,6 +107,10 @@
     justify-content: center;
   }
 
+  .titleCenter{
+    font-size: 32px;
+  }
+
   .RidesDetailGallery-Img {
     height: 47vh;
     width: 100vw;
@@ -133,6 +137,12 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .titleCenter{
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 771px) {
 
   #height{
@@ -151,14 +161,64 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .titleCenter{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titleCenter{
+    font-size: 21px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .RidesDetailGallery-Img{
     height: 42vh;
+  }
+
+  .titleCenter{
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .titleCenter{
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .titleCenter{
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .description{
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .RidesDetailGallery-Img{
     height: 40vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .titleCenter{
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .description{
+    font-size: 12px;
+  }
+
+  .sameP{
+    font-size: 16px;
   }
 }

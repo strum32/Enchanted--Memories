@@ -20,7 +20,8 @@ SwiperCore.use([Mousewheel,Pagination]);
 export default function MobileHolly() {
   
   return (
-      <>
+    <>
+      <p className="swipeUp">swipe up :)</p>
         <Swiper
           direction={'vertical'}
           slidesPerView={1}

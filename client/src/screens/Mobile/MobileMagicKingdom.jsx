@@ -20,7 +20,8 @@ SwiperCore.use([Mousewheel,Pagination]);
 export default function MobileMagicKingdom() {
   
   return (
-      <div id='MobileBackground'>
+    <div id='MobileBackground'>
+      <p className="swipeUp">swipe up :)</p>
         <Swiper
           direction={'vertical'}
           slidesPerView={1}

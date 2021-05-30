@@ -141,7 +141,6 @@ useEffect(() => {
             <PhotoNew handleCreate={handleCreate} />
           </Route>
 
-
           <Route path="/photos/:id">
             <PhotoDetail
               getOnePhoto={getOnePhoto}
