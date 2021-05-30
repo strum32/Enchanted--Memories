@@ -31,7 +31,7 @@ export default function PhotoNew(props) {
       handleCreate(formData);
       }}>
   <Form.Group controlId="CaptionPicture">
-    <Form.Label className="margin-top">Caption</Form.Label>
+    <Form.Label className="margin-top-PhotoNew">Caption</Form.Label>
     <Form.Control
       placeholder="Caption your Photo"
       type="text"

@@ -5,7 +5,7 @@ import img2 from '../../assets/magic3.jpg'
 import img3 from '../../assets/magic4.jpg'
 import img4 from '../../assets/magic2.jpg'
 import img5 from '../../assets/magic5.jpg'
-import './MobileMagicKingdom.css'
+// import './MobileMagicKingdom.css'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";

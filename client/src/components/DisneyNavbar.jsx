@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import './DisneyNavbar.css';
 import img1 from '../assets/logo.png'
 
 export default function DisneyNavbar(props) {

@@ -35,4 +35,2543 @@
   }
 }
 
+/* AllRides section */
+
+.rides{
+  height: 250px;
+  width: 400px;
+  margin-left: -.7vw;
+  image-rendering: pixelated;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+}
+
+.row .g-0{
+  margin-right:10vw;
+}
+
+
+.row.no-gutters{
+  border: 1px solid lightgray;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+}
+
+.ride-title{
+  text-align: center;
+}
+
+.ride-text{
+  text-align: center;
+}
+
+.text-center{
+  align-items: center;
+}
+
+.card-body2{
+  margin-top: 5vh;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  .row.no-gutters{ 
+    width: 80%;
+  }
+
+  .ride-title{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .rides{
+    margin-left: -1vw;
+  }
+    
+  .ride-title{
+    margin-left: 11vw;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .ride-text{
+    margin-left: 11vw;
+  }
+
+  .card-button{
+    margin-left: 11vw;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .ride-title{
+    display: none;
+  }
+
+  .card-body2{
+    margin-top: 7vh;
+  }
+}
+
+@media screen and (min-width: 991px){
+  .alternateTitle{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .alternateTitle{
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  .ride-text{
+    margin-left: 10vw;
+  }
+
+  .card-button{
+    margin-left: 10vw;
+  }
+
+  .rides{
+    height: 250px;
+    width: 350px;
+    margin-left: -1.2vw;
+  } 
+}
+
+@media screen and (max-width: 900px){
+  .alternateTitle{
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  .ride-text{
+    margin-left: 20vw;
+  }
+
+  .card-button{
+    margin-left: 20vw;
+  }
+
+  .rides{
+    height: 250px;
+    width: 350px;
+    margin-left: -1.4vw;
+  } 
+}
+
+@media screen and (max-width: 768px){
+  .row .no-gutters{
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: nowrap;
+  }
+
+  .card-body2{
+    margin-top: 4vh;
+    width: 40vw;
+    position: relative;
+    left: 800px;
+  }
+
+  .ride-text{
+    margin-left: 0;
+  }
+
+  .card-button{
+    margin-left: 0;
+  }
+
+  .rides{
+    margin-left: -2.7vw;
+    height: 25vh;
+    width: 35vw;
+  }
+
+  .col-md-8{
+    position: relative;
+    right:680px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+  .card-button{
+    height:5vh;
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .col-md-8{
+    position: relative;
+    right:680px;
+    padding:0;
+  }
+
+  .card-button{
+    position: relative;
+    right: 0;
+  }
+
+  .rides{
+    width: 34vw;
+  }
+
+  .card-body2{
+    width: 40vw;
+    position: relative;
+    left: 350px;
+  }
+
+  .row .g-0{
+     /* margin-right: 4vw; */
+  }
+}
+
+@media screen and (max-width: 725px){
+  .card-button{
+    width: 25vw;
+  }
+
+  .alternateTitle{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .card-body2{
+    width: 40vw;
+    position: relative;
+    left: 400px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .card-button{
+    width: 30vw;
+  }
+
+  .alternateTitle{
+    font-size: 20px;
+  }
+
+  .rides{
+    height: 22vh;
+    width: 32vw;
+  }
+
+  .card-body2{
+    margin-top: 2vh;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  .card-body2{
+    position: relative;
+    left: 450px;
+  }
+
+  .alternateTitle{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .card-button{
+    width: 35vw;
+  }
+
+  .card-body2{
+    width: 50vw;
+  }
+
+  .rides{
+    height: 21vh;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 456px){
+  .alternateTitle{
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .col-md-8{
+    position: relative;
+    right:360px;
+    width: 25%;
+    padding:0;
+  }
+
+  .card-body2{
+    position: relative;
+    left: 130px;
+  }
+
+  .alternateTitle{
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 415px){
+  
+  .card-button{
+    width: 40vw;
+  }
+
+  .card-body2{
+    margin-top: 2vh;
+  }
+
+  .rides{
+    height: 20.8vh;
+    width: 37vw;
+  }
+
+  .card-body2{
+    position: relative;
+    left: 170px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .rides{
+    margin-left: -11.9px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .alternateTitle{
+    font-size: 13px;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 392px){
+  .card-body2{
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .alternateTitle{
+    font-size: 12px;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 367px){
+  .card-button{
+    width: 43vw;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .rides{
+    margin-left: -12.1px;
+    height: 20.8vh;
+    width: 37vw;
+  }
+
+  .col-md-8{
+    position: relative;
+    right:260px;
+    width: 25%;
+    padding:0;
+  }
+
+  .card-body2{
+    position: relative;
+    left: 70px;
+  }
+}
+/* end of AllRides Section */
+
+/* Beginning of Epcot Page */
+
+#EpcotGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.EpcotContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.EpcotGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(51, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". . . . . . . . . . ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". . . . . . . . . . ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". . . . . . . . . . ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". . . . . . . . . . ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". . . . . . . . . . ."
+  ". l l l l k k k k k ."
+  ". l l l l k k k k k ."
+  ". l l l l k k k k k ."
+  ". l l l l k k k k k ."
+  ". . . . . . . . . . ."
+  ". m m m m m n n n n ."
+  ". m m m m m n n n n ."
+  ". m m m m m n n n n ."
+  ". m m m m m n n n n ."
+  ". . . . . . . . . . ."
+  ". o o o o p p p p p ."
+  ". o o o o p p p p p ."
+  ". o o o o p p p p p ."
+  ". o o o o p p p p p ."
+  ". . . . . . . . . . ."
+  ". q q q q q r r r r ."
+  ". q q q q q r r r r ."
+  ". q q q q q r r r r ."
+  ". q q q q q r r r r ."
+  ". . . . . . . . . . ."
+  ". s s s s t t t t t ."
+  ". s s s s t t t t t ."
+  ". s s s s t t t t t ."
+  ". s s s s t t t t t ."
+  ". . . . . . . . . . ."
+}
+
+#EpcotGallery-Item1 {
+  grid-area: a;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item2 {
+  grid-area: b;
+  background:rgba(241,245,246,1);
+  color: black;
+  margin: 0;
+} 
+
+#EpcotGallery-Item3 {
+  grid-area: c;
+  border: 3px solid black;
+  margin: 0;
+} 
+
+#EpcotGallery-Item4 {
+  grid-area: d;
+  background: rgba(241,245,246,1);
+  margin: 0;
+} 
+
+#EpcotGallery-Item5 {
+  grid-area: e;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item6 {
+  grid-area: f;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#EpcotGallery-Item7 {
+  grid-area: g;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item8 {
+  grid-area: h;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#EpcotGallery-Item9 {
+  grid-area: i;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item10 {
+  grid-area: j;
+  background: rgba(241,245,246,1);
+  margin:0;
+}
+
+#EpcotGallery-Item11 {
+  grid-area: k;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item12 {
+  grid-area: l;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#EpcotGallery-Item13 {
+  grid-area: m;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item14 {
+  grid-area: n;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#EpcotGallery-Item15 {
+  grid-area: p;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item16 {
+  grid-area: o;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#EpcotGallery-Item17 {
+  grid-area: q;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item18 {
+  grid-area: r;
+  background:rgba(241,245,246,1);
+  margin: 0;
+}
+
+#EpcotGallery-Item19 {
+  grid-area: t;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#EpcotGallery-Item20 {
+  grid-area: s;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+.center-Epcot{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.text-Epcot{
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right:6%;
+}
+
+.line {
+  margin:0;
+}
+
+@media only screen and (max-width: 1550px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .center-Epcot {
+    font-size: 31px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .text-Epcot {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  
+  .EpcotGallery{
+    display: none;
+  }
+  
+  #EpcotGallery-Item1{
+    display: none;
+  }
+  
+  #EpcotGallery-Item2{
+    display: none;
+  }
+  
+  #EpcotGallery-Item3{
+    display: none;
+  }
+  
+  #EpcotGallery-Item4{
+    display: none;
+  }
+  
+  #EpcotGallery-Item5{
+    display: none;
+  }
+  
+  #EpcotGallery-Item6{
+    display: none;
+  }
+  #EpcotGallery-Item7{
+    display: none;
+  }
+  #EpcotGallery-Item8{
+    display: none;
+  }
+  
+  #EpcotGallery-Item9{
+    display: none;
+  }
+
+  #EpcotGallery-Item10{
+    display: none;
+  }
+
+  #EpcotGallery-Item11{
+    display: none;
+  }
+
+  #EpcotGallery-Item12{
+    display: none;
+  }
+
+  #EpcotGallery-Item13{
+    display: none;
+  }
+
+  #EpcotGallery-Item14{
+    display: none;
+  }
+
+  #EpcotGallery-Item15{
+    display: none;
+  }
+
+  #EpcotGallery-Item16{
+    display: none;
+  }
+
+  #EpcotGallery-Item17{
+    display: none;
+  }
+
+  #EpcotGallery-Item18{
+    display: none;
+  }
+
+  #EpcotGallery-Item19{
+    display: none;
+  }
+
+  #EpcotGallery-Item20{
+    display: none;
+  }
+}
+
+/* end of Epcot Page */
+
+/* Beginning of Enchanted Animals */
+
+#AnimalGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.AnimalContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AnimalGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(26, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". . . . . . . . . . ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". . . . . . . . . . ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". . . . . . . . . . ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". . . . . . . . . . ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". . . . . . . . . . ."
+}
+
+#AnimalGallery-Item1 {
+  grid-area: a;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item2 {
+  grid-area: b;
+  background: rgba(241,245,246,1);
+  color: black;
+  margin: 0;
+} 
+
+#AnimalGallery-Item3 {
+  grid-area: c;
+  border: 3px solid black;
+  margin: 0;
+} 
+
+#AnimalGallery-Item4 {
+  grid-area: d;
+  background: rgba(241,245,246,1);
+  margin: 0;
+} 
+
+#AnimalGallery-Item5 {
+  grid-area: e;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item6 {
+  grid-area: f;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#AnimalGallery-Item7 {
+  grid-area: g;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item8 {
+  grid-area: h;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#AnimalGallery-Item9 {
+  grid-area: i;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#AnimalGallery-Item10 {
+  grid-area: j;
+  background: rgba(241,245,246,1);
+  margin:0;
+}
+
+.center-Animal{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.text-Animal{
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right:6%;
+}
+
+.line {
+  margin:0;
+}
+
+@media only screen and (max-width: 1090px) {
+  
+  .AnimalGallery{
+    display: none;
+  }
+  
+  #AnimalGallery-Item1{
+    display: none;
+  }
+  
+  #AnimalGallery-Item2{
+    display: none;
+  }
+  
+  #AnimalGallery-Item3{
+    display: none;
+  }
+  
+  #AnimalGallery-Item4{
+    display: none;
+  }
+  
+  #AnimalGallery-Item5{
+    display: none;
+  }
+  
+  #AnimalGallery-Item6{
+    display: none;
+  }
+  #AnimalGallery-Item7{
+    display: none;
+  }
+  #AnimalGallery-Item8{
+    display: none;
+  }
+  
+  #AnimalGallery-Item9{
+    display: none;
+  }
+
+  #AnimalGallery-Item10{
+    display: none;
+  }
+}
+
+/* end of Enchanted Animals */
+
+/* Start of Enchanted Studios */
+
+#HollyGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.HollyContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HollyGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(26, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". . . . . . . . . . ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". . . . . . . . . . ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". . . . . . . . . . ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". . . . . . . . . . ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". . . . . . . . . . ."
+
+}
+
+#HollyGallery-Item1 {
+  grid-area: a;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#HollyGallery-Item2 {
+  grid-area: b;
+  background: rgba(241,245,246,1);
+  color: black;
+  margin: 0;
+} 
+
+#HollyGallery-Item3 {
+  grid-area: c;
+  border: 3px solid black;
+  margin: 0;
+} 
+
+#HollyGallery-Item4 {
+  grid-area: d;
+  background: rgba(241,245,246,1);
+  margin: 0;
+} 
+
+#HollyGallery-Item5 {
+  grid-area: e;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#HollyGallery-Item6 {
+  grid-area: f;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#HollyGallery-Item7 {
+  grid-area: g;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#HollyGallery-Item8 {
+  grid-area: h;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#HollyGallery-Item11 {
+  grid-area: i;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#HollyGallery-Item12 {
+  grid-area: j;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+.center-Holly{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.text-Holly{
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right:6%;
+}
+
+.line {
+  margin:0;
+}
+
+@media only screen and (max-width: 1550px) {
+  .text-Holly {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1385px) {
+  .text-Holly {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .text-Holly {
+    font-size: 13px;
+  }
+  .center-Holly {
+    font-size: 31px;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  
+  .HollyGallery{
+    display: none;
+  }
+  
+  #HollyGallery-Item1{
+    display: none;
+  }
+  
+  #HollyGallery-Item2{
+    display: none;
+  }
+  
+  #HollyGallery-Item3{
+    display: none;
+  }
+  
+  #HollyGallery-Item4{
+    display: none;
+  }
+  
+  #HollyGallery-Item5{
+    display: none;
+  }
+  
+  #HollyGallery-Item6{
+    display: none;
+  }
+  #HollyGallery-Item7{
+    display: none;
+  }
+  #HollyGallery-Item8{
+    display: none;
+  }
+  
+  #HollyGallery-Item9{
+    display: none;
+  }
+
+  #HollyGallery-Item10{
+    display: none;
+  }
+}
+
+/* End of Enchnated Studios */
+
+/* Beginning of Enchanted Kingdom */
+
+#MagicGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.MagicContainer {
+  row-gap: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MagicGallery {
+  display: table;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(26, 5vw);
+  grid-template-areas: 
+  ". . . . . . . . . . ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". a a a a a b b b b ."
+  ". . . . . . . . . . ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". d d d d c c c c c ."
+  ". . . . . . . . . . ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". e e e e e f f f f ."
+  ". . . . . . . . . . ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". h h h h g g g g g ."
+  ". . . . . . . . . . ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". i i i i i j j j j ."
+  ". . . . . . . . . . ."
+}
+
+#MagicGallery-Item1 {
+  grid-area: a;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item2 {
+  grid-area: b;
+  background: rgba(241,245,246,1);
+  color: black;
+  margin: 0;
+} 
+
+#MagicGallery-Item3 {
+  grid-area: c;
+  border: 3px solid black;
+  margin: 0;
+} 
+
+#MagicGallery-Item4 {
+  grid-area: d;
+  background: rgba(241,245,246,1);
+  margin: 0;
+} 
+
+#MagicGallery-Item5 {
+  grid-area: e;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item6 {
+  grid-area: f;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#MagicGallery-Item7 {
+  grid-area: g;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item8 {
+  grid-area: h;
+  background: rgba(241,245,246,1);
+  margin: 0;
+}
+
+#MagicGallery-Item9 {
+  grid-area: i;
+  border: 3px solid black;
+  margin: 0;
+}
+
+#MagicGallery-Item10 {
+  grid-area: j;
+  background: rgba(241,245,246,1);
+  margin:0;
+}
+
+.center-Magic{
+  text-align: center;
+  margin-top: 4%;
+}
+
+.text-Magic{
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right:6%;
+}
+
+.line {
+  margin:0;
+}
+
+@media only screen and (max-width: 1450px) {
+  .text-Magic {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .text-Magic {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  
+  .MagicGallery{
+    display: none;
+  }
+  
+  #MagicGallery-Item1{
+    display: none;
+  }
+  
+  #MagicGallery-Item2{
+    display: none;
+  }
+  
+  #MagicGallery-Item3{
+    display: none;
+  }
+  
+  #MagicGallery-Item4{
+    display: none;
+  }
+  
+  #MagicGallery-Item5{
+    display: none;
+  }
+  
+  #MagicGallery-Item6{
+    display: none;
+  }
+  #MagicGallery-Item7{
+    display: none;
+  }
+  #MagicGallery-Item8{
+    display: none;
+  }
+  
+  #MagicGallery-Item9{
+    display: none;
+  }
+
+  #MagicGallery-Item10{
+    display: none;
+  }
+}
+
+/* End of Enchanted Kingdom */
+
+/* Beginning of Park Detail */
+
+.display-ParkDetail{
+  display:flex;
+  justify-content: center;
+  background: rgb(49,0,221);
+  background: linear-gradient(180deg, rgba(49,0,221,0.2458158263305322) 35%, rgba(241,245,246,1) 85%);
+  border-bottom: 5px solid;
+}
+
+.background-ParkDetail {
+  background: rgb(11,199,236);
+  background: linear-gradient(0deg, rgba(11,199,236,0.469625350140056) 35%, rgba(241,245,246,1) 75%);
+}
+
+.picture-ParkDetail{
+  height: 90vh;
+  width: 45vw;
+}
+
+.inactiveLink{
+  pointer-events: none;
+  cursor: default;
+}
+
+.center-ParkDetail{
+  text-align: center;
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 2000px){
+  .picture-ParkDetail{
+    width: 49.583vw;
+  }
+}
+
+@media screen and (max-width: 1900px){
+  .picture-ParkDetail{
+    width: 54.166vw;
+  }
+}
+
+@media screen and (max-width: 1800px){
+  .picture-ParkDetail{
+    width: 58.749vw;
+  }
+}
+
+@media screen and (max-width: 1700px){
+  .picture-ParkDetail{
+    width: 63.332vw;
+  }
+}
+
+@media screen and (max-width: 1600px){
+  .picture-ParkDetail{
+    width: 67.915vw;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .picture-ParkDetail{
+    width: 72.498vw;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .picture-ParkDetail{
+    width: 77.081vw;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .picture-ParkDetail{
+    width: 81.664vw;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .picture-ParkDetail{
+    width: 81.664vw;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .picture-ParkDetail{
+    width: 90.83vw;
+  }
+
+  .center4{
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .picture-ParkDetail{
+    width: 95.413vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .picture-ParkDetail{
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .picture-ParkDetail{
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .picture-ParkDetail{
+    height: 78vh;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .picture-ParkDetail{
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .picture-ParkDetail{
+    height: 66vh;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .picture-ParkDetail{
+    height: 63vh;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .picture-ParkDetail{
+    height: 60vh;
+  }
+}
+
+/* End of Park Detail */
+
+/* Beginning of PhotoDetail */
+
+.Display-PhotoDetail{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding:0;
+  background: #F2F2F2;
+}
+
+.PhotoDetailGallery-Img {
+  height: 90vh;
+  width: 60vw;
+  margin: 0;
+  padding: 0;
+}
+
+.headline-PhotoDetail{
+  text-align: center;
+  margin-top: 6vh;
+  font-size: 40px;
+}
+
+.title-PhotoDetail{
+  margin-left: 4vw;
+  margin-top: 7vh;
+  margin-right: 4vw;
+  font-size: 25px;
+}
+
+.Button-PhotoDetail{
+  margin-left: 4vw;
+  margin-top: 5vh;
+}
+
+.firstline-PhotoDetail{
+  margin-top: 7vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1100px) {
+  .Display-PhotoDetail{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PhotoDetailGallery-Img{
+    width: 100vw;
+    height: 47vh;
+  }
+
+  .headline-PhotoDetail{
+    display: none;
+  }
+
+  .firstline-PhotoDetail{
+    margin-top: 4vh;
+  }
+
+  .title-PhotoDetail{
+    margin-top: 4vh;
+  }
+
+  .Button-PhotoDetail{
+    padding: 0;
+    margin-top: 2vh;
+    margin-bottom: 4vh
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .PhotoDetailGallery-Img{
+    height: 42vh;
+  }
+
+  .firstline-PhotoDetail{
+    font-size: 15px;
+  }
+
+  .title-PhotoDetail{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .PhotoDetailGallery-Img{
+    height: 40vh;
+  }
+
+  .firstline-PhotoDetail{
+    font-size: 13px;
+  }
+
+  .title-PhotoDetail{
+    font-size: 20px;
+  }
+}
+
+/* end of Photo Detail */
+
+/* beginning of RidesDetail */
+
+.Display-Rides{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding:0;
+  background: #F2F2F2;
+}
+
+.RidesDetailGallery-Img {
+  height: 90vh;
+  width: 60vw;
+  margin: 0;
+  padding: 0;
+}
+
+.titleCenter-Rides{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5vh;
+}
+
+.sameP-Rides {
+  margin-left: 4vw;
+  font-size: 22px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  color: #0099cc;
+}
+
+.description-Rides{
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  font-size: 20px;
+}
+
+.DiffP-Rides{
+  margin-top: 5vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.subpark{
+  margin-top: 7vh;
+  margin-left: 4vw;
+}
+
+ @media screen and (max-width: 1276px){
+  .titleCenter-Rides{
+      font-size: 38px;
+  }
+
+  .subpark{
+    margin-left: 2vw;
+  }
+  
+  .description-Rides{
+    font-size: 18px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .DiffP-Rides{
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .sameP-Rides{
+    font-size: 20px;
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 1133px){
+  .titleCenter-Rides{
+    font-size: 36px;
+  }
+
+.subpark{
+  margin-left: 1.5vw;
+  font-size: 14px;
+  }
+
+.description-Rides{
+  font-size: 16px;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  }
+
+.DiffP-Rides{
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  font-size: 14px;
+  }
+
+.sameP-Rides{
+  font-size: 18px;
+  margin-left: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Display-Rides{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .divHeight-Rides{
+    height: 100vh;
+  }
+
+  .titleCenter-Rides{
+    font-size: 32px;
+  }
+
+  .RidesDetailGallery-Img {
+    height: 47vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subpark{
+    display: none;
+  }
+
+  .sameP-Rides{
+    text-align: center;
+  }
+
+  
+  .description-Rides{
+    text-align: center;
+    margin-bottom: 3.5vh
+  }
+
+  .DiffP-Rides{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .titleCenter-Rides{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+
+  #height{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  #category{
+    margin-left:0;
+    margin-right:0;
+  }
+
+  #open{
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .titleCenter-Rides{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titleCenter-Rides{
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .RidesDetailGallery-Img{
+    height: 42vh;
+  }
+
+  .titleCenter-Rides{
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .titleCenter-Rides{
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .titleCenter-Rides{
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .description-Rides{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .RidesDetailGallery-Img{
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .titleCenter-Rides{
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .description-Rides{
+    font-size: 12px;
+  }
+
+  .sameP-Rides{
+    font-size: 16px;
+  }
+}
+
+/* end of RidesDetail */
+
+/* beginng of mobile Park pages */
+
+@media screen and (min-width: 1091px){
+  .mySwiper3{
+    display: none;
+  }
+} 
+
+html{
+  background: linear-gradient(0deg, rgba(11,199,236,0.469625350140056) 35%, rgba(241,245,246,1) 75%);
+}
+
+.mySwiper3{
+  margin-bottom: 8vh;
+  height: 56vh;
+  width: 95vw;
+}
+
+
+#MobileImage{
+  height: 45vh;
+}
+
+.swiper-pagination{
+  visibility: visible;
+}
+
+.MobileText{
+  background:rgba(241,245,246,1);
+  height: 10vh;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+  .mySwiper3{
+    height: 54vh;
+  }
+
+  #MobileImage{
+    height: 43vh;
+  }
+}
+
+@media screen and (max-width: 900px){
+  
+  .mySwiper3{
+    height: 52vh;
+  }
+
+  #MobileImage{
+    height: 41vh;
+  }
+}
+
+@media screen and (min-width: 881px){
+  .swipeUp{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .swipeUp{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 815px){
+
+  .mySwiper3{
+    height: 49vh;
+  }
+
+  #MobileImage{
+    height: 38vh;
+  }
+}
+@media screen and (max-width: 750px){
+  .mySwiper3{
+    height: 51.5vh;
+  }
+  
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 12vh;
+  }
+}
+
+@media screen and (max-width: 725px){
+  .mySwiper3{
+    height: 49vh;
+  }
+
+  #MobileImage{
+    height: 36vh;
+  }
+}
+
+@media screen and (max-width: 650px){
+  
+  .mySwiper3{
+    height: 47vh;
+  }
+
+  #MobileImage{
+    height: 34vh;
+  }
+}
+
+@media screen and (max-width: 531px){
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 14vh;
+  }
+
+  .mySwiper3{
+    height: 49vh;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 17vh;
+    font-size: 13px;
+    font-weight: 500px;
+  }
+
+  .mySwiper3{
+    height: 46.4vh;
+  }
+
+  #MobileImage{
+    height: 31vh;
+  }
+}
+
+@media screen and (max-width: 420px){
+
+  #MobileImage{
+    height: 29vh;
+  }
+
+  .MobileText{
+    background:rgba(241,245,246,1);
+    height: 17vh;
+  }
+}
+
+/* end of mobile Park pages */
+
+/* beginning of mobile rides and photos */
+
+@media screen and (min-width: 951px){
+  .rides-mobile-image {
+    display: none;
+  }
+  .ride-mobile-title {
+    display: none;
+  }
+} 
+
+.rides-mobile-image{
+  height: 40vh;
+  width: 100vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.ride-mobile-title{
+  margin-top: 4vh;
+  text-align: center;
+}
+
+#hover:hover {
+  opacity: 0.2;
+}
+
+#item-fade {
+  background: black;
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+@media screen and (max-width: 600px){
+  .rides-mobile-image{
+    height: 36vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .rides-mobile-image{
+    height: 33vh;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .rides-mobile-image{
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 370px){
+  .rides-mobile-image{
+    height: 28vh;
+  }
+}
+
+/* end of mobile rides and photos */
+
+/* beginning of Carousel */
+
+.img-size-Carousel{
+  width: 100vw;
+  height: 80vh;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  align-items: center;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+@media screen and (max-width: 1113px) {
+  .carousel{
+    margin-bottom: 5vh;
+  } 
+}
+
+@media screen and (max-width: 700px) {
+  .carousel{
+    height: 60vh;
+  } 
+
+  .img-size-Carousel{
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel{
+    height: 55vh;
+  } 
+
+  .img-size-Carousel{
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel{
+    height: 50vh;
+  } 
+
+  .img-size-Carousel{
+    height: 50vh;
+  }
+}
+
+/* end of Carousel */
+
+/* beginning of Disney Credit Card */
+
+#CreditGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.CreditContainer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #F4F4F4;
+}
+
+.CreditGallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(6, 3vw);
+  grid-template-areas: 
+  
+  ". . . . . . . . . . . . . . . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . a a a a a a . s s s s s . ."
+  ". . . . . . . . . . . . . . . ."
+}
+
+#CreditGallery-Item1 {
+  grid-area: a;
+}
+
+#CreditGallery-Item2 {
+  grid-area: s;
+  position: relative;
+  top: -5%;
+} 
+
+.height{
+  margin-top: 3%;
+}
+
+.font-Credit{
+  font-size: 24px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.font2-Credit{
+  font-size: 36px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.font3-Credit{
+  font-size: 18px;
+  font: Avenir, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 1873px) {
+  .font-Credit{
+    font-size: 20px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font2-Credit{
+    font-size: 32px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1561px) {
+  .font-Credit{
+    font-size: 18px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font2-Credit{
+    font-size: 30px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font3-Credit{
+    font-size: 16px;
+    font: Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  #CreditGallery-Item2 {
+    grid-area: s;
+    position: relative;
+    top: -7%;
+  } 
+}
+
+@media screen and (max-width: 1405px) {
+  .font-Credit{
+    font-size: 16px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font2-Credit{
+    font-size: 28px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  }
+  .font3-Credit{
+    font-size: 15px;
+    font: Avenir, Helvetica, Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  
+  #CreditGallery-Item2 {
+    grid-area: s;
+    position: relative;
+    top: -9%;
+  } 
+}
+
+@media screen and (max-width: 1250px) {
+  
+  #CreditGallery-Item2 {
+    display: none;
+  } 
+
+  .CreditGallery {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 4.5vw);
+    grid-template-areas: 
+    
+    ". . . . . . . . . . . . . . . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . a a a a a a a a a a a a . ."
+    ". . . . . . . . . . . . . . . ."
+  }
+
+  #CreditGallery-Item1 {
+    grid-area: a;
+    position: relative;
+    top: 9%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .CreditGallery{
+    display: none;
+  }
+}
+
+/* end of Disney Credit Card */
+
+/* beginning of Disney Navbar */
+
+
+.navbar{
+  width: 100%
+}
+
+.fontColorHeader{
+  margin-right: 1vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 0;
+  color: red;
+}
+
+.navbar-brand{
+  width: 200px;
+  height: 60px;
+}
+
+.nav-item{
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+#navbarDropdown{
+  color: #007BFF;
+  padding: 10px;
+}
+
+li.dropdown-item{
+  text-decoration: none;
+}
+
+
+a { 
+  text-decoration: none
+}
+
+.dropdown-menu.show{
+  position: relative;
+  left: 15vw;
+}
+
+@media screen and (max-width: 1788px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 17.5vw;
+  }
+}
+
+@media screen and (max-width: 1544px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 20.5vw;
+  }
+}
+
+@media screen and (max-width: 1310px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 24.3vw;
+  }
+}
+
+@media screen and (max-width: 1310px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 24.3vw;
+  }
+}
+
+@media screen and (max-width: 1110px){
+  .dropdown-menu.show{
+    position: relative;
+    left: 28.5vw;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .navbar-brand{
+    width:240px;
+  }
+
+  .dropdown-menu.show{
+    position: relative;
+    left: 0;
+  }
+}
+
+  @media screen and (max-width: 750px){
+    .fontColorHeader{
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 750px){
+    .fontColorHeader{
+      font-size: 14px;
+    }
+
+  } @media screen and (max-width: 670px){
+    .fontColorHeader{
+      font-size: 13px;
+    }
+  }
+
+@media screen and (max-width: 625px){
+  .fontColorHeader{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .fontColorHeader{
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 385px){
+  .fontColorHeader{
+    font-size: 10.4px;
+  }
+}
+
+@media screen and (max-width: 367px){
+  .fontColorHeader{
+    font-size: 10.2px;
+  }
+}
+
+/* end of Disney Navbar */
+
+/* beginning of Disney Photos */
+
+#PhotosGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.PhotosContainer {
+  row-gap: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PhotosGallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 4.3vw);
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-areas: 
+  ". . . . . . . . . . . . . . . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . s s s s e e e e w w w w . ."
+  ". . s s s s e e e e w w w w . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . d d d d d d d d d d d d . ."
+  ". . . . . . . . . . . . . . . ."
+}
+
+#PhotosGallery-Item1 {
+  grid-area: w;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+#PhotosGallery-Item2 {
+  grid-area: s;
+  margin-top:0;
+  margin-bottom:0;
+} 
+
+#PhotosGallery-Item3 {
+  grid-area: a;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top:0;
+  background: rgb(39,62,176);
+  background: radial-gradient(circle, rgba(39,62,176,1) 0%, rgba(8,9,33,1) 72%);
+  border: 1px solid black;
+  color: white;
+} 
+
+#PhotosGallery-Item4 {
+  grid-area: q;
+  margin-top:0;
+  margin-bottom:0;
+} 
+
+#PhotosGallery-Item5 {
+  grid-area: d;
+  margin-top:0;
+  background: rgb(250,250,252);
+  background: radial-gradient(circle, rgba(250,250,252,1) 0%, rgba(231,229,229,0.5452556022408963) 27%);
+  
+}
+
+#PhotosGallery-Item6 {
+  grid-area: e;
+  text-align:center;
+  margin-top:0;
+  margin-bottom:0;
+  background: rgb(251,255,255);
+  background: linear-gradient(0deg, rgba(251,255,255,1) 9%, rgba(191,188,188,0.8981967787114846) 98%);
+}
+
+.down-DisneyPhoto{
+  margin-top: 3%;
+  font-size: 60px;
+}
+
+.down2-DisneyPhoto{
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.down3-DisneyPhoto{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.outline-DisneyPhoto{
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+
+.hover:hover {
+  opacity: 0.2;
+}
+
+.item-fade {
+  background: black;
+  opacity: 0.8;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+
+@media screen and (max-width: 1670px){
+  .down-DisneyPhoto{
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .down-DisneyPhoto{
+    font-size: 51px;
+  }
+}
+
+@media screen and (max-width: 1361px) {
+
+  .down2-DisneyPhoto{
+    font-size: 26px;
+    margin-top: 3%;
+  } 
+
+  .outline-DisneyPhoto{
+    font-size: 14px;
+  }
+
+  .down3-DisneyPhoto{
+    font-size: 18px;
+  }
+
+  .down-DisneyPhoto{
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  
+  .down-DisneyPhoto{
+    font-size: 42px;
+  }
+  
+  .down2-DisneyPhoto{
+    font-size: 23px;
+  }
+
+  .outline-DisneyPhoto{
+    font-size: 12px;
+  }
+
+  .down3-DisneyPhoto{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1150px){
+
+  .down3-DisneyPhoto{
+    margin-top: 3.5px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .PhotosGallery{
+    display: none;
+  }
+}
+
+/* end of Disney Photos */
+
+/* beginning of Disney Rides */
+
+#RidesGallery-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.RidesContainer {
+  row-gap: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.RidesGallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(13, 5vw);
+  grid-template-areas: 
+
+  ". . . . . . . . . . . . . . . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . a a a a a a a a a a a a . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . s s s s q q q q w w w w . ."
+  ". . . . . . . . . . . . . . . ."
+}
+
+#RidesGallery-Item1 {
+  grid-area: w;
+  margin:0;
+}
+
+#RidesGallery-Item2 {
+  grid-area: s;
+  margin:0;
+} 
+
+#RidesGallery-Item3 {
+  grid-area: a;
+  margin: 0;
+} 
+
+#RidesGallery-Item4 {
+  grid-area: q;
+  margin:0;
+} 
+
+.geeks {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.geeks img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 950px){
+  .RidesGallery{
+    display: none;
+  }
+} 
+
+/* end of Disney Rides */
+
+
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Image } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
-import './AllRides.css'
+import '../App.css'
 import DisneyNavbar from '../components/DisneyNavbar';
 
 export default function AllRides(props) {

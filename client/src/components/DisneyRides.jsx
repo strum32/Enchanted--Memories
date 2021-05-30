@@ -5,7 +5,7 @@ import img1 from '../assets/DisneyRide1.jpg'
 import img2 from '../assets/DisneyRide2.jpg'
 import img3 from '../assets/DisneyRide3.jpg'
 import img4 from '../assets/DisneyRide4.jpg'
-import './DisneyRides.css'
+// import './DisneyRides.css'
 
 
 export default function DisneyRides() {

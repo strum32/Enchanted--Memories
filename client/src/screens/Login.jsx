@@ -21,15 +21,15 @@ export default function Login(props) {
   }
   
   return (
-    <div className='formContainer'>
+    <div className='formContainer-Login'>
       <DisneyNavbar/>
-      <div className="Background">
-      <Form className='margin' onSubmit={(e) => {
+      <div>
+      <Form className='margin-Login' onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData);
       }}>
         <Form.Group controlId="formBasicEmail">
-          <Form.Label className="form-top">Username</Form.Label>
+          <Form.Label className="form-top-Login">Username</Form.Label>
             <Form.Control
               type="text"
               placeholder="Enter Username"
@@ -54,7 +54,7 @@ export default function Login(props) {
         </Form.Group>
         <div>
           <Button className='loginButton' variant="primary" type="submit">Submit</Button>
-          <p className="inlineTogether"><Link to="/register" className="orRegister">or Register</Link></p>
+          <p className="inlineTogether-Login"><Link to="/register" className="orRegister">or Register</Link></p>
         </div>
       </Form>
       </div>

@@ -10,7 +10,7 @@ import img7 from '../../assets/Epcot7.jpg'
 import img8 from '../../assets/Epcot8.jpg'
 import img9 from '../../assets/Epcot9.jpg'
 import img10 from '../../assets/Epcot10.jpg'
-import './MobileMagicKingdom.css'
+// import './MobileMagicKingdom.css'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";

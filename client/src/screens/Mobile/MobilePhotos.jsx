@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Image } from 'react-bootstrap'
-import "./MobileRides.css"
 import img1 from '../../assets/DisneyPhoto2.jpg'
 
 
