@@ -12,10 +12,14 @@
   .inlineTogether-Login{
     display: inline-block;
     padding: 9px;
-    margin-bottom: 55vh;
+    margin-bottom: 37vh;
   }
 
   .loginButton{
+    margin-left: 10vw;
+  }
+
+  .danger{
     margin-left: 10vw;
   }
 

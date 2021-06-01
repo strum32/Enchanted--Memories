@@ -33,6 +33,7 @@ function App(){
   const [parks, setParks] = useState([]);
   const history = useHistory();
 
+
   useEffect(() => {
     const fetchParks = async () => {
       const parkList = await getAllParks();
@@ -135,7 +136,6 @@ useEffect(() => {
           <Route path='/rides'>
             <AllRides rides={rides}/>
           </Route>
-
 
           <Route path='/photos/new'>
             <PhotoNew handleCreate={handleCreate} />

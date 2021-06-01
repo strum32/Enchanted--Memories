@@ -11,5 +11,10 @@
   .registerButton{
     margin-left: 10vw;
     margin-top: 1vh;
-    margin-bottom: 50vh;
+    margin-bottom: 25vh;
+  }
+
+  #invalidCredentials{
+    margin-top: 1vh;
+    margin-bottom: 25vh;
   }

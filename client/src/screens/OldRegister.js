@@ -1,21 +1,14 @@
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap'
-import { useHistory } from 'react-router-dom'
-import { registerUser } from '../services/auth';
 import DisneyNavbar from '../components/DisneyNavbar'
 import "./Register.css"
 
 export default function Register(props) {
-  const history = useHistory();
-
   const [formData, setFormData] = useState({
     username: '',
     email: '',
-    password: '',
-    isError: false,
-    errorMsg: ""
+    password: ''
   })
-
   const { username, email, password } = formData;
   const { handleRegister } = props;
 
@@ -26,53 +19,14 @@ export default function Register(props) {
       [name]: value
     }))
   }
-
-  const onRegister = (event) => {
-    event.preventDefault();
-
-    registerUser(formData)
-      .then((user) => {
-        handleRegister(user);
-      })
-      .then(() => history.push("/login"))
-      .catch((error) => {
-        console.error(error);
-        setFormData({
-          username: '',
-          password: '',
-          email: '',
-          isError: true,
-          errorMsg: 'Invalid Credentials'
-        });
-      });
-  };
-
-  const renderError = () => {
-    const toggleForm = formData.isError ? "danger" : "";
-    if (formData.isError) {
-      return (
-        <div>
-          <Button id="sign-in-button" type="submit" className={toggleForm} id='invalidCredentials'>
-            {formData.errorMsg}
-          </Button>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <Button className='registerButton' id="sign-in-button" type="submit">
-            Submit
-          </Button>
-        </div>
-      );
-    }
-  };
-
   return (
     <div>
       <DisneyNavbar/>
     <div className="Background">
-        <Form className='margin' onSubmit={onRegister}>
+        <Form className='margin' onSubmit={(e) => {
+          e.preventDefault();
+          handleRegister(formData);
+        }}>
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label className="margin-top-Register">Username</Form.Label>
             <Form.Control
@@ -106,7 +60,9 @@ export default function Register(props) {
             Password must be at least 6 characters long
           </Form.Text>
         </Form.Group>
-          {renderError()}  
+          <Button className='registerButton' variant="primary" type="submit">
+            Submit
+          </Button>
         </Form>
       </div>
     </div>

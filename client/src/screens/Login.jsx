@@ -1,14 +1,21 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useHistory  } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap'
 import DisneyNavbar from '../components/DisneyNavbar'
+import "../services/auth"
 import './Login.css'
+import { loginUser } from '../services/auth';
 
 export default function Login(props) {
+  const history = useHistory();
+
   const [formData, setFormData] = useState({
-    username: '',
-    password: ''
-  })
+    username: "",
+    password: "",
+    isError: false,
+    errorMsg: "",
+  });
+
   const { username, password } = formData;
   const { handleLogin } = props;
 
@@ -19,15 +26,55 @@ export default function Login(props) {
       [name]: value
     }))
   }
-  
+
+  const onSignIn = (event) => {
+    event.preventDefault();
+
+    loginUser(formData)
+      .then((user) => {
+        handleLogin(user);
+      })
+      .then(() => history.push("/"))
+      .catch((error) => {
+        console.error(error);
+        setFormData({
+          isError: true,
+          errorMsg: "Invalid Credentials",
+          username: "",
+          password: "",
+        });
+      });
+  };
+
+  const renderError = () => {
+    const toggleForm = formData.isError ? "danger" : "";
+    if (formData.isError) {
+      return (
+        <div>
+          <Button id="sign-in-button" type="submit" className={toggleForm}>
+            {formData.errorMsg}
+          </Button>
+          <p className="inlineTogether-Login"><NavLink to="/register" className="orRegister">or Register</NavLink></p>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <Button className='loginButton' id="sign-in-button" type="submit">
+            Submit
+          </Button>
+          <p className="inlineTogether-Login"><NavLink to="/register" className="orRegister">or Register</NavLink></p>
+        </div>
+      );
+    }
+  };
+
   return (
-    <div className='formContainer-Login'>
+    <div className="background">
       <DisneyNavbar/>
-      <div>
-      <Form className='margin-Login' onSubmit={(e) => {
-      e.preventDefault();
-      handleLogin(formData);
-      }}>
+        <div className="page-container">
+          <div className="form-container1">
+          <Form className='margin-Login' onSubmit={onSignIn}>
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="form-top-Login">Username</Form.Label>
             <Form.Control
@@ -41,7 +88,6 @@ export default function Login(props) {
             We'll never share your information with anyone else.
           </Form.Text>
         </Form.Group>
-
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
             <Form.Control
@@ -52,12 +98,12 @@ export default function Login(props) {
               onChange={handleChange}
             />
         </Form.Group>
-        <div>
-          <Button className='loginButton' variant="primary" type="submit">Submit</Button>
-          <p className="inlineTogether-Login"><Link to="/register" className="orRegister">or Register</Link></p>
-        </div>
+        {renderError()}    
       </Form>
+        <div className="signup">
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
