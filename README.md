@@ -1,6 +1,6 @@
 # Enchanted--Memories
 
-##OverView
+## OverView
 
 Enchanted Memories is a full stack application that allows users to browse Enchanted Memory parks and rides. Authorized users have the ability to create, update and delete pictures which are associated with their individual accounts. This app utilizies Ruby on Rails and PostgreSQL on the backend, and React.js on the frontend.
 
@@ -22,7 +22,7 @@ User authentication and association to limit user interaction with the app's con
 | Rails | Backend model-view-controller framework for Ruby | 
 
 
-#Client Front End 
+# Client Front End 
 
 [Wire Frame Enchanted Memories Home page](https://steve196697.invisionapp.com/freehand/Home-Page-L28dNETEL)
 [Wire Frame Enchanted Memories Park page](https://steve196697.invisionapp.com/freehand/Park-Page-WrWOh9myV)
@@ -34,12 +34,12 @@ User authentication and association to limit user interaction with the app's con
 
 [React component tree](https://lucid.app/lucidspark/e02a771f-5645-45d1-96aa-34e5e5e725ac/edit?viewport_loc=-1066%2C163%2C6530%2C2326%2C0_0&invitationId=inv_ebce91db-faea-4a7b-ba55-ccb8d556c066)
 
-##ERD model
+## ERD model
 
 [ERD MODEL](https://drive.google.com/file/d/1ZPsFibMm06FTstAhzA27gk84r-l2pNrx/view?usp=sharing)
 
 
-##Post MVP
+## Post MVP
 
 - Create a vacation and blog page. 
 - use of third party API 
