@@ -30,7 +30,7 @@ User authentication and association to limit user interaction with the app's con
 [Wire Frame Enchated Memories Photo:id and Rides:id page](https://steve196697.invisionapp.com/freehand/Photo-id-and-photo-id-cNPPnr7Ba)
 [Wire Frame Enchanted Memories login, registration, and add photo](https://steve196697.invisionapp.com/freehand/Login-Register-and-add-a-photo-Xp6myJeBd)
 
-##React Component Tree 
+## React Component Tree 
 
 [React component tree](https://lucid.app/lucidspark/e02a771f-5645-45d1-96aa-34e5e5e725ac/edit?viewport_loc=-1066%2C163%2C6530%2C2326%2C0_0&invitationId=inv_ebce91db-faea-4a7b-ba55-ccb8d556c066)
 
